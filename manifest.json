@@ -1,0 +1,4105 @@
+{
+  "vendor": "Microchip",
+  "generated": "2026-07-19",
+  "index": "https://packs.download.microchip.com/index.idx",
+  "sources": [
+    {
+      "name": "Microchip.PIC32CK-GC_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CK-GC_DFP.1.2.168.atpack",
+      "version": "1.2.168",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 20
+    },
+    {
+      "name": "Microchip.PIC32CK-SG_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CK-SG_DFP.1.7.233.atpack",
+      "version": "1.7.233",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 22
+    },
+    {
+      "name": "Microchip.PIC32CM-GC00_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-GC00_DFP.1.0.27.atpack",
+      "version": "1.0.27",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 3
+    },
+    {
+      "name": "Microchip.PIC32CM-GV_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-GV_DFP.1.3.47.atpack",
+      "version": "1.3.47",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 6
+    },
+    {
+      "name": "Microchip.PIC32CM-JH_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-JH_DFP.1.7.296.atpack",
+      "version": "1.7.296",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 24
+    },
+    {
+      "name": "Microchip.PIC32CM-LE_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-LE_DFP.1.4.336.atpack",
+      "version": "1.4.336",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 8
+    },
+    {
+      "name": "Microchip.PIC32CM-LS_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-LS_DFP.1.3.278.atpack",
+      "version": "1.3.278",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 11
+    },
+    {
+      "name": "Microchip.PIC32CM-MC_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-MC_DFP.1.5.244.atpack",
+      "version": "1.5.244",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 4
+    },
+    {
+      "name": "Microchip.PIC32CM-PL_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-PL_DFP.1.5.437.atpack",
+      "version": "1.5.437",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 11
+    },
+    {
+      "name": "Microchip.PIC32CM-SG00_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-SG00_DFP.1.1.56.atpack",
+      "version": "1.1.56",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 3
+    },
+    {
+      "name": "Microchip.PIC32CX-BZ3_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CX-BZ3_DFP.1.4.259.atpack",
+      "version": "1.4.259",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 16
+    },
+    {
+      "name": "Microchip.PIC32CX-BZ6_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CX-BZ6_DFP.1.3.38.atpack",
+      "version": "1.3.38",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 4
+    },
+    {
+      "name": "Microchip.PIC32CX-BZ_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CX-BZ_DFP.1.4.243.atpack",
+      "version": "1.4.243",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 5
+    },
+    {
+      "name": "Microchip.PIC32CX-MT_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CX-MT_DFP.1.4.152.atpack",
+      "version": "1.4.152",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-MT_DFP-LICENSE.txt",
+      "files": 17
+    },
+    {
+      "name": "Microchip.PIC32CX-SG41_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CX-SG41_DFP.1.6.172.atpack",
+      "version": "1.6.172",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 4
+    },
+    {
+      "name": "Microchip.PIC32CX-SG60_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CX-SG60_DFP.1.3.159.atpack",
+      "version": "1.3.159",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 2
+    },
+    {
+      "name": "Microchip.PIC32CX-SG61_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CX-SG61_DFP.1.3.171.atpack",
+      "version": "1.3.171",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 2
+    },
+    {
+      "name": "Microchip.PIC32CX-SG_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CX-SG_DFP.1.5.176.atpack",
+      "version": "1.5.176",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 2
+    },
+    {
+      "name": "Microchip.PIC32CZ-CA70_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CZ-CA70_DFP.1.4.79.atpack",
+      "version": "1.4.79",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 9
+    },
+    {
+      "name": "Microchip.PIC32CZ-CA80_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CZ-CA80_DFP.1.7.219.atpack",
+      "version": "1.7.219",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 12
+    },
+    {
+      "name": "Microchip.PIC32CZ-CA90_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CZ-CA90_DFP.1.8.226.atpack",
+      "version": "1.8.226",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 12
+    },
+    {
+      "name": "Microchip.PIC32CZ-CA91_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CZ-CA91_DFP.1.4.23.atpack",
+      "version": "1.4.23",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 7
+    },
+    {
+      "name": "Microchip.PIC32CZ-MC70_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CZ-MC70_DFP.1.3.57.atpack",
+      "version": "1.3.57",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 4
+    },
+    {
+      "name": "Microchip.SAM9X6_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAM9X6_DFP.1.16.283.atpack",
+      "version": "1.16.283",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 5
+    },
+    {
+      "name": "Microchip.SAM9X7_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAM9X7_DFP.1.13.225.atpack",
+      "version": "1.13.225",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 9
+    },
+    {
+      "name": "Microchip.SAMA5D2_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMA5D2_DFP.1.17.292.atpack",
+      "version": "1.17.292",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 19
+    },
+    {
+      "name": "Microchip.SAMA5D3_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMA5D3_DFP.1.0.172.atpack",
+      "version": "1.0.172",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 5
+    },
+    {
+      "name": "Microchip.SAMA7D65_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMA7D65_DFP.1.12.120.atpack",
+      "version": "1.12.120",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 9
+    },
+    {
+      "name": "Microchip.SAMA7G5_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMA7G5_DFP.1.15.327.atpack",
+      "version": "1.15.327",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 8
+    },
+    {
+      "name": "Microchip.SAMC20_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMC20_DFP.3.6.222.atpack",
+      "version": "3.6.222",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 16
+    },
+    {
+      "name": "Microchip.SAMC21_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMC21_DFP.3.9.248.atpack",
+      "version": "3.9.248",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 16
+    },
+    {
+      "name": "Microchip.SAMD09_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMD09_DFP.2.5.147.atpack",
+      "version": "2.5.147",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 2
+    },
+    {
+      "name": "Microchip.SAMD10_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMD10_DFP.2.7.81.atpack",
+      "version": "2.7.81",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 7
+    },
+    {
+      "name": "Microchip.SAMD11_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMD11_DFP.2.7.195.atpack",
+      "version": "2.7.195",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 4
+    },
+    {
+      "name": "Microchip.SAMD20_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMD20_DFP.3.7.231.atpack",
+      "version": "3.7.231",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 28
+    },
+    {
+      "name": "Microchip.SAMD21_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMD21_DFP.3.8.270.atpack",
+      "version": "3.8.270",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 34
+    },
+    {
+      "name": "Microchip.SAMD51_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMD51_DFP.3.9.276.atpack",
+      "version": "3.9.276",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 9
+    },
+    {
+      "name": "Microchip.SAMDA1_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMDA1_DFP.2.8.196.atpack",
+      "version": "2.8.196",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 9
+    },
+    {
+      "name": "Microchip.SAME51_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAME51_DFP.3.9.267.atpack",
+      "version": "3.9.267",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 7
+    },
+    {
+      "name": "Microchip.SAME53_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAME53_DFP.3.10.248.atpack",
+      "version": "3.10.248",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 5
+    },
+    {
+      "name": "Microchip.SAME54_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAME54_DFP.3.11.261.atpack",
+      "version": "3.11.261",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 4
+    },
+    {
+      "name": "Microchip.SAME70_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAME70_DFP.4.13.292.atpack",
+      "version": "4.13.292",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 9
+    },
+    {
+      "name": "Microchip.SAMG_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMG_DFP.3.10.223.atpack",
+      "version": "3.10.223",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 9
+    },
+    {
+      "name": "Microchip.SAMHA0_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMHA0_DFP.2.4.179.atpack",
+      "version": "2.4.179",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 7
+    },
+    {
+      "name": "Microchip.SAMHA1_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMHA1_DFP.2.5.190.atpack",
+      "version": "2.5.190",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 10
+    },
+    {
+      "name": "Microchip.SAML10_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAML10_DFP.3.11.262.atpack",
+      "version": "3.11.262",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 6
+    },
+    {
+      "name": "Microchip.SAML11_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAML11_DFP.4.5.268.atpack",
+      "version": "4.5.268",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 6
+    },
+    {
+      "name": "Microchip.SAML21_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAML21_DFP.3.8.229.atpack",
+      "version": "3.8.229",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 15
+    },
+    {
+      "name": "Microchip.SAML22_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAML22_DFP.3.8.203.atpack",
+      "version": "3.8.203",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "files": 9
+    },
+    {
+      "name": "Microchip.SAMR21_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMR21_DFP.2.1.155.atpack",
+      "version": "2.1.155",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 7
+    },
+    {
+      "name": "Microchip.SAMR30_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMR30_DFP.2.0.47.atpack",
+      "version": "2.0.47",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 2
+    },
+    {
+      "name": "Microchip.SAMR34_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMR34_DFP.2.2.187.atpack",
+      "version": "2.2.187",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 3
+    },
+    {
+      "name": "Microchip.SAMR35_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMR35_DFP.2.1.63.atpack",
+      "version": "2.1.63",
+      "license": "Apache-2.0",
+      "license_file": null,
+      "files": 3
+    },
+    {
+      "name": "Microchip.SAMRH707_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMRH707_DFP.1.4.194.atpack",
+      "version": "1.4.194",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 1
+    },
+    {
+      "name": "Microchip.SAMRH71_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMRH71_DFP.2.8.290.atpack",
+      "version": "2.8.290",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 1
+    },
+    {
+      "name": "Microchip.SAMS70_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMS70_DFP.4.12.234.atpack",
+      "version": "4.12.234",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 9
+    },
+    {
+      "name": "Microchip.SAMV70_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMV70_DFP.4.12.233.atpack",
+      "version": "4.12.233",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 6
+    },
+    {
+      "name": "Microchip.SAMV71-RT_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMV71-RT_DFP.1.3.152.atpack",
+      "version": "1.3.152",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 1
+    },
+    {
+      "name": "Microchip.SAMV71_DFP",
+      "url": "https://packs.download.microchip.com/Microchip.SAMV71_DFP.4.13.257.atpack",
+      "version": "4.13.257",
+      "license": "Apache-2.0",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 9
+    }
+  ],
+  "files": [
+    {
+      "path": "PIC32CK_GC/PIC32CK0512GC00064.svd",
+      "device": "PIC32CK0512GC00064",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK0512GC00100.svd",
+      "device": "PIC32CK0512GC00100",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1012GC00048.svd",
+      "device": "PIC32CK1012GC00048",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1012GC00064.svd",
+      "device": "PIC32CK1012GC00064",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1012GC00100.svd",
+      "device": "PIC32CK1012GC00100",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1025GC00064.svd",
+      "device": "PIC32CK1025GC00064",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1025GC00100.svd",
+      "device": "PIC32CK1025GC00100",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK2051GC00064.svd",
+      "device": "PIC32CK2051GC00064",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK2051GC00100.svd",
+      "device": "PIC32CK2051GC00100",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK2051GC00144.svd",
+      "device": "PIC32CK2051GC00144",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK0512GC01064.svd",
+      "device": "PIC32CK0512GC01064",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK0512GC01100.svd",
+      "device": "PIC32CK0512GC01100",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1012GC01048.svd",
+      "device": "PIC32CK1012GC01048",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1012GC01064.svd",
+      "device": "PIC32CK1012GC01064",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1012GC01100.svd",
+      "device": "PIC32CK1012GC01100",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1025GC01064.svd",
+      "device": "PIC32CK1025GC01064",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1025GC01100.svd",
+      "device": "PIC32CK1025GC01100",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK2051GC01064.svd",
+      "device": "PIC32CK2051GC01064",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK2051GC01100.svd",
+      "device": "PIC32CK2051GC01100",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK2051GC01144.svd",
+      "device": "PIC32CK2051GC01144",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK0512SG00064.svd",
+      "device": "PIC32CK0512SG00064",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK0512SG00100.svd",
+      "device": "PIC32CK0512SG00100",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1012SG00048.svd",
+      "device": "PIC32CK1012SG00048",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1012SG00064.svd",
+      "device": "PIC32CK1012SG00064",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1012SG00100.svd",
+      "device": "PIC32CK1012SG00100",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1025SG00064.svd",
+      "device": "PIC32CK1025SG00064",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1025SG00100.svd",
+      "device": "PIC32CK1025SG00100",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1025SG00144.svd",
+      "device": "PIC32CK1025SG00144",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK2051SG00064.svd",
+      "device": "PIC32CK2051SG00064",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK2051SG00100.svd",
+      "device": "PIC32CK2051SG00100",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK2051SG00144.svd",
+      "device": "PIC32CK2051SG00144",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK0512SG01064.svd",
+      "device": "PIC32CK0512SG01064",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK0512SG01100.svd",
+      "device": "PIC32CK0512SG01100",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1012SG01048.svd",
+      "device": "PIC32CK1012SG01048",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1012SG01064.svd",
+      "device": "PIC32CK1012SG01064",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1012SG01100.svd",
+      "device": "PIC32CK1012SG01100",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1025SG01064.svd",
+      "device": "PIC32CK1025SG01064",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1025SG01100.svd",
+      "device": "PIC32CK1025SG01100",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK1025SG01144.svd",
+      "device": "PIC32CK1025SG01144",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK2051SG01064.svd",
+      "device": "PIC32CK2051SG01064",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK2051SG01100.svd",
+      "device": "PIC32CK2051SG01100",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_SG/PIC32CK2051SG01144.svd",
+      "device": "PIC32CK2051SG01144",
+      "family": "PIC32CK_SG",
+      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_GC00/PIC32CM5112GC00048.svd",
+      "device": "PIC32CM5112GC00048",
+      "family": "PIC32CM_GC00",
+      "source": "Microchip.PIC32CM-GC00_DFP.1.0.27",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_GC00/PIC32CM5112GC00064.svd",
+      "device": "PIC32CM5112GC00064",
+      "family": "PIC32CM_GC00",
+      "source": "Microchip.PIC32CM-GC00_DFP.1.0.27",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_GC00/PIC32CM5112GC00100.svd",
+      "device": "PIC32CM5112GC00100",
+      "family": "PIC32CM_GC00",
+      "source": "Microchip.PIC32CM-GC00_DFP.1.0.27",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_GV/PIC32CM1602GV00032.svd",
+      "device": "PIC32CM1602GV00032",
+      "family": "PIC32CM_GV",
+      "source": "Microchip.PIC32CM-GV_DFP.1.3.47",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_GV/PIC32CM1602GV00048.svd",
+      "device": "PIC32CM1602GV00048",
+      "family": "PIC32CM_GV",
+      "source": "Microchip.PIC32CM-GV_DFP.1.3.47",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_GV/PIC32CM1602GV00064.svd",
+      "device": "PIC32CM1602GV00064",
+      "family": "PIC32CM_GV",
+      "source": "Microchip.PIC32CM-GV_DFP.1.3.47",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_GV/PIC32CM3204GV00032.svd",
+      "device": "PIC32CM3204GV00032",
+      "family": "PIC32CM_GV",
+      "source": "Microchip.PIC32CM-GV_DFP.1.3.47",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_GV/PIC32CM3204GV00048.svd",
+      "device": "PIC32CM3204GV00048",
+      "family": "PIC32CM_GV",
+      "source": "Microchip.PIC32CM-GV_DFP.1.3.47",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_GV/PIC32CM3204GV00064.svd",
+      "device": "PIC32CM3204GV00064",
+      "family": "PIC32CM_GV",
+      "source": "Microchip.PIC32CM-GV_DFP.1.3.47",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM2532JH00032.svd",
+      "device": "PIC32CM2532JH00032",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM2532JH00048.svd",
+      "device": "PIC32CM2532JH00048",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM2532JH00064.svd",
+      "device": "PIC32CM2532JH00064",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM2532JH00100.svd",
+      "device": "PIC32CM2532JH00100",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM5164JH00032.svd",
+      "device": "PIC32CM5164JH00032",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM5164JH00048.svd",
+      "device": "PIC32CM5164JH00048",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM5164JH00064.svd",
+      "device": "PIC32CM5164JH00064",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM5164JH00100.svd",
+      "device": "PIC32CM5164JH00100",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM2532JH01032.svd",
+      "device": "PIC32CM2532JH01032",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM2532JH01048.svd",
+      "device": "PIC32CM2532JH01048",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM2532JH01064.svd",
+      "device": "PIC32CM2532JH01064",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM2532JH01100.svd",
+      "device": "PIC32CM2532JH01100",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM5164JH01032.svd",
+      "device": "PIC32CM5164JH01032",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM5164JH01048.svd",
+      "device": "PIC32CM5164JH01048",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM5164JH01064.svd",
+      "device": "PIC32CM5164JH01064",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM5164JH01100.svd",
+      "device": "PIC32CM5164JH01100",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM1216JH01032.svd",
+      "device": "PIC32CM1216JH01032",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM1216JH01048.svd",
+      "device": "PIC32CM1216JH01048",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM3204JH00032.svd",
+      "device": "PIC32CM3204JH00032",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM3204JH00048.svd",
+      "device": "PIC32CM3204JH00048",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM3204JH00064.svd",
+      "device": "PIC32CM3204JH00064",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM6408JH00032.svd",
+      "device": "PIC32CM6408JH00032",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM6408JH00048.svd",
+      "device": "PIC32CM6408JH00048",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_JH/PIC32CM6408JH00064.svd",
+      "device": "PIC32CM6408JH00064",
+      "family": "PIC32CM_JH",
+      "source": "Microchip.PIC32CM-JH_DFP.1.7.296",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LE/PIC32CM1216LE00032.svd",
+      "device": "PIC32CM1216LE00032",
+      "family": "PIC32CM_LE",
+      "source": "Microchip.PIC32CM-LE_DFP.1.4.336",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LE/PIC32CM1216LE00048.svd",
+      "device": "PIC32CM1216LE00048",
+      "family": "PIC32CM_LE",
+      "source": "Microchip.PIC32CM-LE_DFP.1.4.336",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LE/PIC32CM2532LE00048.svd",
+      "device": "PIC32CM2532LE00048",
+      "family": "PIC32CM_LE",
+      "source": "Microchip.PIC32CM-LE_DFP.1.4.336",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LE/PIC32CM2532LE00064.svd",
+      "device": "PIC32CM2532LE00064",
+      "family": "PIC32CM_LE",
+      "source": "Microchip.PIC32CM-LE_DFP.1.4.336",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LE/PIC32CM2532LE00100.svd",
+      "device": "PIC32CM2532LE00100",
+      "family": "PIC32CM_LE",
+      "source": "Microchip.PIC32CM-LE_DFP.1.4.336",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LE/PIC32CM5164LE00048.svd",
+      "device": "PIC32CM5164LE00048",
+      "family": "PIC32CM_LE",
+      "source": "Microchip.PIC32CM-LE_DFP.1.4.336",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LE/PIC32CM5164LE00064.svd",
+      "device": "PIC32CM5164LE00064",
+      "family": "PIC32CM_LE",
+      "source": "Microchip.PIC32CM-LE_DFP.1.4.336",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LE/PIC32CM5164LE00100.svd",
+      "device": "PIC32CM5164LE00100",
+      "family": "PIC32CM_LE",
+      "source": "Microchip.PIC32CM-LE_DFP.1.4.336",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM1216LS00032.svd",
+      "device": "PIC32CM1216LS00032",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM1216LS00048.svd",
+      "device": "PIC32CM1216LS00048",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM2532LS00048.svd",
+      "device": "PIC32CM2532LS00048",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM2532LS00064.svd",
+      "device": "PIC32CM2532LS00064",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM2532LS00100.svd",
+      "device": "PIC32CM2532LS00100",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM5164LS00048.svd",
+      "device": "PIC32CM5164LS00048",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM5164LS00064.svd",
+      "device": "PIC32CM5164LS00064",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM5164LS00100.svd",
+      "device": "PIC32CM5164LS00100",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM5164LS60048.svd",
+      "device": "PIC32CM5164LS60048",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM5164LS60064.svd",
+      "device": "PIC32CM5164LS60064",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_LS/PIC32CM5164LS60100.svd",
+      "device": "PIC32CM5164LS60100",
+      "family": "PIC32CM_LS",
+      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_MC/PIC32CM1216MC00032.svd",
+      "device": "PIC32CM1216MC00032",
+      "family": "PIC32CM_MC",
+      "source": "Microchip.PIC32CM-MC_DFP.1.5.244",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_MC/PIC32CM1216MC00048.svd",
+      "device": "PIC32CM1216MC00048",
+      "family": "PIC32CM_MC",
+      "source": "Microchip.PIC32CM-MC_DFP.1.5.244",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_MC/PIC32CM6408MC00032.svd",
+      "device": "PIC32CM6408MC00032",
+      "family": "PIC32CM_MC",
+      "source": "Microchip.PIC32CM-MC_DFP.1.5.244",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_MC/PIC32CM6408MC00048.svd",
+      "device": "PIC32CM6408MC00048",
+      "family": "PIC32CM_MC",
+      "source": "Microchip.PIC32CM-MC_DFP.1.5.244",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM1216PL10028.svd",
+      "device": "PIC32CM1216PL10028",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM1216PL10032.svd",
+      "device": "PIC32CM1216PL10032",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM1216PL10048.svd",
+      "device": "PIC32CM1216PL10048",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM1216PL10064.svd",
+      "device": "PIC32CM1216PL10064",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM3204PL10020.svd",
+      "device": "PIC32CM3204PL10020",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM3204PL10028.svd",
+      "device": "PIC32CM3204PL10028",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM3204PL10032.svd",
+      "device": "PIC32CM3204PL10032",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM6408PL10028.svd",
+      "device": "PIC32CM6408PL10028",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM6408PL10032.svd",
+      "device": "PIC32CM6408PL10032",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM6408PL10048.svd",
+      "device": "PIC32CM6408PL10048",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_PL/PIC32CM6408PL10064.svd",
+      "device": "PIC32CM6408PL10064",
+      "family": "PIC32CM_PL",
+      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_SG00/PIC32CM5112SG00048.svd",
+      "device": "PIC32CM5112SG00048",
+      "family": "PIC32CM_SG00",
+      "source": "Microchip.PIC32CM-SG00_DFP.1.1.56",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_SG00/PIC32CM5112SG00064.svd",
+      "device": "PIC32CM5112SG00064",
+      "family": "PIC32CM_SG00",
+      "source": "Microchip.PIC32CM-SG00_DFP.1.1.56",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CM_SG00/PIC32CM5112SG00100.svd",
+      "device": "PIC32CM5112SG00100",
+      "family": "PIC32CM_SG00",
+      "source": "Microchip.PIC32CM-SG00_DFP.1.1.56",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32CX5109BZ31032_SL3.svd",
+      "device": "PIC32CX5109BZ31032_SL3",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32CX5109BZ31048_SL3.svd",
+      "device": "PIC32CX5109BZ31048_SL3",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32CX5109BZ31032.svd",
+      "device": "PIC32CX5109BZ31032",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32CX5109BZ31048.svd",
+      "device": "PIC32CX5109BZ31048",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32CX5109BZ36032_SL3.svd",
+      "device": "PIC32CX5109BZ36032_SL3",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32CX5109BZ36048_SL3.svd",
+      "device": "PIC32CX5109BZ36048_SL3",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32CX5109BZ36032.svd",
+      "device": "PIC32CX5109BZ36032",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32CX5109BZ36048.svd",
+      "device": "PIC32CX5109BZ36048",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/WBZ350_SL3.svd",
+      "device": "WBZ350_SL3",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/WBZ351_SL3.svd",
+      "device": "WBZ351_SL3",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/WBZ350.svd",
+      "device": "WBZ350",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/WBZ351.svd",
+      "device": "WBZ351",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32WM_BZ3601_SL3.svd",
+      "device": "PIC32WM_BZ3601_SL3",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32WM_BZ3602_SL3.svd",
+      "device": "PIC32WM_BZ3602_SL3",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32WM_BZ3601.svd",
+      "device": "PIC32WM_BZ3601",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ3/PIC32WM_BZ3602.svd",
+      "device": "PIC32WM_BZ3602",
+      "family": "PIC32CX_BZ3",
+      "source": "Microchip.PIC32CX-BZ3_DFP.1.4.259",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ6/PIC32CX2051BZ62132.svd",
+      "device": "PIC32CX2051BZ62132",
+      "family": "PIC32CX_BZ6",
+      "source": "Microchip.PIC32CX-BZ6_DFP.1.3.38",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ6/PIC32CX2051BZ66048.svd",
+      "device": "PIC32CX2051BZ66048",
+      "family": "PIC32CX_BZ6",
+      "source": "Microchip.PIC32CX-BZ6_DFP.1.3.38",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ6/PIC32WM_BZ6204.svd",
+      "device": "PIC32WM_BZ6204",
+      "family": "PIC32CX_BZ6",
+      "source": "Microchip.PIC32CX-BZ6_DFP.1.3.38",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ6/PIC32WM_BZ6602.svd",
+      "device": "PIC32WM_BZ6602",
+      "family": "PIC32CX_BZ6",
+      "source": "Microchip.PIC32CX-BZ6_DFP.1.3.38",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ/PIC32CX1012BZ24032.svd",
+      "device": "PIC32CX1012BZ24032",
+      "family": "PIC32CX_BZ",
+      "source": "Microchip.PIC32CX-BZ_DFP.1.4.243",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ/PIC32CX1012BZ25048.svd",
+      "device": "PIC32CX1012BZ25048",
+      "family": "PIC32CX_BZ",
+      "source": "Microchip.PIC32CX-BZ_DFP.1.4.243",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ/WBZ450.svd",
+      "device": "WBZ450",
+      "family": "PIC32CX_BZ",
+      "source": "Microchip.PIC32CX-BZ_DFP.1.4.243",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ/WBZ451.svd",
+      "device": "WBZ451",
+      "family": "PIC32CX_BZ",
+      "source": "Microchip.PIC32CX-BZ_DFP.1.4.243",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_BZ/WBZ451H.svd",
+      "device": "WBZ451H",
+      "family": "PIC32CX_BZ",
+      "source": "Microchip.PIC32CX-BZ_DFP.1.4.243",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX1025MTC128.svd",
+      "device": "PIC32CX1025MTC128",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX1025MTC128S1.svd",
+      "device": "PIC32CX1025MTC128S1",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX2051MTC128.svd",
+      "device": "PIC32CX2051MTC128",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX2051MTC128S1.svd",
+      "device": "PIC32CX2051MTC128S1",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX5112MTC128.svd",
+      "device": "PIC32CX5112MTC128",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX5112MTC128S1.svd",
+      "device": "PIC32CX5112MTC128S1",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX1025MTG128.svd",
+      "device": "PIC32CX1025MTG128",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX1025MTG64.svd",
+      "device": "PIC32CX1025MTG64",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX2051MTG128.svd",
+      "device": "PIC32CX2051MTG128",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX2051MTG64.svd",
+      "device": "PIC32CX2051MTG64",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX5112MTG128.svd",
+      "device": "PIC32CX5112MTG128",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX1025MTSH128.svd",
+      "device": "PIC32CX1025MTSH128",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX1025MTSH128S1.svd",
+      "device": "PIC32CX1025MTSH128S1",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX2051MTSH128.svd",
+      "device": "PIC32CX2051MTSH128",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX2051MTSH128S1.svd",
+      "device": "PIC32CX2051MTSH128S1",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX5112MTSH128.svd",
+      "device": "PIC32CX5112MTSH128",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_MT/PIC32CX5112MTSH128S1.svd",
+      "device": "PIC32CX5112MTSH128S1",
+      "family": "PIC32CX_MT",
+      "source": "Microchip.PIC32CX-MT_DFP.1.4.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_SG41/PIC32CX1025SG41064.svd",
+      "device": "PIC32CX1025SG41064",
+      "family": "PIC32CX_SG41",
+      "source": "Microchip.PIC32CX-SG41_DFP.1.6.172",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_SG41/PIC32CX1025SG41080.svd",
+      "device": "PIC32CX1025SG41080",
+      "family": "PIC32CX_SG41",
+      "source": "Microchip.PIC32CX-SG41_DFP.1.6.172",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_SG41/PIC32CX1025SG41100.svd",
+      "device": "PIC32CX1025SG41100",
+      "family": "PIC32CX_SG41",
+      "source": "Microchip.PIC32CX-SG41_DFP.1.6.172",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_SG41/PIC32CX1025SG41128.svd",
+      "device": "PIC32CX1025SG41128",
+      "family": "PIC32CX_SG41",
+      "source": "Microchip.PIC32CX-SG41_DFP.1.6.172",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_SG60/PIC32CX1025SG60100.svd",
+      "device": "PIC32CX1025SG60100",
+      "family": "PIC32CX_SG60",
+      "source": "Microchip.PIC32CX-SG60_DFP.1.3.159",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_SG60/PIC32CX1025SG60128.svd",
+      "device": "PIC32CX1025SG60128",
+      "family": "PIC32CX_SG60",
+      "source": "Microchip.PIC32CX-SG60_DFP.1.3.159",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_SG61/PIC32CX1025SG61100.svd",
+      "device": "PIC32CX1025SG61100",
+      "family": "PIC32CX_SG61",
+      "source": "Microchip.PIC32CX-SG61_DFP.1.3.171",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_SG61/PIC32CX1025SG61128.svd",
+      "device": "PIC32CX1025SG61128",
+      "family": "PIC32CX_SG61",
+      "source": "Microchip.PIC32CX-SG61_DFP.1.3.171",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_SG/PIC32CX0525SG12084.svd",
+      "device": "PIC32CX0525SG12084",
+      "family": "PIC32CX_SG",
+      "source": "Microchip.PIC32CX-SG_DFP.1.5.176",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CX_SG/PIC32CX0525SG12144.svd",
+      "device": "PIC32CX0525SG12144",
+      "family": "PIC32CX_SG",
+      "source": "Microchip.PIC32CX-SG_DFP.1.5.176",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA70/PIC32CZ1038CA70064.svd",
+      "device": "PIC32CZ1038CA70064",
+      "family": "PIC32CZ_CA70",
+      "source": "Microchip.PIC32CZ-CA70_DFP.1.4.79",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA70/PIC32CZ1038CA70100.svd",
+      "device": "PIC32CZ1038CA70100",
+      "family": "PIC32CZ_CA70",
+      "source": "Microchip.PIC32CZ-CA70_DFP.1.4.79",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA70/PIC32CZ1038CA70144.svd",
+      "device": "PIC32CZ1038CA70144",
+      "family": "PIC32CZ_CA70",
+      "source": "Microchip.PIC32CZ-CA70_DFP.1.4.79",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA70/PIC32CZ2051CA70064.svd",
+      "device": "PIC32CZ2051CA70064",
+      "family": "PIC32CZ_CA70",
+      "source": "Microchip.PIC32CZ-CA70_DFP.1.4.79",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA70/PIC32CZ2051CA70100.svd",
+      "device": "PIC32CZ2051CA70100",
+      "family": "PIC32CZ_CA70",
+      "source": "Microchip.PIC32CZ-CA70_DFP.1.4.79",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA70/PIC32CZ2051CA70144.svd",
+      "device": "PIC32CZ2051CA70144",
+      "family": "PIC32CZ_CA70",
+      "source": "Microchip.PIC32CZ-CA70_DFP.1.4.79",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA70/PIC32CZ5125CA70064.svd",
+      "device": "PIC32CZ5125CA70064",
+      "family": "PIC32CZ_CA70",
+      "source": "Microchip.PIC32CZ-CA70_DFP.1.4.79",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA70/PIC32CZ5125CA70100.svd",
+      "device": "PIC32CZ5125CA70100",
+      "family": "PIC32CZ_CA70",
+      "source": "Microchip.PIC32CZ-CA70_DFP.1.4.79",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA70/PIC32CZ5125CA70144.svd",
+      "device": "PIC32CZ5125CA70144",
+      "family": "PIC32CZ_CA70",
+      "source": "Microchip.PIC32CZ-CA70_DFP.1.4.79",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ2051CA80100.svd",
+      "device": "PIC32CZ2051CA80100",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ2051CA80144.svd",
+      "device": "PIC32CZ2051CA80144",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ2051CA80176.svd",
+      "device": "PIC32CZ2051CA80176",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ2051CA80208.svd",
+      "device": "PIC32CZ2051CA80208",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ4010CA80100.svd",
+      "device": "PIC32CZ4010CA80100",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ4010CA80144.svd",
+      "device": "PIC32CZ4010CA80144",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ4010CA80176.svd",
+      "device": "PIC32CZ4010CA80176",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ4010CA80208.svd",
+      "device": "PIC32CZ4010CA80208",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ8110CA80100.svd",
+      "device": "PIC32CZ8110CA80100",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ8110CA80144.svd",
+      "device": "PIC32CZ8110CA80144",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ8110CA80176.svd",
+      "device": "PIC32CZ8110CA80176",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA80/PIC32CZ8110CA80208.svd",
+      "device": "PIC32CZ8110CA80208",
+      "family": "PIC32CZ_CA80",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ2051CA90100.svd",
+      "device": "PIC32CZ2051CA90100",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ2051CA90144.svd",
+      "device": "PIC32CZ2051CA90144",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ2051CA90176.svd",
+      "device": "PIC32CZ2051CA90176",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ2051CA90208.svd",
+      "device": "PIC32CZ2051CA90208",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ4010CA90100.svd",
+      "device": "PIC32CZ4010CA90100",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ4010CA90144.svd",
+      "device": "PIC32CZ4010CA90144",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ4010CA90176.svd",
+      "device": "PIC32CZ4010CA90176",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ4010CA90208.svd",
+      "device": "PIC32CZ4010CA90208",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ8110CA90100.svd",
+      "device": "PIC32CZ8110CA90100",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ8110CA90144.svd",
+      "device": "PIC32CZ8110CA90144",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ8110CA90176.svd",
+      "device": "PIC32CZ8110CA90176",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA90/PIC32CZ8110CA90208.svd",
+      "device": "PIC32CZ8110CA90208",
+      "family": "PIC32CZ_CA90",
+      "source": "Microchip.PIC32CZ-CA90_DFP.1.8.226",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA91/PIC32CZ2051CA91100.svd",
+      "device": "PIC32CZ2051CA91100",
+      "family": "PIC32CZ_CA91",
+      "source": "Microchip.PIC32CZ-CA91_DFP.1.4.23",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA91/PIC32CZ2051CA91144.svd",
+      "device": "PIC32CZ2051CA91144",
+      "family": "PIC32CZ_CA91",
+      "source": "Microchip.PIC32CZ-CA91_DFP.1.4.23",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA91/PIC32CZ2051CA91176.svd",
+      "device": "PIC32CZ2051CA91176",
+      "family": "PIC32CZ_CA91",
+      "source": "Microchip.PIC32CZ-CA91_DFP.1.4.23",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA91/PIC32CZ4010CA91100.svd",
+      "device": "PIC32CZ4010CA91100",
+      "family": "PIC32CZ_CA91",
+      "source": "Microchip.PIC32CZ-CA91_DFP.1.4.23",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA91/PIC32CZ4010CA91144.svd",
+      "device": "PIC32CZ4010CA91144",
+      "family": "PIC32CZ_CA91",
+      "source": "Microchip.PIC32CZ-CA91_DFP.1.4.23",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA91/PIC32CZ4010CA91176.svd",
+      "device": "PIC32CZ4010CA91176",
+      "family": "PIC32CZ_CA91",
+      "source": "Microchip.PIC32CZ-CA91_DFP.1.4.23",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_CA91/PIC32CZ4010CA91208.svd",
+      "device": "PIC32CZ4010CA91208",
+      "family": "PIC32CZ_CA91",
+      "source": "Microchip.PIC32CZ-CA91_DFP.1.4.23",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_MC70/PIC32CZ1038MC70064.svd",
+      "device": "PIC32CZ1038MC70064",
+      "family": "PIC32CZ_MC70",
+      "source": "Microchip.PIC32CZ-MC70_DFP.1.3.57",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_MC70/PIC32CZ1038MC70100.svd",
+      "device": "PIC32CZ1038MC70100",
+      "family": "PIC32CZ_MC70",
+      "source": "Microchip.PIC32CZ-MC70_DFP.1.3.57",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_MC70/PIC32CZ2051MC70064.svd",
+      "device": "PIC32CZ2051MC70064",
+      "family": "PIC32CZ_MC70",
+      "source": "Microchip.PIC32CZ-MC70_DFP.1.3.57",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CZ_MC70/PIC32CZ2051MC70100.svd",
+      "device": "PIC32CZ2051MC70100",
+      "family": "PIC32CZ_MC70",
+      "source": "Microchip.PIC32CZ-MC70_DFP.1.3.57",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X6/SAM9X60.svd",
+      "device": "SAM9X60",
+      "family": "SAM9X6",
+      "source": "Microchip.SAM9X6_DFP.1.16.283",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X6/SAM9X60D1G.svd",
+      "device": "SAM9X60D1G",
+      "family": "SAM9X6",
+      "source": "Microchip.SAM9X6_DFP.1.16.283",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X6/SAM9X60D1G_SOM.svd",
+      "device": "SAM9X60D1G_SOM",
+      "family": "SAM9X6",
+      "source": "Microchip.SAM9X6_DFP.1.16.283",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X6/SAM9X60D5M.svd",
+      "device": "SAM9X60D5M",
+      "family": "SAM9X6",
+      "source": "Microchip.SAM9X6_DFP.1.16.283",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X6/SAM9X60D6K.svd",
+      "device": "SAM9X60D6K",
+      "family": "SAM9X6",
+      "source": "Microchip.SAM9X6_DFP.1.16.283",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X7/SAM9X70.svd",
+      "device": "SAM9X70",
+      "family": "SAM9X7",
+      "source": "Microchip.SAM9X7_DFP.1.13.225",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X7/SAM9X72.svd",
+      "device": "SAM9X72",
+      "family": "SAM9X7",
+      "source": "Microchip.SAM9X7_DFP.1.13.225",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X7/SAM9X75.svd",
+      "device": "SAM9X75",
+      "family": "SAM9X7",
+      "source": "Microchip.SAM9X7_DFP.1.13.225",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X7/SAM9X75D1G.svd",
+      "device": "SAM9X75D1G",
+      "family": "SAM9X7",
+      "source": "Microchip.SAM9X7_DFP.1.13.225",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X7/SAM9X75D1GN2.svd",
+      "device": "SAM9X75D1GN2",
+      "family": "SAM9X7",
+      "source": "Microchip.SAM9X7_DFP.1.13.225",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X7/SAM9X75D2G.svd",
+      "device": "SAM9X75D2G",
+      "family": "SAM9X7",
+      "source": "Microchip.SAM9X7_DFP.1.13.225",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X7/SAM9X75D2GN4.svd",
+      "device": "SAM9X75D2GN4",
+      "family": "SAM9X7",
+      "source": "Microchip.SAM9X7_DFP.1.13.225",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X7/SAM9X75D5M.svd",
+      "device": "SAM9X75D5M",
+      "family": "SAM9X7",
+      "source": "Microchip.SAM9X7_DFP.1.13.225",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAM9X7/SAM9X75D5MN0.svd",
+      "device": "SAM9X75D5MN0",
+      "family": "SAM9X7",
+      "source": "Microchip.SAM9X7_DFP.1.13.225",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D21.svd",
+      "device": "ATSAMA5D21",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D22.svd",
+      "device": "ATSAMA5D22",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D225CD1M.svd",
+      "device": "ATSAMA5D225CD1M",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D23.svd",
+      "device": "ATSAMA5D23",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D24.svd",
+      "device": "ATSAMA5D24",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D26.svd",
+      "device": "ATSAMA5D26",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D27.svd",
+      "device": "ATSAMA5D27",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D27CD1G.svd",
+      "device": "ATSAMA5D27CD1G",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D27CD5M.svd",
+      "device": "ATSAMA5D27CD5M",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D27CLD1G.svd",
+      "device": "ATSAMA5D27CLD1G",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D27CLD2G.svd",
+      "device": "ATSAMA5D27CLD2G",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D28.svd",
+      "device": "ATSAMA5D28",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D28CD1G.svd",
+      "device": "ATSAMA5D28CD1G",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D28CLD1G.svd",
+      "device": "ATSAMA5D28CLD1G",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D28CLD2G.svd",
+      "device": "ATSAMA5D28CLD2G",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D27SOM1.svd",
+      "device": "ATSAMA5D27SOM1",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D27WLSOM1.svd",
+      "device": "ATSAMA5D27WLSOM1",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D29.svd",
+      "device": "ATSAMA5D29",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D2/ATSAMA5D29TA100.svd",
+      "device": "ATSAMA5D29TA100",
+      "family": "SAMA5D2",
+      "source": "Microchip.SAMA5D2_DFP.1.17.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D3/ATSAMA5D31.svd",
+      "device": "ATSAMA5D31",
+      "family": "SAMA5D3",
+      "source": "Microchip.SAMA5D3_DFP.1.0.172",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D3/ATSAMA5D33.svd",
+      "device": "ATSAMA5D33",
+      "family": "SAMA5D3",
+      "source": "Microchip.SAMA5D3_DFP.1.0.172",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D3/ATSAMA5D34.svd",
+      "device": "ATSAMA5D34",
+      "family": "SAMA5D3",
+      "source": "Microchip.SAMA5D3_DFP.1.0.172",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D3/ATSAMA5D35.svd",
+      "device": "ATSAMA5D35",
+      "family": "SAMA5D3",
+      "source": "Microchip.SAMA5D3_DFP.1.0.172",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA5D3/ATSAMA5D36.svd",
+      "device": "ATSAMA5D36",
+      "family": "SAMA5D3",
+      "source": "Microchip.SAMA5D3_DFP.1.0.172",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7D65/SAMA7D65.svd",
+      "device": "SAMA7D65",
+      "family": "SAMA7D65",
+      "source": "Microchip.SAMA7D65_DFP.1.12.120",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7D65/SAMA7D65D1G.svd",
+      "device": "SAMA7D65D1G",
+      "family": "SAMA7D65",
+      "source": "Microchip.SAMA7D65_DFP.1.12.120",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7D65/SAMA7D65D1GN2.svd",
+      "device": "SAMA7D65D1GN2",
+      "family": "SAMA7D65",
+      "source": "Microchip.SAMA7D65_DFP.1.12.120",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7D65/SAMA7D65D2G.svd",
+      "device": "SAMA7D65D2G",
+      "family": "SAMA7D65",
+      "source": "Microchip.SAMA7D65_DFP.1.12.120",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7D65/SAMA7D65D2GN8.svd",
+      "device": "SAMA7D65D2GN8",
+      "family": "SAMA7D65",
+      "source": "Microchip.SAMA7D65_DFP.1.12.120",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7D65/SAMA7D65D4G.svd",
+      "device": "SAMA7D65D4G",
+      "family": "SAMA7D65",
+      "source": "Microchip.SAMA7D65_DFP.1.12.120",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7D65/SAMA7D65D4GN8.svd",
+      "device": "SAMA7D65D4GN8",
+      "family": "SAMA7D65",
+      "source": "Microchip.SAMA7D65_DFP.1.12.120",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7D65/SAMA7D65D5M.svd",
+      "device": "SAMA7D65D5M",
+      "family": "SAMA7D65",
+      "source": "Microchip.SAMA7D65_DFP.1.12.120",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7D65/SAMA7D65D5MN0.svd",
+      "device": "SAMA7D65D5MN0",
+      "family": "SAMA7D65",
+      "source": "Microchip.SAMA7D65_DFP.1.12.120",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7G5/SAMA7G54.svd",
+      "device": "SAMA7G54",
+      "family": "SAMA7G5",
+      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7G5/SAMA7G54D1G.svd",
+      "device": "SAMA7G54D1G",
+      "family": "SAMA7G5",
+      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7G5/SAMA7G54D1GN0.svd",
+      "device": "SAMA7G54D1GN0",
+      "family": "SAMA7G5",
+      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7G5/SAMA7G54D1GN2.svd",
+      "device": "SAMA7G54D1GN2",
+      "family": "SAMA7G5",
+      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7G5/SAMA7G54D2G.svd",
+      "device": "SAMA7G54D2G",
+      "family": "SAMA7G5",
+      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7G5/SAMA7G54D2GN4.svd",
+      "device": "SAMA7G54D2GN4",
+      "family": "SAMA7G5",
+      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7G5/SAMA7G54D4G.svd",
+      "device": "SAMA7G54D4G",
+      "family": "SAMA7G5",
+      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMA7G5/SAMA7G54D4GN8.svd",
+      "device": "SAMA7G54D4GN8",
+      "family": "SAMA7G5",
+      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20E15A.svd",
+      "device": "ATSAMC20E15A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20E16A.svd",
+      "device": "ATSAMC20E16A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20E17A.svd",
+      "device": "ATSAMC20E17A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20E18A.svd",
+      "device": "ATSAMC20E18A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20G15A.svd",
+      "device": "ATSAMC20G15A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20G16A.svd",
+      "device": "ATSAMC20G16A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20G17A.svd",
+      "device": "ATSAMC20G17A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20G18A.svd",
+      "device": "ATSAMC20G18A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20J15A.svd",
+      "device": "ATSAMC20J15A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20J16A.svd",
+      "device": "ATSAMC20J16A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20J17A.svd",
+      "device": "ATSAMC20J17A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20J17AU.svd",
+      "device": "ATSAMC20J17AU",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20J18A.svd",
+      "device": "ATSAMC20J18A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20J18AU.svd",
+      "device": "ATSAMC20J18AU",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20N17A.svd",
+      "device": "ATSAMC20N17A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC20/ATSAMC20N18A.svd",
+      "device": "ATSAMC20N18A",
+      "family": "SAMC20",
+      "source": "Microchip.SAMC20_DFP.3.6.222",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21E15A.svd",
+      "device": "ATSAMC21E15A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21E16A.svd",
+      "device": "ATSAMC21E16A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21E17A.svd",
+      "device": "ATSAMC21E17A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21E18A.svd",
+      "device": "ATSAMC21E18A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21G15A.svd",
+      "device": "ATSAMC21G15A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21G16A.svd",
+      "device": "ATSAMC21G16A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21G17A.svd",
+      "device": "ATSAMC21G17A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21G18A.svd",
+      "device": "ATSAMC21G18A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21J15A.svd",
+      "device": "ATSAMC21J15A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21J16A.svd",
+      "device": "ATSAMC21J16A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21J17A.svd",
+      "device": "ATSAMC21J17A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21J17AU.svd",
+      "device": "ATSAMC21J17AU",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21J18A.svd",
+      "device": "ATSAMC21J18A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21J18AU.svd",
+      "device": "ATSAMC21J18AU",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21N17A.svd",
+      "device": "ATSAMC21N17A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMC21/ATSAMC21N18A.svd",
+      "device": "ATSAMC21N18A",
+      "family": "SAMC21",
+      "source": "Microchip.SAMC21_DFP.3.9.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD09/ATSAMD09C13A.svd",
+      "device": "ATSAMD09C13A",
+      "family": "SAMD09",
+      "source": "Microchip.SAMD09_DFP.2.5.147",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD09/ATSAMD09D14A.svd",
+      "device": "ATSAMD09D14A",
+      "family": "SAMD09",
+      "source": "Microchip.SAMD09_DFP.2.5.147",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD10/ATSAMD10C13A.svd",
+      "device": "ATSAMD10C13A",
+      "family": "SAMD10",
+      "source": "Microchip.SAMD10_DFP.2.7.81",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD10/ATSAMD10C14A.svd",
+      "device": "ATSAMD10C14A",
+      "family": "SAMD10",
+      "source": "Microchip.SAMD10_DFP.2.7.81",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD10/ATSAMD10D13AM.svd",
+      "device": "ATSAMD10D13AM",
+      "family": "SAMD10",
+      "source": "Microchip.SAMD10_DFP.2.7.81",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD10/ATSAMD10D13AS.svd",
+      "device": "ATSAMD10D13AS",
+      "family": "SAMD10",
+      "source": "Microchip.SAMD10_DFP.2.7.81",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD10/ATSAMD10D14AM.svd",
+      "device": "ATSAMD10D14AM",
+      "family": "SAMD10",
+      "source": "Microchip.SAMD10_DFP.2.7.81",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD10/ATSAMD10D14AS.svd",
+      "device": "ATSAMD10D14AS",
+      "family": "SAMD10",
+      "source": "Microchip.SAMD10_DFP.2.7.81",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD10/ATSAMD10D14AU.svd",
+      "device": "ATSAMD10D14AU",
+      "family": "SAMD10",
+      "source": "Microchip.SAMD10_DFP.2.7.81",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD11/ATSAMD11C14A.svd",
+      "device": "ATSAMD11C14A",
+      "family": "SAMD11",
+      "source": "Microchip.SAMD11_DFP.2.7.195",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD11/ATSAMD11D14AM.svd",
+      "device": "ATSAMD11D14AM",
+      "family": "SAMD11",
+      "source": "Microchip.SAMD11_DFP.2.7.195",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD11/ATSAMD11D14AS.svd",
+      "device": "ATSAMD11D14AS",
+      "family": "SAMD11",
+      "source": "Microchip.SAMD11_DFP.2.7.195",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD11/ATSAMD11D14AU.svd",
+      "device": "ATSAMD11D14AU",
+      "family": "SAMD11",
+      "source": "Microchip.SAMD11_DFP.2.7.195",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20E14.svd",
+      "device": "ATSAMD20E14",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20E15.svd",
+      "device": "ATSAMD20E15",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20E16.svd",
+      "device": "ATSAMD20E16",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20E17.svd",
+      "device": "ATSAMD20E17",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20E18.svd",
+      "device": "ATSAMD20E18",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20G14.svd",
+      "device": "ATSAMD20G14",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20G15.svd",
+      "device": "ATSAMD20G15",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20G16.svd",
+      "device": "ATSAMD20G16",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20G17.svd",
+      "device": "ATSAMD20G17",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20G17U.svd",
+      "device": "ATSAMD20G17U",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20G18.svd",
+      "device": "ATSAMD20G18",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20G18U.svd",
+      "device": "ATSAMD20G18U",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20J14.svd",
+      "device": "ATSAMD20J14",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20J15.svd",
+      "device": "ATSAMD20J15",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20J16.svd",
+      "device": "ATSAMD20J16",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20J17.svd",
+      "device": "ATSAMD20J17",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20J18.svd",
+      "device": "ATSAMD20J18",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20E14B.svd",
+      "device": "ATSAMD20E14B",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20E15B.svd",
+      "device": "ATSAMD20E15B",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20E15BU.svd",
+      "device": "ATSAMD20E15BU",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20E16B.svd",
+      "device": "ATSAMD20E16B",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20E16BU.svd",
+      "device": "ATSAMD20E16BU",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20G14B.svd",
+      "device": "ATSAMD20G14B",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20G15B.svd",
+      "device": "ATSAMD20G15B",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20G16B.svd",
+      "device": "ATSAMD20G16B",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20J14B.svd",
+      "device": "ATSAMD20J14B",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20J15B.svd",
+      "device": "ATSAMD20J15B",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD20/ATSAMD20J16B.svd",
+      "device": "ATSAMD20J16B",
+      "family": "SAMD20",
+      "source": "Microchip.SAMD20_DFP.3.7.231",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E15A.svd",
+      "device": "ATSAMD21E15A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E16A.svd",
+      "device": "ATSAMD21E16A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E17A.svd",
+      "device": "ATSAMD21E17A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E18A.svd",
+      "device": "ATSAMD21E18A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G15A.svd",
+      "device": "ATSAMD21G15A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G16A.svd",
+      "device": "ATSAMD21G16A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G17A.svd",
+      "device": "ATSAMD21G17A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G17AU.svd",
+      "device": "ATSAMD21G17AU",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G18A.svd",
+      "device": "ATSAMD21G18A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G18AU.svd",
+      "device": "ATSAMD21G18AU",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21J15A.svd",
+      "device": "ATSAMD21J15A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21J16A.svd",
+      "device": "ATSAMD21J16A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21J17A.svd",
+      "device": "ATSAMD21J17A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21J18A.svd",
+      "device": "ATSAMD21J18A",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E15B.svd",
+      "device": "ATSAMD21E15B",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E15BU.svd",
+      "device": "ATSAMD21E15BU",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E16B.svd",
+      "device": "ATSAMD21E16B",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E16BU.svd",
+      "device": "ATSAMD21E16BU",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G15B.svd",
+      "device": "ATSAMD21G15B",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G16B.svd",
+      "device": "ATSAMD21G16B",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21J15B.svd",
+      "device": "ATSAMD21J15B",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21J16B.svd",
+      "device": "ATSAMD21J16B",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E15CU.svd",
+      "device": "ATSAMD21E15CU",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E16CU.svd",
+      "device": "ATSAMD21E16CU",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E17D.svd",
+      "device": "ATSAMD21E17D",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E17DU.svd",
+      "device": "ATSAMD21E17DU",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G17D.svd",
+      "device": "ATSAMD21G17D",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21J17D.svd",
+      "device": "ATSAMD21J17D",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E15L.svd",
+      "device": "ATSAMD21E15L",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E16L.svd",
+      "device": "ATSAMD21E16L",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21E17L.svd",
+      "device": "ATSAMD21E17L",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G15L.svd",
+      "device": "ATSAMD21G15L",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G16L.svd",
+      "device": "ATSAMD21G16L",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD21/ATSAMD21G17L.svd",
+      "device": "ATSAMD21G17L",
+      "family": "SAMD21",
+      "source": "Microchip.SAMD21_DFP.3.8.270",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD51/ATSAMD51G18A.svd",
+      "device": "ATSAMD51G18A",
+      "family": "SAMD51",
+      "source": "Microchip.SAMD51_DFP.3.9.276",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD51/ATSAMD51G19A.svd",
+      "device": "ATSAMD51G19A",
+      "family": "SAMD51",
+      "source": "Microchip.SAMD51_DFP.3.9.276",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD51/ATSAMD51J18A.svd",
+      "device": "ATSAMD51J18A",
+      "family": "SAMD51",
+      "source": "Microchip.SAMD51_DFP.3.9.276",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD51/ATSAMD51J19A.svd",
+      "device": "ATSAMD51J19A",
+      "family": "SAMD51",
+      "source": "Microchip.SAMD51_DFP.3.9.276",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD51/ATSAMD51J20A.svd",
+      "device": "ATSAMD51J20A",
+      "family": "SAMD51",
+      "source": "Microchip.SAMD51_DFP.3.9.276",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD51/ATSAMD51N19A.svd",
+      "device": "ATSAMD51N19A",
+      "family": "SAMD51",
+      "source": "Microchip.SAMD51_DFP.3.9.276",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD51/ATSAMD51N20A.svd",
+      "device": "ATSAMD51N20A",
+      "family": "SAMD51",
+      "source": "Microchip.SAMD51_DFP.3.9.276",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD51/ATSAMD51P19A.svd",
+      "device": "ATSAMD51P19A",
+      "family": "SAMD51",
+      "source": "Microchip.SAMD51_DFP.3.9.276",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMD51/ATSAMD51P20A.svd",
+      "device": "ATSAMD51P20A",
+      "family": "SAMD51",
+      "source": "Microchip.SAMD51_DFP.3.9.276",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMDA1/ATSAMDA1E14B.svd",
+      "device": "ATSAMDA1E14B",
+      "family": "SAMDA1",
+      "source": "Microchip.SAMDA1_DFP.2.8.196",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMDA1/ATSAMDA1E15B.svd",
+      "device": "ATSAMDA1E15B",
+      "family": "SAMDA1",
+      "source": "Microchip.SAMDA1_DFP.2.8.196",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMDA1/ATSAMDA1E16B.svd",
+      "device": "ATSAMDA1E16B",
+      "family": "SAMDA1",
+      "source": "Microchip.SAMDA1_DFP.2.8.196",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMDA1/ATSAMDA1G14B.svd",
+      "device": "ATSAMDA1G14B",
+      "family": "SAMDA1",
+      "source": "Microchip.SAMDA1_DFP.2.8.196",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMDA1/ATSAMDA1G15B.svd",
+      "device": "ATSAMDA1G15B",
+      "family": "SAMDA1",
+      "source": "Microchip.SAMDA1_DFP.2.8.196",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMDA1/ATSAMDA1G16B.svd",
+      "device": "ATSAMDA1G16B",
+      "family": "SAMDA1",
+      "source": "Microchip.SAMDA1_DFP.2.8.196",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMDA1/ATSAMDA1J14B.svd",
+      "device": "ATSAMDA1J14B",
+      "family": "SAMDA1",
+      "source": "Microchip.SAMDA1_DFP.2.8.196",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMDA1/ATSAMDA1J15B.svd",
+      "device": "ATSAMDA1J15B",
+      "family": "SAMDA1",
+      "source": "Microchip.SAMDA1_DFP.2.8.196",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMDA1/ATSAMDA1J16B.svd",
+      "device": "ATSAMDA1J16B",
+      "family": "SAMDA1",
+      "source": "Microchip.SAMDA1_DFP.2.8.196",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME51/ATSAME51G18A.svd",
+      "device": "ATSAME51G18A",
+      "family": "SAME51",
+      "source": "Microchip.SAME51_DFP.3.9.267",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME51/ATSAME51G19A.svd",
+      "device": "ATSAME51G19A",
+      "family": "SAME51",
+      "source": "Microchip.SAME51_DFP.3.9.267",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME51/ATSAME51J18A.svd",
+      "device": "ATSAME51J18A",
+      "family": "SAME51",
+      "source": "Microchip.SAME51_DFP.3.9.267",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME51/ATSAME51J19A.svd",
+      "device": "ATSAME51J19A",
+      "family": "SAME51",
+      "source": "Microchip.SAME51_DFP.3.9.267",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME51/ATSAME51J20A.svd",
+      "device": "ATSAME51J20A",
+      "family": "SAME51",
+      "source": "Microchip.SAME51_DFP.3.9.267",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME51/ATSAME51N19A.svd",
+      "device": "ATSAME51N19A",
+      "family": "SAME51",
+      "source": "Microchip.SAME51_DFP.3.9.267",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME51/ATSAME51N20A.svd",
+      "device": "ATSAME51N20A",
+      "family": "SAME51",
+      "source": "Microchip.SAME51_DFP.3.9.267",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME53/ATSAME53J18A.svd",
+      "device": "ATSAME53J18A",
+      "family": "SAME53",
+      "source": "Microchip.SAME53_DFP.3.10.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME53/ATSAME53J19A.svd",
+      "device": "ATSAME53J19A",
+      "family": "SAME53",
+      "source": "Microchip.SAME53_DFP.3.10.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME53/ATSAME53J20A.svd",
+      "device": "ATSAME53J20A",
+      "family": "SAME53",
+      "source": "Microchip.SAME53_DFP.3.10.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME53/ATSAME53N19A.svd",
+      "device": "ATSAME53N19A",
+      "family": "SAME53",
+      "source": "Microchip.SAME53_DFP.3.10.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME53/ATSAME53N20A.svd",
+      "device": "ATSAME53N20A",
+      "family": "SAME53",
+      "source": "Microchip.SAME53_DFP.3.10.248",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME54/ATSAME54N19A.svd",
+      "device": "ATSAME54N19A",
+      "family": "SAME54",
+      "source": "Microchip.SAME54_DFP.3.11.261",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME54/ATSAME54N20A.svd",
+      "device": "ATSAME54N20A",
+      "family": "SAME54",
+      "source": "Microchip.SAME54_DFP.3.11.261",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME54/ATSAME54P19A.svd",
+      "device": "ATSAME54P19A",
+      "family": "SAME54",
+      "source": "Microchip.SAME54_DFP.3.11.261",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME54/ATSAME54P20A.svd",
+      "device": "ATSAME54P20A",
+      "family": "SAME54",
+      "source": "Microchip.SAME54_DFP.3.11.261",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME70/ATSAME70J19B.svd",
+      "device": "ATSAME70J19B",
+      "family": "SAME70",
+      "source": "Microchip.SAME70_DFP.4.13.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME70/ATSAME70J20B.svd",
+      "device": "ATSAME70J20B",
+      "family": "SAME70",
+      "source": "Microchip.SAME70_DFP.4.13.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME70/ATSAME70J21B.svd",
+      "device": "ATSAME70J21B",
+      "family": "SAME70",
+      "source": "Microchip.SAME70_DFP.4.13.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME70/ATSAME70N19B.svd",
+      "device": "ATSAME70N19B",
+      "family": "SAME70",
+      "source": "Microchip.SAME70_DFP.4.13.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME70/ATSAME70N20B.svd",
+      "device": "ATSAME70N20B",
+      "family": "SAME70",
+      "source": "Microchip.SAME70_DFP.4.13.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME70/ATSAME70N21B.svd",
+      "device": "ATSAME70N21B",
+      "family": "SAME70",
+      "source": "Microchip.SAME70_DFP.4.13.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME70/ATSAME70Q19B.svd",
+      "device": "ATSAME70Q19B",
+      "family": "SAME70",
+      "source": "Microchip.SAME70_DFP.4.13.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME70/ATSAME70Q20B.svd",
+      "device": "ATSAME70Q20B",
+      "family": "SAME70",
+      "source": "Microchip.SAME70_DFP.4.13.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAME70/ATSAME70Q21B.svd",
+      "device": "ATSAME70Q21B",
+      "family": "SAME70",
+      "source": "Microchip.SAME70_DFP.4.13.292",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMG/ATSAMG51G18.svd",
+      "device": "ATSAMG51G18",
+      "family": "SAMG",
+      "source": "Microchip.SAMG_DFP.3.10.223",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMG/ATSAMG51N18.svd",
+      "device": "ATSAMG51N18",
+      "family": "SAMG",
+      "source": "Microchip.SAMG_DFP.3.10.223",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMG/ATSAMG53G19.svd",
+      "device": "ATSAMG53G19",
+      "family": "SAMG",
+      "source": "Microchip.SAMG_DFP.3.10.223",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMG/ATSAMG53N19.svd",
+      "device": "ATSAMG53N19",
+      "family": "SAMG",
+      "source": "Microchip.SAMG_DFP.3.10.223",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMG/ATSAMG54G19.svd",
+      "device": "ATSAMG54G19",
+      "family": "SAMG",
+      "source": "Microchip.SAMG_DFP.3.10.223",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMG/ATSAMG54J19.svd",
+      "device": "ATSAMG54J19",
+      "family": "SAMG",
+      "source": "Microchip.SAMG_DFP.3.10.223",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMG/ATSAMG54N19.svd",
+      "device": "ATSAMG54N19",
+      "family": "SAMG",
+      "source": "Microchip.SAMG_DFP.3.10.223",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMG/ATSAMG55G19.svd",
+      "device": "ATSAMG55G19",
+      "family": "SAMG",
+      "source": "Microchip.SAMG_DFP.3.10.223",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMG/ATSAMG55J19.svd",
+      "device": "ATSAMG55J19",
+      "family": "SAMG",
+      "source": "Microchip.SAMG_DFP.3.10.223",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA0/ATSAMHA0E14AB.svd",
+      "device": "ATSAMHA0E14AB",
+      "family": "SAMHA0",
+      "source": "Microchip.SAMHA0_DFP.2.4.179",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA0/ATSAMHA0E15AB.svd",
+      "device": "ATSAMHA0E15AB",
+      "family": "SAMHA0",
+      "source": "Microchip.SAMHA0_DFP.2.4.179",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA0/ATSAMHA0E16AB.svd",
+      "device": "ATSAMHA0E16AB",
+      "family": "SAMHA0",
+      "source": "Microchip.SAMHA0_DFP.2.4.179",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA0/ATSAMHA0G14AB.svd",
+      "device": "ATSAMHA0G14AB",
+      "family": "SAMHA0",
+      "source": "Microchip.SAMHA0_DFP.2.4.179",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA0/ATSAMHA0G15AB.svd",
+      "device": "ATSAMHA0G15AB",
+      "family": "SAMHA0",
+      "source": "Microchip.SAMHA0_DFP.2.4.179",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA0/ATSAMHA0G16AB.svd",
+      "device": "ATSAMHA0G16AB",
+      "family": "SAMHA0",
+      "source": "Microchip.SAMHA0_DFP.2.4.179",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA0/ATSAMHA0G17AB.svd",
+      "device": "ATSAMHA0G17AB",
+      "family": "SAMHA0",
+      "source": "Microchip.SAMHA0_DFP.2.4.179",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA1/ATSAMHA1G14A.svd",
+      "device": "ATSAMHA1G14A",
+      "family": "SAMHA1",
+      "source": "Microchip.SAMHA1_DFP.2.5.190",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA1/ATSAMHA1G15A.svd",
+      "device": "ATSAMHA1G15A",
+      "family": "SAMHA1",
+      "source": "Microchip.SAMHA1_DFP.2.5.190",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA1/ATSAMHA1G16A.svd",
+      "device": "ATSAMHA1G16A",
+      "family": "SAMHA1",
+      "source": "Microchip.SAMHA1_DFP.2.5.190",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA1/ATSAMHA1E14AB.svd",
+      "device": "ATSAMHA1E14AB",
+      "family": "SAMHA1",
+      "source": "Microchip.SAMHA1_DFP.2.5.190",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA1/ATSAMHA1E15AB.svd",
+      "device": "ATSAMHA1E15AB",
+      "family": "SAMHA1",
+      "source": "Microchip.SAMHA1_DFP.2.5.190",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA1/ATSAMHA1E16AB.svd",
+      "device": "ATSAMHA1E16AB",
+      "family": "SAMHA1",
+      "source": "Microchip.SAMHA1_DFP.2.5.190",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA1/ATSAMHA1G14AB.svd",
+      "device": "ATSAMHA1G14AB",
+      "family": "SAMHA1",
+      "source": "Microchip.SAMHA1_DFP.2.5.190",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA1/ATSAMHA1G15AB.svd",
+      "device": "ATSAMHA1G15AB",
+      "family": "SAMHA1",
+      "source": "Microchip.SAMHA1_DFP.2.5.190",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA1/ATSAMHA1G16AB.svd",
+      "device": "ATSAMHA1G16AB",
+      "family": "SAMHA1",
+      "source": "Microchip.SAMHA1_DFP.2.5.190",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMHA1/ATSAMHA1G17AB.svd",
+      "device": "ATSAMHA1G17AB",
+      "family": "SAMHA1",
+      "source": "Microchip.SAMHA1_DFP.2.5.190",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML10/ATSAML10D14A.svd",
+      "device": "ATSAML10D14A",
+      "family": "SAML10",
+      "source": "Microchip.SAML10_DFP.3.11.262",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML10/ATSAML10D15A.svd",
+      "device": "ATSAML10D15A",
+      "family": "SAML10",
+      "source": "Microchip.SAML10_DFP.3.11.262",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML10/ATSAML10D16A.svd",
+      "device": "ATSAML10D16A",
+      "family": "SAML10",
+      "source": "Microchip.SAML10_DFP.3.11.262",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML10/ATSAML10E14A.svd",
+      "device": "ATSAML10E14A",
+      "family": "SAML10",
+      "source": "Microchip.SAML10_DFP.3.11.262",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML10/ATSAML10E15A.svd",
+      "device": "ATSAML10E15A",
+      "family": "SAML10",
+      "source": "Microchip.SAML10_DFP.3.11.262",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML10/ATSAML10E16A.svd",
+      "device": "ATSAML10E16A",
+      "family": "SAML10",
+      "source": "Microchip.SAML10_DFP.3.11.262",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML11/ATSAML11D14A.svd",
+      "device": "ATSAML11D14A",
+      "family": "SAML11",
+      "source": "Microchip.SAML11_DFP.4.5.268",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML11/ATSAML11D15A.svd",
+      "device": "ATSAML11D15A",
+      "family": "SAML11",
+      "source": "Microchip.SAML11_DFP.4.5.268",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML11/ATSAML11D16A.svd",
+      "device": "ATSAML11D16A",
+      "family": "SAML11",
+      "source": "Microchip.SAML11_DFP.4.5.268",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML11/ATSAML11E14A.svd",
+      "device": "ATSAML11E14A",
+      "family": "SAML11",
+      "source": "Microchip.SAML11_DFP.4.5.268",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML11/ATSAML11E15A.svd",
+      "device": "ATSAML11E15A",
+      "family": "SAML11",
+      "source": "Microchip.SAML11_DFP.4.5.268",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML11/ATSAML11E16A.svd",
+      "device": "ATSAML11E16A",
+      "family": "SAML11",
+      "source": "Microchip.SAML11_DFP.4.5.268",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21E18A.svd",
+      "device": "ATSAML21E18A",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21G18A.svd",
+      "device": "ATSAML21G18A",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21J18A.svd",
+      "device": "ATSAML21J18A",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21E15B.svd",
+      "device": "ATSAML21E15B",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21E16B.svd",
+      "device": "ATSAML21E16B",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21E17B.svd",
+      "device": "ATSAML21E17B",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21E18B.svd",
+      "device": "ATSAML21E18B",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21G16B.svd",
+      "device": "ATSAML21G16B",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21G17B.svd",
+      "device": "ATSAML21G17B",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21G18B.svd",
+      "device": "ATSAML21G18B",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21J16B.svd",
+      "device": "ATSAML21J16B",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21J17B.svd",
+      "device": "ATSAML21J17B",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21J17BU.svd",
+      "device": "ATSAML21J17BU",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21J18B.svd",
+      "device": "ATSAML21J18B",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML21/ATSAML21J18BU.svd",
+      "device": "ATSAML21J18BU",
+      "family": "SAML21",
+      "source": "Microchip.SAML21_DFP.3.8.229",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML22/ATSAML22G16A.svd",
+      "device": "ATSAML22G16A",
+      "family": "SAML22",
+      "source": "Microchip.SAML22_DFP.3.8.203",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML22/ATSAML22G17A.svd",
+      "device": "ATSAML22G17A",
+      "family": "SAML22",
+      "source": "Microchip.SAML22_DFP.3.8.203",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML22/ATSAML22G18A.svd",
+      "device": "ATSAML22G18A",
+      "family": "SAML22",
+      "source": "Microchip.SAML22_DFP.3.8.203",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML22/ATSAML22J16A.svd",
+      "device": "ATSAML22J16A",
+      "family": "SAML22",
+      "source": "Microchip.SAML22_DFP.3.8.203",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML22/ATSAML22J17A.svd",
+      "device": "ATSAML22J17A",
+      "family": "SAML22",
+      "source": "Microchip.SAML22_DFP.3.8.203",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML22/ATSAML22J18A.svd",
+      "device": "ATSAML22J18A",
+      "family": "SAML22",
+      "source": "Microchip.SAML22_DFP.3.8.203",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML22/ATSAML22N16A.svd",
+      "device": "ATSAML22N16A",
+      "family": "SAML22",
+      "source": "Microchip.SAML22_DFP.3.8.203",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML22/ATSAML22N17A.svd",
+      "device": "ATSAML22N17A",
+      "family": "SAML22",
+      "source": "Microchip.SAML22_DFP.3.8.203",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAML22/ATSAML22N18A.svd",
+      "device": "ATSAML22N18A",
+      "family": "SAML22",
+      "source": "Microchip.SAML22_DFP.3.8.203",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR21/ATSAMR21E16A.svd",
+      "device": "ATSAMR21E16A",
+      "family": "SAMR21",
+      "source": "Microchip.SAMR21_DFP.2.1.155",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR21/ATSAMR21E17A.svd",
+      "device": "ATSAMR21E17A",
+      "family": "SAMR21",
+      "source": "Microchip.SAMR21_DFP.2.1.155",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR21/ATSAMR21E18A.svd",
+      "device": "ATSAMR21E18A",
+      "family": "SAMR21",
+      "source": "Microchip.SAMR21_DFP.2.1.155",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR21/ATSAMR21E19A.svd",
+      "device": "ATSAMR21E19A",
+      "family": "SAMR21",
+      "source": "Microchip.SAMR21_DFP.2.1.155",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR21/ATSAMR21G16A.svd",
+      "device": "ATSAMR21G16A",
+      "family": "SAMR21",
+      "source": "Microchip.SAMR21_DFP.2.1.155",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR21/ATSAMR21G17A.svd",
+      "device": "ATSAMR21G17A",
+      "family": "SAMR21",
+      "source": "Microchip.SAMR21_DFP.2.1.155",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR21/ATSAMR21G18A.svd",
+      "device": "ATSAMR21G18A",
+      "family": "SAMR21",
+      "source": "Microchip.SAMR21_DFP.2.1.155",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR30/ATSAMR30E18A.svd",
+      "device": "ATSAMR30E18A",
+      "family": "SAMR30",
+      "source": "Microchip.SAMR30_DFP.2.0.47",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR30/ATSAMR30G18A.svd",
+      "device": "ATSAMR30G18A",
+      "family": "SAMR30",
+      "source": "Microchip.SAMR30_DFP.2.0.47",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR34/ATSAMR34J16B.svd",
+      "device": "ATSAMR34J16B",
+      "family": "SAMR34",
+      "source": "Microchip.SAMR34_DFP.2.2.187",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR34/ATSAMR34J17B.svd",
+      "device": "ATSAMR34J17B",
+      "family": "SAMR34",
+      "source": "Microchip.SAMR34_DFP.2.2.187",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR34/ATSAMR34J18B.svd",
+      "device": "ATSAMR34J18B",
+      "family": "SAMR34",
+      "source": "Microchip.SAMR34_DFP.2.2.187",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR35/ATSAMR35J16B.svd",
+      "device": "ATSAMR35J16B",
+      "family": "SAMR35",
+      "source": "Microchip.SAMR35_DFP.2.1.63",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR35/ATSAMR35J17B.svd",
+      "device": "ATSAMR35J17B",
+      "family": "SAMR35",
+      "source": "Microchip.SAMR35_DFP.2.1.63",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMR35/ATSAMR35J18B.svd",
+      "device": "ATSAMR35J18B",
+      "family": "SAMR35",
+      "source": "Microchip.SAMR35_DFP.2.1.63",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMRH707/ATSAMRH707F18A.svd",
+      "device": "ATSAMRH707F18A",
+      "family": "SAMRH707",
+      "source": "Microchip.SAMRH707_DFP.1.4.194",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMRH71/ATSAMRH71F20C.svd",
+      "device": "ATSAMRH71F20C",
+      "family": "SAMRH71",
+      "source": "Microchip.SAMRH71_DFP.2.8.290",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMS70/ATSAMS70J19B.svd",
+      "device": "ATSAMS70J19B",
+      "family": "SAMS70",
+      "source": "Microchip.SAMS70_DFP.4.12.234",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMS70/ATSAMS70J20B.svd",
+      "device": "ATSAMS70J20B",
+      "family": "SAMS70",
+      "source": "Microchip.SAMS70_DFP.4.12.234",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMS70/ATSAMS70J21B.svd",
+      "device": "ATSAMS70J21B",
+      "family": "SAMS70",
+      "source": "Microchip.SAMS70_DFP.4.12.234",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMS70/ATSAMS70N19B.svd",
+      "device": "ATSAMS70N19B",
+      "family": "SAMS70",
+      "source": "Microchip.SAMS70_DFP.4.12.234",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMS70/ATSAMS70N20B.svd",
+      "device": "ATSAMS70N20B",
+      "family": "SAMS70",
+      "source": "Microchip.SAMS70_DFP.4.12.234",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMS70/ATSAMS70N21B.svd",
+      "device": "ATSAMS70N21B",
+      "family": "SAMS70",
+      "source": "Microchip.SAMS70_DFP.4.12.234",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMS70/ATSAMS70Q19B.svd",
+      "device": "ATSAMS70Q19B",
+      "family": "SAMS70",
+      "source": "Microchip.SAMS70_DFP.4.12.234",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMS70/ATSAMS70Q20B.svd",
+      "device": "ATSAMS70Q20B",
+      "family": "SAMS70",
+      "source": "Microchip.SAMS70_DFP.4.12.234",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMS70/ATSAMS70Q21B.svd",
+      "device": "ATSAMS70Q21B",
+      "family": "SAMS70",
+      "source": "Microchip.SAMS70_DFP.4.12.234",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV70/ATSAMV70J19B.svd",
+      "device": "ATSAMV70J19B",
+      "family": "SAMV70",
+      "source": "Microchip.SAMV70_DFP.4.12.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV70/ATSAMV70J20B.svd",
+      "device": "ATSAMV70J20B",
+      "family": "SAMV70",
+      "source": "Microchip.SAMV70_DFP.4.12.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV70/ATSAMV70N19B.svd",
+      "device": "ATSAMV70N19B",
+      "family": "SAMV70",
+      "source": "Microchip.SAMV70_DFP.4.12.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV70/ATSAMV70N20B.svd",
+      "device": "ATSAMV70N20B",
+      "family": "SAMV70",
+      "source": "Microchip.SAMV70_DFP.4.12.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV70/ATSAMV70Q19B.svd",
+      "device": "ATSAMV70Q19B",
+      "family": "SAMV70",
+      "source": "Microchip.SAMV70_DFP.4.12.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV70/ATSAMV70Q20B.svd",
+      "device": "ATSAMV70Q20B",
+      "family": "SAMV70",
+      "source": "Microchip.SAMV70_DFP.4.12.233",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV71_RT/ATSAMV71Q21RT.svd",
+      "device": "ATSAMV71Q21RT",
+      "family": "SAMV71_RT",
+      "source": "Microchip.SAMV71-RT_DFP.1.3.152",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV71/ATSAMV71J19B.svd",
+      "device": "ATSAMV71J19B",
+      "family": "SAMV71",
+      "source": "Microchip.SAMV71_DFP.4.13.257",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV71/ATSAMV71J20B.svd",
+      "device": "ATSAMV71J20B",
+      "family": "SAMV71",
+      "source": "Microchip.SAMV71_DFP.4.13.257",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV71/ATSAMV71J21B.svd",
+      "device": "ATSAMV71J21B",
+      "family": "SAMV71",
+      "source": "Microchip.SAMV71_DFP.4.13.257",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV71/ATSAMV71N19B.svd",
+      "device": "ATSAMV71N19B",
+      "family": "SAMV71",
+      "source": "Microchip.SAMV71_DFP.4.13.257",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV71/ATSAMV71N20B.svd",
+      "device": "ATSAMV71N20B",
+      "family": "SAMV71",
+      "source": "Microchip.SAMV71_DFP.4.13.257",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV71/ATSAMV71N21B.svd",
+      "device": "ATSAMV71N21B",
+      "family": "SAMV71",
+      "source": "Microchip.SAMV71_DFP.4.13.257",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV71/ATSAMV71Q19B.svd",
+      "device": "ATSAMV71Q19B",
+      "family": "SAMV71",
+      "source": "Microchip.SAMV71_DFP.4.13.257",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV71/ATSAMV71Q20B.svd",
+      "device": "ATSAMV71Q20B",
+      "family": "SAMV71",
+      "source": "Microchip.SAMV71_DFP.4.13.257",
+      "provenance": "pristine"
+    },
+    {
+      "path": "SAMV71/ATSAMV71Q21B.svd",
+      "device": "ATSAMV71Q21B",
+      "family": "SAMV71",
+      "source": "Microchip.SAMV71_DFP.4.13.257",
+      "provenance": "pristine"
+    }
+  ],
+  "stats": {
+    "total_files": 517,
+    "total_bytes": 1012801782
+  },
+  "issues": []
+}
