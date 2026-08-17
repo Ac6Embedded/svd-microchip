@@ -1,6 +1,6 @@
 {
   "vendor": "Microchip",
-  "generated": "2026-07-19",
+  "generated": "2026-08-17",
   "index": "https://packs.download.microchip.com/index.idx",
   "sources": [
     {
@@ -93,10 +93,10 @@
     },
     {
       "name": "Microchip.PIC32CX-BZ6_DFP",
-      "url": "https://packs.download.microchip.com/Microchip.PIC32CX-BZ6_DFP.1.3.38.atpack",
-      "version": "1.3.38",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CX-BZ6_DFP.1.4.74.atpack",
+      "version": "1.4.74",
       "license": "Apache-2.0",
-      "license_file": "PIC32CX-BZ6_DFP-LICENSE.txt",
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
       "files": 4
     },
     {
@@ -373,10 +373,10 @@
     },
     {
       "name": "Microchip.SAML11_DFP",
-      "url": "https://packs.download.microchip.com/Microchip.SAML11_DFP.4.5.268.atpack",
-      "version": "4.5.268",
+      "url": "https://packs.download.microchip.com/Microchip.SAML11_DFP.4.6.350.atpack",
+      "version": "4.6.350",
       "license": "Apache-2.0",
-      "license_file": null,
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
       "files": 6
     },
     {
@@ -1377,28 +1377,28 @@
       "path": "PIC32CX_BZ6/PIC32CX2051BZ62132.svd",
       "device": "PIC32CX2051BZ62132",
       "family": "PIC32CX_BZ6",
-      "source": "Microchip.PIC32CX-BZ6_DFP.1.3.38",
+      "source": "Microchip.PIC32CX-BZ6_DFP.1.4.74",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CX_BZ6/PIC32CX2051BZ66048.svd",
       "device": "PIC32CX2051BZ66048",
       "family": "PIC32CX_BZ6",
-      "source": "Microchip.PIC32CX-BZ6_DFP.1.3.38",
+      "source": "Microchip.PIC32CX-BZ6_DFP.1.4.74",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CX_BZ6/PIC32WM_BZ6204.svd",
       "device": "PIC32WM_BZ6204",
       "family": "PIC32CX_BZ6",
-      "source": "Microchip.PIC32CX-BZ6_DFP.1.3.38",
+      "source": "Microchip.PIC32CX-BZ6_DFP.1.4.74",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CX_BZ6/PIC32WM_BZ6602.svd",
       "device": "PIC32WM_BZ6602",
       "family": "PIC32CX_BZ6",
-      "source": "Microchip.PIC32CX-BZ6_DFP.1.3.38",
+      "source": "Microchip.PIC32CX-BZ6_DFP.1.4.74",
       "provenance": "pristine"
     },
     {
@@ -3596,42 +3596,42 @@
       "path": "SAML11/ATSAML11D14A.svd",
       "device": "ATSAML11D14A",
       "family": "SAML11",
-      "source": "Microchip.SAML11_DFP.4.5.268",
+      "source": "Microchip.SAML11_DFP.4.6.350",
       "provenance": "pristine"
     },
     {
       "path": "SAML11/ATSAML11D15A.svd",
       "device": "ATSAML11D15A",
       "family": "SAML11",
-      "source": "Microchip.SAML11_DFP.4.5.268",
+      "source": "Microchip.SAML11_DFP.4.6.350",
       "provenance": "pristine"
     },
     {
       "path": "SAML11/ATSAML11D16A.svd",
       "device": "ATSAML11D16A",
       "family": "SAML11",
-      "source": "Microchip.SAML11_DFP.4.5.268",
+      "source": "Microchip.SAML11_DFP.4.6.350",
       "provenance": "pristine"
     },
     {
       "path": "SAML11/ATSAML11E14A.svd",
       "device": "ATSAML11E14A",
       "family": "SAML11",
-      "source": "Microchip.SAML11_DFP.4.5.268",
+      "source": "Microchip.SAML11_DFP.4.6.350",
       "provenance": "pristine"
     },
     {
       "path": "SAML11/ATSAML11E15A.svd",
       "device": "ATSAML11E15A",
       "family": "SAML11",
-      "source": "Microchip.SAML11_DFP.4.5.268",
+      "source": "Microchip.SAML11_DFP.4.6.350",
       "provenance": "pristine"
     },
     {
       "path": "SAML11/ATSAML11E16A.svd",
       "device": "ATSAML11E16A",
       "family": "SAML11",
-      "source": "Microchip.SAML11_DFP.4.5.268",
+      "source": "Microchip.SAML11_DFP.4.6.350",
       "provenance": "pristine"
     },
     {
@@ -4099,7 +4099,7 @@
   ],
   "stats": {
     "total_files": 517,
-    "total_bytes": 1012801782
+    "total_bytes": 1013585692
   },
   "issues": []
 }
