@@ -1,20 +1,20 @@
 {
   "vendor": "Microchip",
-  "generated": "2026-08-17",
+  "generated": "2026-08-24",
   "index": "https://packs.download.microchip.com/index.idx",
   "sources": [
     {
       "name": "Microchip.PIC32CK-GC_DFP",
-      "url": "https://packs.download.microchip.com/Microchip.PIC32CK-GC_DFP.1.2.168.atpack",
-      "version": "1.2.168",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CK-GC_DFP.1.3.221.atpack",
+      "version": "1.3.221",
       "license": "Apache-2.0",
-      "license_file": null,
-      "files": 20
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
+      "files": 21
     },
     {
       "name": "Microchip.PIC32CK-SG_DFP",
-      "url": "https://packs.download.microchip.com/Microchip.PIC32CK-SG_DFP.1.7.233.atpack",
-      "version": "1.7.233",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CK-SG_DFP.1.8.265.atpack",
+      "version": "1.8.265",
       "license": "Apache-2.0",
       "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
       "files": 22
@@ -53,10 +53,10 @@
     },
     {
       "name": "Microchip.PIC32CM-LS_DFP",
-      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-LS_DFP.1.3.278.atpack",
-      "version": "1.3.278",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-LS_DFP.1.4.351.atpack",
+      "version": "1.4.351",
       "license": "Apache-2.0",
-      "license_file": null,
+      "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
       "files": 11
     },
     {
@@ -481,294 +481,301 @@
       "path": "PIC32CK_GC/PIC32CK0512GC00064.svd",
       "device": "PIC32CK0512GC00064",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK0512GC00100.svd",
       "device": "PIC32CK0512GC00100",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK1012GC00048.svd",
       "device": "PIC32CK1012GC00048",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK1012GC00064.svd",
       "device": "PIC32CK1012GC00064",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK1012GC00100.svd",
       "device": "PIC32CK1012GC00100",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK1025GC00064.svd",
       "device": "PIC32CK1025GC00064",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK1025GC00100.svd",
       "device": "PIC32CK1025GC00100",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK2051GC00064.svd",
       "device": "PIC32CK2051GC00064",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK2051GC00100.svd",
       "device": "PIC32CK2051GC00100",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK2051GC00144.svd",
       "device": "PIC32CK2051GC00144",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK0512GC01064.svd",
       "device": "PIC32CK0512GC01064",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK0512GC01100.svd",
       "device": "PIC32CK0512GC01100",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK1012GC01048.svd",
       "device": "PIC32CK1012GC01048",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK1012GC01064.svd",
       "device": "PIC32CK1012GC01064",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK1012GC01100.svd",
       "device": "PIC32CK1012GC01100",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK1025GC01064.svd",
       "device": "PIC32CK1025GC01064",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK1025GC01100.svd",
       "device": "PIC32CK1025GC01100",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
+      "provenance": "pristine"
+    },
+    {
+      "path": "PIC32CK_GC/PIC32CK1025GC01144.svd",
+      "device": "PIC32CK1025GC01144",
+      "family": "PIC32CK_GC",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK2051GC01064.svd",
       "device": "PIC32CK2051GC01064",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK2051GC01100.svd",
       "device": "PIC32CK2051GC01100",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_GC/PIC32CK2051GC01144.svd",
       "device": "PIC32CK2051GC01144",
       "family": "PIC32CK_GC",
-      "source": "Microchip.PIC32CK-GC_DFP.1.2.168",
+      "source": "Microchip.PIC32CK-GC_DFP.1.3.221",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK0512SG00064.svd",
       "device": "PIC32CK0512SG00064",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK0512SG00100.svd",
       "device": "PIC32CK0512SG00100",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1012SG00048.svd",
       "device": "PIC32CK1012SG00048",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1012SG00064.svd",
       "device": "PIC32CK1012SG00064",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1012SG00100.svd",
       "device": "PIC32CK1012SG00100",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1025SG00064.svd",
       "device": "PIC32CK1025SG00064",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1025SG00100.svd",
       "device": "PIC32CK1025SG00100",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1025SG00144.svd",
       "device": "PIC32CK1025SG00144",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK2051SG00064.svd",
       "device": "PIC32CK2051SG00064",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK2051SG00100.svd",
       "device": "PIC32CK2051SG00100",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK2051SG00144.svd",
       "device": "PIC32CK2051SG00144",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK0512SG01064.svd",
       "device": "PIC32CK0512SG01064",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK0512SG01100.svd",
       "device": "PIC32CK0512SG01100",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1012SG01048.svd",
       "device": "PIC32CK1012SG01048",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1012SG01064.svd",
       "device": "PIC32CK1012SG01064",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1012SG01100.svd",
       "device": "PIC32CK1012SG01100",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1025SG01064.svd",
       "device": "PIC32CK1025SG01064",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1025SG01100.svd",
       "device": "PIC32CK1025SG01100",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK1025SG01144.svd",
       "device": "PIC32CK1025SG01144",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK2051SG01064.svd",
       "device": "PIC32CK2051SG01064",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK2051SG01100.svd",
       "device": "PIC32CK2051SG01100",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CK_SG/PIC32CK2051SG01144.svd",
       "device": "PIC32CK2051SG01144",
       "family": "PIC32CK_SG",
-      "source": "Microchip.PIC32CK-SG_DFP.1.7.233",
+      "source": "Microchip.PIC32CK-SG_DFP.1.8.265",
       "provenance": "pristine"
     },
     {
@@ -1062,77 +1069,77 @@
       "path": "PIC32CM_LS/PIC32CM1216LS00032.svd",
       "device": "PIC32CM1216LS00032",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_LS/PIC32CM1216LS00048.svd",
       "device": "PIC32CM1216LS00048",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_LS/PIC32CM2532LS00048.svd",
       "device": "PIC32CM2532LS00048",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_LS/PIC32CM2532LS00064.svd",
       "device": "PIC32CM2532LS00064",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_LS/PIC32CM2532LS00100.svd",
       "device": "PIC32CM2532LS00100",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_LS/PIC32CM5164LS00048.svd",
       "device": "PIC32CM5164LS00048",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_LS/PIC32CM5164LS00064.svd",
       "device": "PIC32CM5164LS00064",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_LS/PIC32CM5164LS00100.svd",
       "device": "PIC32CM5164LS00100",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_LS/PIC32CM5164LS60048.svd",
       "device": "PIC32CM5164LS60048",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_LS/PIC32CM5164LS60064.svd",
       "device": "PIC32CM5164LS60064",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_LS/PIC32CM5164LS60100.svd",
       "device": "PIC32CM5164LS60100",
       "family": "PIC32CM_LS",
-      "source": "Microchip.PIC32CM-LS_DFP.1.3.278",
+      "source": "Microchip.PIC32CM-LS_DFP.1.4.351",
       "provenance": "pristine"
     },
     {
@@ -4098,8 +4105,8 @@
     }
   ],
   "stats": {
-    "total_files": 517,
-    "total_bytes": 1013585692
+    "total_files": 518,
+    "total_bytes": 1016844889
   },
   "issues": []
 }
