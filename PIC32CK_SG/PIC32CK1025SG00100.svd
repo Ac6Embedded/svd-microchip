@@ -927,26 +927,6 @@ limitations under the License.
             <description>ADC Core 1 Interrupt</description>
             <value>133</value>
          </interrupt>
-         <interrupt>
-            <name>Reserved2</name>
-            <description>ADC Unused/Reserved</description>
-            <value>134</value>
-         </interrupt>
-         <interrupt>
-            <name>Reserved3</name>
-            <description>ADC Unused/Reserved</description>
-            <value>135</value>
-         </interrupt>
-         <interrupt>
-            <name>Reserved4</name>
-            <description>ADC Unused/Reserved</description>
-            <value>136</value>
-         </interrupt>
-         <interrupt>
-            <name>Reserved5</name>
-            <description>ADC Unused/Reserved</description>
-            <value>137</value>
-         </interrupt>
          <registers>
             <register>
                <name>CTRLA</name>
@@ -4132,22 +4112,22 @@ limitations under the License.
                            <value>0x6</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0x7</name>
+                           <name>TCC</name>
                            <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x7</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0x8</name>
+                           <name>TCC_ALT1</name>
                            <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x8</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0x9</name>
+                           <name>TCC_ALT2</name>
                            <description>TCC0/TCC2/TCC4/TCC6 input source</description>
                            <value>0x9</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0xA</name>
+                           <name>TCC_ALT3</name>
                            <description>TCC1/TCC3/TCC5/TCC7 input source</description>
                            <value>0xA</value>
                         </enumeratedValue>
@@ -4204,22 +4184,22 @@ limitations under the License.
                            <value>0x6</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0x7</name>
+                           <name>TCC</name>
                            <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x7</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0x8</name>
+                           <name>TCC_ALT1</name>
                            <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x8</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0x9</name>
+                           <name>TCC_ALT2</name>
                            <description>TCC0/TCC2/TCC4/TCC6 input source</description>
                            <value>0x9</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0xA</name>
+                           <name>TCC_ALT3</name>
                            <description>TCC1/TCC3/TCC5/TCC7 input source</description>
                            <value>0xA</value>
                         </enumeratedValue>
@@ -4276,22 +4256,22 @@ limitations under the License.
                            <value>0x6</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0x7</name>
+                           <name>TCC</name>
                            <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x7</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0x8</name>
+                           <name>TCC_ALT1</name>
                            <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x8</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0x9</name>
+                           <name>TCC_ALT2</name>
                            <description>TCC0/TCC2/TCC4/TCC6 input source</description>
                            <value>0x9</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC_0xA</name>
+                           <name>TCC_ALT3</name>
                            <description>TCC1/TCC3/TCC5/TCC7 input source</description>
                            <value>0xA</value>
                         </enumeratedValue>
@@ -5720,12 +5700,6 @@ limitations under the License.
                            <value>3</value>
                         </enumeratedValue>
                      </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>QOS4</name>
-                     <description>Priority Group 4 Quality Of Service Control</description>
-                     <bitOffset>24</bitOffset>
-                     <bitWidth>2</bitWidth>
                   </field>
                </fields>
             </register>

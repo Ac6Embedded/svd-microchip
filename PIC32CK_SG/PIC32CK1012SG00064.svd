@@ -273,18 +273,6 @@ limitations under the License.
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
-                  <field>
-                     <name>AIPMPEN</name>
-                     <description>Analog Input Charge Pump Enable</description>
-                     <bitOffset>27</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CONFIG</name>
-                     <description>Configuration Extension</description>
-                     <bitOffset>28</bitOffset>
-                     <bitWidth>4</bitWidth>
-                  </field>
                </fields>
             </register>
             <register>
@@ -914,26 +902,6 @@ limitations under the License.
             <description>ADC Core 1 Interrupt</description>
             <value>133</value>
          </interrupt>
-         <interrupt>
-            <name>Reserved2</name>
-            <description>ADC Unused/Reserved</description>
-            <value>134</value>
-         </interrupt>
-         <interrupt>
-            <name>Reserved3</name>
-            <description>ADC Unused/Reserved</description>
-            <value>135</value>
-         </interrupt>
-         <interrupt>
-            <name>Reserved4</name>
-            <description>ADC Unused/Reserved</description>
-            <value>136</value>
-         </interrupt>
-         <interrupt>
-            <name>Reserved5</name>
-            <description>ADC Unused/Reserved</description>
-            <value>137</value>
-         </interrupt>
          <registers>
             <register>
                <name>CTRLA</name>
@@ -1290,13 +1258,13 @@ limitations under the License.
                         <name>CHNCMPEN</name>
                         <description>Channel Comparator Enable</description>
                         <bitOffset>0</bitOffset>
-                        <bitWidth>16</bitWidth>
+                        <bitWidth>14</bitWidth>
                      </field>
                      <field>
                         <name>LVL</name>
                         <description>Channel Level</description>
                         <bitOffset>16</bitOffset>
-                        <bitWidth>16</bitWidth>
+                        <bitWidth>14</bitWidth>
                      </field>
                   </fields>
                </register>
@@ -1309,13 +1277,13 @@ limitations under the License.
                         <name>CSS</name>
                         <description>Channel SCAN Select</description>
                         <bitOffset>0</bitOffset>
-                        <bitWidth>16</bitWidth>
+                        <bitWidth>14</bitWidth>
                      </field>
                      <field>
                         <name>FRACT</name>
                         <description>Channel Fractional</description>
                         <bitOffset>16</bitOffset>
-                        <bitWidth>16</bitWidth>
+                        <bitWidth>14</bitWidth>
                      </field>
                   </fields>
                </register>
@@ -1346,7 +1314,7 @@ limitations under the License.
                         <name>SIGN</name>
                         <description>SIGN setting</description>
                         <bitOffset>16</bitOffset>
-                        <bitWidth>16</bitWidth>
+                        <bitWidth>14</bitWidth>
                      </field>
                   </fields>
                </register>
@@ -4114,24 +4082,29 @@ limitations under the License.
                            <value>0x5</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TC</name>
-                           <description>TC input source</description>
+                           <name>SERCOM</name>
+                           <description>SERCOM input source</description>
                            <value>0x6</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>ALTTC</name>
-                           <description>Alternate TC input source</description>
+                           <name>TCC</name>
+                           <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x7</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC</name>
-                           <description>TCC input source</description>
+                           <name>TCC_ALT1</name>
+                           <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x8</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>SERCOM</name>
-                           <description>SERCOM input source</description>
+                           <name>TCC_ALT2</name>
+                           <description>TCC0/TCC2/TCC4/TCC6 input source</description>
                            <value>0x9</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>TCC_ALT3</name>
+                           <description>TCC1/TCC3/TCC5/TCC7 input source</description>
+                           <value>0xA</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>ASYNCEVENT</name>
@@ -4181,24 +4154,29 @@ limitations under the License.
                            <value>0x5</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TC</name>
-                           <description>TC input source</description>
+                           <name>SERCOM</name>
+                           <description>SERCOM input source</description>
                            <value>0x6</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>ALTTC</name>
-                           <description>Alternate TC input source</description>
+                           <name>TCC</name>
+                           <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x7</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC</name>
-                           <description>TCC input source</description>
+                           <name>TCC_ALT1</name>
+                           <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x8</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>SERCOM</name>
-                           <description>SERCOM input source</description>
+                           <name>TCC_ALT2</name>
+                           <description>TCC0/TCC2/TCC4/TCC6 input source</description>
                            <value>0x9</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>TCC_ALT3</name>
+                           <description>TCC1/TCC3/TCC5/TCC7 input source</description>
+                           <value>0xA</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>ASYNCEVENT</name>
@@ -4248,24 +4226,29 @@ limitations under the License.
                            <value>0x5</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TC</name>
-                           <description>TC input source</description>
+                           <name>SERCOM</name>
+                           <description>SERCOM input source</description>
                            <value>0x6</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>ALTTC</name>
-                           <description>Alternate TC input source</description>
+                           <name>TCC</name>
+                           <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x7</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>TCC</name>
-                           <description>TCC input source</description>
+                           <name>TCC_ALT1</name>
+                           <description>TCC0/TCC1/TCC2/TCC3 input source</description>
                            <value>0x8</value>
                         </enumeratedValue>
                         <enumeratedValue>
-                           <name>SERCOM</name>
-                           <description>SERCOM input source</description>
+                           <name>TCC_ALT2</name>
+                           <description>TCC0/TCC2/TCC4/TCC6 input source</description>
                            <value>0x9</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>TCC_ALT3</name>
+                           <description>TCC1/TCC3/TCC5/TCC7 input source</description>
+                           <value>0xA</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>ASYNCEVENT</name>
@@ -4439,26 +4422,6 @@ limitations under the License.
                            <description>Cache Size is 4 KB</description>
                            <value>2</value>
                         </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CSIZE_8KB</name>
-                           <description>Cache Size is 8 KB</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CSIZE_16KB</name>
-                           <description>Cache Size is 16 KB</description>
-                           <value>4</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CSIZE_32KB</name>
-                           <description>Cache Size is 32 KB</description>
-                           <value>5</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CSIZE_64KB</name>
-                           <description>Cache Size is 64 KB</description>
-                           <value>6</value>
-                        </enumeratedValue>
                      </enumeratedValues>
                   </field>
                   <field>
@@ -4472,34 +4435,9 @@ limitations under the License.
                      <enumeratedValues>
                         <name>CLSIZESelect</name>
                         <enumeratedValue>
-                           <name>CLSIZE_4B</name>
-                           <description>Cache Line Size is 4 bytes</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CLSIZE_8B</name>
-                           <description>Cache Line Size is 8 bytes</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
                            <name>CLSIZE_16B</name>
                            <description>Cache Line Size is 16 bytes</description>
                            <value>2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CLSIZE_32B</name>
-                           <description>Cache Line Size is 32 bytes</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CLSIZE_64B</name>
-                           <description>Cache Line Size is 64 bytes</description>
-                           <value>4</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CLSIZE_128B</name>
-                           <description>Cache Line Size is 128 bytes</description>
-                           <value>5</value>
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
@@ -4547,26 +4485,6 @@ limitations under the License.
                            <name>CONF_CSIZE_4KB</name>
                            <description>The Cache Size is configured to 4KB</description>
                            <value>2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CONF_CSIZE_8KB</name>
-                           <description>The Cache Size is configured to 8KB</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CONF_CSIZE_16KB</name>
-                           <description>The Cache Size is configured to 16KB</description>
-                           <value>4</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CONF_CSIZE_32KB</name>
-                           <description>The Cache Size is configured to 32KB</description>
-                           <value>5</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CONF_CSIZE_64KB</name>
-                           <description>The Cache Size is configured to 64KB</description>
-                           <value>6</value>
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
@@ -4652,22 +4570,22 @@ limitations under the License.
                         <enumeratedValue>
                            <name>WAY0</name>
                            <description>Way 0 is selection for index invalidation</description>
-                           <value>0</value>
+                           <value>1</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>WAY1</name>
                            <description>Way 1 is selection for index invalidation</description>
-                           <value>1</value>
+                           <value>2</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>WAY2</name>
                            <description>Way 2 is selection for index invalidation</description>
-                           <value>2</value>
+                           <value>4</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>WAY3</name>
                            <description>Way 3 is selection for index invalidation</description>
-                           <value>3</value>
+                           <value>8</value>
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
@@ -4792,9 +4710,15 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>S_SNAPSTALL</name>
+                     <name>C_SNAPSTALL</name>
                      <description>Snap stall control</description>
                      <bitOffset>5</bitOffset>
+                     <bitWidth>1</bitWidth>
+                  </field>
+                  <field>
+                     <name>C_PMOV</name>
+                     <description>Halt on PMU overflow contro</description>
+                     <bitOffset>6</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
@@ -4802,48 +4726,84 @@ limitations under the License.
                      <description>Register ready status</description>
                      <bitOffset>16</bitOffset>
                      <bitWidth>1</bitWidth>
+                     <access>read-only</access>
                   </field>
                   <field>
                      <name>S_HALT</name>
                      <description>Halted status</description>
                      <bitOffset>17</bitOffset>
                      <bitWidth>1</bitWidth>
+                     <access>read-only</access>
                   </field>
                   <field>
                      <name>S_SLEEP</name>
                      <description>Sleeping status</description>
                      <bitOffset>18</bitOffset>
                      <bitWidth>1</bitWidth>
+                     <access>read-only</access>
                   </field>
                   <field>
                      <name>S_LOCKUP</name>
                      <description>Lockup status</description>
                      <bitOffset>19</bitOffset>
                      <bitWidth>1</bitWidth>
+                     <access>read-only</access>
                   </field>
                   <field>
                      <name>S_SDE</name>
                      <description>Secure debug enabled</description>
                      <bitOffset>20</bitOffset>
                      <bitWidth>1</bitWidth>
+                     <access>read-only</access>
+                  </field>
+                  <field>
+                     <name>S_NSUIDE</name>
+                     <description>Non-secure unprivileged-only haltingdebug enabled</description>
+                     <bitOffset>21</bitOffset>
+                     <bitWidth>1</bitWidth>
+                     <access>read-only</access>
+                  </field>
+                  <field>
+                     <name>S_SUIDE</name>
+                     <description>Secure unprivileged-only halting debug enabled</description>
+                     <bitOffset>22</bitOffset>
+                     <bitWidth>1</bitWidth>
+                     <access>read-only</access>
+                  </field>
+                  <field>
+                     <name>S_FPD</name>
+                     <description>Floating-point registers Debuggable</description>
+                     <bitOffset>23</bitOffset>
+                     <bitWidth>1</bitWidth>
+                     <access>read-only</access>
                   </field>
                   <field>
                      <name>S_RETIRE_ST</name>
                      <description>Retire sticky status</description>
                      <bitOffset>24</bitOffset>
                      <bitWidth>1</bitWidth>
+                     <access>read-only</access>
                   </field>
                   <field>
                      <name>S_RESET_ST</name>
                      <description>Reset sticky status</description>
                      <bitOffset>25</bitOffset>
                      <bitWidth>1</bitWidth>
+                     <access>read-only</access>
                   </field>
                   <field>
                      <name>S_RESTART_ST</name>
                      <description>Restart sticky status</description>
                      <bitOffset>26</bitOffset>
                      <bitWidth>1</bitWidth>
+                     <access>read-only</access>
+                  </field>
+                  <field>
+                     <name>DBGKEY</name>
+                     <description>Debug key, must write 0xA05F to enable writes</description>
+                     <bitOffset>16</bitOffset>
+                     <bitWidth>16</bitWidth>
+                     <access>write-only</access>
                   </field>
                </fields>
             </register>
@@ -4923,7 +4883,7 @@ limitations under the License.
                   </field>
                   <field>
                      <name>VC_INTERR</name>
-                     <description>Excception entry and return faults Halting debug vector catch enable</description>
+                     <description>Exception entry and return faults Halting debug vector catch enable</description>
                      <bitOffset>9</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
@@ -5117,16 +5077,51 @@ limitations under the License.
                <fields>
                   <field>
                      <name>NSID</name>
+                     <description>Non-secure Invasive Debug</description>
                      <bitOffset>0</bitOffset>
-                     <bitWidth>1</bitWidth>
+                     <bitWidth>2</bitWidth>
+                     <writeConstraint>
+                        <useEnumeratedValues>true</useEnumeratedValues>
+                     </writeConstraint>
+                     <enumeratedValues>
+                        <name>NSIDSelect</name>
+                        <enumeratedValue>
+                           <name>NO</name>
+                           <description>Non-secure invasive debug prohibited</description>
+                           <value>2</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>YES</name>
+                           <description>Non-secure invasive debug allowed</description>
+                           <value>3</value>
+                        </enumeratedValue>
+                     </enumeratedValues>
                   </field>
                   <field>
                      <name>NSNID</name>
+                     <description>Non-secure Non-invasive Debug</description>
                      <bitOffset>2</bitOffset>
-                     <bitWidth>1</bitWidth>
+                     <bitWidth>2</bitWidth>
+                     <writeConstraint>
+                        <useEnumeratedValues>true</useEnumeratedValues>
+                     </writeConstraint>
+                     <enumeratedValues>
+                        <name>NSNIDSelect</name>
+                        <enumeratedValue>
+                           <name>NO</name>
+                           <description>Non-secure non-invasive debug prohibited</description>
+                           <value>2</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>YES</name>
+                           <description>Non-secure non-invasive debug allowed</description>
+                           <value>3</value>
+                        </enumeratedValue>
+                     </enumeratedValues>
                   </field>
                   <field>
                      <name>SID</name>
+                     <description>Secure Invasive Debug</description>
                      <bitOffset>4</bitOffset>
                      <bitWidth>2</bitWidth>
                      <writeConstraint>
@@ -5153,6 +5148,7 @@ limitations under the License.
                   </field>
                   <field>
                      <name>SNID</name>
+                     <description>Secure Non-invasive Debug</description>
                      <bitOffset>6</bitOffset>
                      <bitWidth>2</bitWidth>
                      <writeConstraint>
@@ -5173,6 +5169,114 @@ limitations under the License.
                         <enumeratedValue>
                            <name>YES</name>
                            <description>Secure non-invasive debug allowed</description>
+                           <value>3</value>
+                        </enumeratedValue>
+                     </enumeratedValues>
+                  </field>
+                  <field>
+                     <name>NSUID</name>
+                     <description>Non-secure Unprivileged Invasive Debug</description>
+                     <bitOffset>16</bitOffset>
+                     <bitWidth>2</bitWidth>
+                     <writeConstraint>
+                        <useEnumeratedValues>true</useEnumeratedValues>
+                     </writeConstraint>
+                     <enumeratedValues>
+                        <name>NSUIDSelect</name>
+                        <enumeratedValue>
+                           <name>NOSEC</name>
+                           <description>Unprivileged halting debug not implemented</description>
+                           <value>0</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>NO</name>
+                           <description>Non-secure halting debug prohibited</description>
+                           <value>2</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>YES</name>
+                           <description>Non-secure halting debug allowed in unprivileged mode</description>
+                           <value>3</value>
+                        </enumeratedValue>
+                     </enumeratedValues>
+                  </field>
+                  <field>
+                     <name>NSUNID</name>
+                     <description>Non-secure Unprivileged Non-invasive Debug</description>
+                     <bitOffset>18</bitOffset>
+                     <bitWidth>2</bitWidth>
+                     <writeConstraint>
+                        <useEnumeratedValues>true</useEnumeratedValues>
+                     </writeConstraint>
+                     <enumeratedValues>
+                        <name>NSUNIDSelect</name>
+                        <enumeratedValue>
+                           <name>NOSEC</name>
+                           <description>Unprivileged Non-invasive debug not implemented</description>
+                           <value>0</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>NO</name>
+                           <description>Non-secure Non-invasive debug prohibited</description>
+                           <value>2</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>YES</name>
+                           <description>Non-secure Non-invasive debug allowed in unprivileged mode</description>
+                           <value>3</value>
+                        </enumeratedValue>
+                     </enumeratedValues>
+                  </field>
+                  <field>
+                     <name>SUID</name>
+                     <description>Secure Unprivileged Invasive Debug</description>
+                     <bitOffset>20</bitOffset>
+                     <bitWidth>2</bitWidth>
+                     <writeConstraint>
+                        <useEnumeratedValues>true</useEnumeratedValues>
+                     </writeConstraint>
+                     <enumeratedValues>
+                        <name>SUIDSelect</name>
+                        <enumeratedValue>
+                           <name>NOSEC</name>
+                           <description>Security Extension or Unprivileged Debug not implemented</description>
+                           <value>0</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>NO</name>
+                           <description>Secure halting debug prohibited</description>
+                           <value>2</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>YES</name>
+                           <description>Secure halting debug allowed in unprivileged mode</description>
+                           <value>3</value>
+                        </enumeratedValue>
+                     </enumeratedValues>
+                  </field>
+                  <field>
+                     <name>SUNID</name>
+                     <description>Secure Unprivileged Non-invasive Debug</description>
+                     <bitOffset>22</bitOffset>
+                     <bitWidth>2</bitWidth>
+                     <writeConstraint>
+                        <useEnumeratedValues>true</useEnumeratedValues>
+                     </writeConstraint>
+                     <enumeratedValues>
+                        <name>SUNIDSelect</name>
+                        <enumeratedValue>
+                           <name>NOSEC</name>
+                           <description>Security Extension or Unprivileged Non-invasive Debug not implemented</description>
+                           <value>0</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>NO</name>
+                           <description>Secure Non-invasive debug prohibited</description>
+                           <value>2</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>YES</name>
+                           <description>Secure Non-invasive debug allowed in unprivileged mode</description>
                            <value>3</value>
                         </enumeratedValue>
                      </enumeratedValues>
@@ -5572,38 +5676,6 @@ limitations under the License.
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
-                  <field>
-                     <name>QOS4</name>
-                     <description>Priority Group 4 Quality Of Service Control</description>
-                     <bitOffset>24</bitOffset>
-                     <bitWidth>2</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>QOS4Select</name>
-                        <enumeratedValue>
-                           <name>LEVEL_0</name>
-                           <description>QoS level is 0 (lowest)</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>LEVEL_1</name>
-                           <description>QoS level is 1 (lower)</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>LEVEL_2</name>
-                           <description>QoS level is 2 (medium)</description>
-                           <value>2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>LEVEL_3</name>
-                           <description>QoS level is 3 (high)</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
                </fields>
             </register>
             <register>
@@ -5699,102 +5771,6 @@ limitations under the License.
                      <bitOffset>7</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
-                  <field>
-                     <name>CH8</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>8</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH9</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>9</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH10</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>10</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH11</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>11</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH12</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>12</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH13</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>13</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH14</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>14</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH15</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>15</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH16</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>16</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH17</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>17</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH18</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>18</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH19</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>19</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH20</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>20</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH21</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>21</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH22</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>22</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH23</name>
-                     <description>DMA Channel active interrupt at priority 3</description>
-                     <bitOffset>23</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
                </fields>
             </register>
             <register>
@@ -5851,102 +5827,6 @@ limitations under the License.
                      <bitOffset>7</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
-                  <field>
-                     <name>CH8</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>8</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH9</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>9</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH10</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>10</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH11</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>11</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH12</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>12</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH13</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>13</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH14</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>14</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH15</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>15</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH16</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>16</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH17</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>17</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH18</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>18</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH19</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>19</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH20</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>20</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH21</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>21</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH22</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>22</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH23</name>
-                     <description>DMA Channel active interrupt at priority 2</description>
-                     <bitOffset>23</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
                </fields>
             </register>
             <register>
@@ -6001,102 +5881,6 @@ limitations under the License.
                      <name>CH7</name>
                      <description>DMA Channel active interrupt at priority 1</description>
                      <bitOffset>7</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH8</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>8</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH9</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>9</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH10</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>10</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH11</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>11</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH12</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>12</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH13</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>13</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH14</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>14</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH15</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>15</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH16</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>16</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH17</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>17</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH18</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>18</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH19</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>19</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH20</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>20</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH21</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>21</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH22</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>22</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CH23</name>
-                     <description>DMA Channel active interrupt at priority 1</description>
-                     <bitOffset>23</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
@@ -6287,7 +6071,7 @@ limitations under the License.
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>BYTORD_BYTE_SWIZZLE</name>
-                              <description>Bytes are swapped as: BYTE3 to BYTE2, BYTE2 to BYTE3, BYTE1 to BYTE1, and BYTE0 to BYTE1</description>
+                              <description>Bytes are swapped as: BYTE3 to BYTE2, BYTE2 to BYTE3, BYTE1 to BYTE0, and BYTE0 to BYTE1</description>
                               <value>3</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -6347,7 +6131,7 @@ limitations under the License.
                            <name>EVAUXACTSelect</name>
                            <enumeratedValue>
                               <name>ABORT_BLK_XFER</name>
-                              <description>Event Aborts Bock Transfer</description>
+                              <description>Event Aborts Block Transfer</description>
                               <value>0</value>
                            </enumeratedValue>
                            <enumeratedValue>
@@ -6359,6 +6143,11 @@ limitations under the License.
                               <name>COND_TRIG</name>
                               <description>Event acts as a Conditional Trigger</description>
                               <value>2</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>ABORT_LINK_LIST</name>
+                              <description>Event aborts Linked List operation and Block Transfer</description>
+                              <value>3</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
@@ -6946,6 +6735,11 @@ limitations under the License.
                            <description>Global Memory built-in self-test</description>
                            <value>0xA501</value>
                         </enumeratedValue>
+                        <enumeratedValue>
+                           <name>MSET</name>
+                           <description>Memory Set</description>
+                           <value>0xA502</value>
+                        </enumeratedValue>
                      </enumeratedValues>
                   </field>
                </fields>
@@ -7267,18 +7061,6 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>CRSTEXT2</name>
-                     <description>CPU 2 Reset Phase Extension</description>
-                     <bitOffset>10</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CRSTEXT3</name>
-                     <description>CPU 3 Reset Phase Extension</description>
-                     <bitOffset>11</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
                      <name>BREXT0</name>
                      <description>BootRom 0 Phase Extension</description>
                      <bitOffset>16</bitOffset>
@@ -7288,18 +7070,6 @@ limitations under the License.
                      <name>BREXT1</name>
                      <description>BootRom 1 Phase Extension</description>
                      <bitOffset>17</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BREXT2</name>
-                     <description>BootRom 2 Phase Extension</description>
-                     <bitOffset>18</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BREXT3</name>
-                     <description>BootRom 3 Phase Extension</description>
-                     <bitOffset>19</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
@@ -7346,12 +7116,6 @@ limitations under the License.
                      <bitOffset>10</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
-                  <field>
-                     <name>APDIS</name>
-                     <description>ARM Access Ports Disabled</description>
-                     <bitOffset>11</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
                </fields>
             </register>
             <register>
@@ -7374,6 +7138,16 @@ limitations under the License.
                            <name>IDLE</name>
                            <description>State Machine Ready</description>
                            <value>0x0</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>CRC32</name>
+                           <description>CRC32 Operation Ongoing</description>
+                           <value>0x1</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>MSET</name>
+                           <description>Memory Set</description>
+                           <value>0x4</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>MBIST_FILL</name>
@@ -7542,70 +7316,6 @@ limitations under the License.
                      </writeConstraint>
                      <enumeratedValues>
                         <name>CPU1Select</name>
-                        <enumeratedValue>
-                           <name>SECURED</name>
-                           <description>Debugger targeting CPU0 domain can only access the DSU external address space otherwise debugger access is disabled</description>
-                           <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>NS_DEBUG</name>
-                           <description>Debugger can access only non-secure regions</description>
-                           <value>0x1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>FULL_DEBUG</name>
-                           <description>Debugger can access secure and non-secure regions</description>
-                           <value>0x2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>UNIMPLEMENTED</name>
-                           <description>No CPU in this slot</description>
-                           <value>0x3</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>CPU2</name>
-                     <description>Per CPU Debugger Access Level</description>
-                     <bitOffset>4</bitOffset>
-                     <bitWidth>2</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>CPU2Select</name>
-                        <enumeratedValue>
-                           <name>SECURED</name>
-                           <description>Debugger targeting CPU0 domain can only access the DSU external address space otherwise debugger access is disabled</description>
-                           <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>NS_DEBUG</name>
-                           <description>Debugger can access only non-secure regions</description>
-                           <value>0x1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>FULL_DEBUG</name>
-                           <description>Debugger can access secure and non-secure regions</description>
-                           <value>0x2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>UNIMPLEMENTED</name>
-                           <description>No CPU in this slot</description>
-                           <value>0x3</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>CPU3</name>
-                     <description>Per CPU Debugger Access Level</description>
-                     <bitOffset>6</bitOffset>
-                     <bitWidth>2</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>CPU3Select</name>
                         <enumeratedValue>
                            <name>SECURED</name>
                            <description>Debugger targeting CPU0 domain can only access the DSU external address space otherwise debugger access is disabled</description>
@@ -10628,31 +10338,6 @@ limitations under the License.
                </fields>
             </register>
             <register>
-               <name>CTRLB</name>
-               <description>Control B Register</description>
-               <addressOffset>0x4</addressOffset>
-               <fields>
-                  <field>
-                     <name>PRM</name>
-                     <description>Set NVM Power Reduction Mode</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>TEMP</name>
-                     <description>NVM Operating Temperature Read Mode</description>
-                     <bitOffset>1</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>SLP</name>
-                     <description>NVM Power Reduction Mode selection during System Standby Sleep</description>
-                     <bitOffset>8</bitOffset>
-                     <bitWidth>2</bitWidth>
-                  </field>
-               </fields>
-            </register>
-            <register>
                <name>INTENCLR</name>
                <description>Interrupt Enable Clear Register</description>
                <addressOffset>0x8</addressOffset>
@@ -10762,26 +10447,6 @@ limitations under the License.
                      <name>FLTCAP</name>
                      <description>ECC Fault Capture Flag</description>
                      <bitOffset>16</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-               </fields>
-            </register>
-            <register>
-               <name>STATUS</name>
-               <description>NVM Status Register</description>
-               <addressOffset>0x14</addressOffset>
-               <access>read-only</access>
-               <fields>
-                  <field>
-                     <name>PRM</name>
-                     <description>NVM Power Reduction Mode Status</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>TEMP</name>
-                     <description>NVM Operating Temperature Read Mode Status</description>
-                     <bitOffset>1</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
@@ -11120,10 +10785,16 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>DERR</name>
-                     <description>Double Error Detected &amp; Single Error Corrected</description>
+                     <name>SERR</name>
+                     <description>Single Error Corrected</description>
                      <bitOffset>16</bitOffset>
-                     <bitWidth>2</bitWidth>
+                     <bitWidth>1</bitWidth>
+                  </field>
+                  <field>
+                     <name>DERR</name>
+                     <description>Double Error Detected</description>
+                     <bitOffset>17</bitOffset>
+                     <bitWidth>1</bitWidth>
                   </field>
                   <field>
                      <name>CERR</name>
@@ -11140,8 +10811,8 @@ limitations under the License.
                   <field>
                      <name>PERR</name>
                      <description>Per Word Parity Error Status</description>
-                     <bitOffset>27</bitOffset>
-                     <bitWidth>5</bitWidth>
+                     <bitOffset>28</bitOffset>
+                     <bitWidth>4</bitWidth>
                   </field>
                </fields>
             </register>
@@ -11189,7 +10860,7 @@ limitations under the License.
                   </field>
                   <field>
                      <name>KEYZ</name>
-                     <description>Flash Key Locations read 0 s</description>
+                     <description>Flash Key Locations read</description>
                      <bitOffset>1</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
@@ -11249,18 +10920,6 @@ limitations under the License.
                      <name>SDALCPU1</name>
                      <description>Set DAL for CPU n</description>
                      <bitOffset>2</bitOffset>
-                     <bitWidth>2</bitWidth>
-                  </field>
-                  <field>
-                     <name>SDALCPU2</name>
-                     <description>Set DAL for CPU n</description>
-                     <bitOffset>4</bitOffset>
-                     <bitWidth>2</bitWidth>
-                  </field>
-                  <field>
-                     <name>SDALCPU3</name>
-                     <description>Set DAL for CPU n</description>
-                     <bitOffset>6</bitOffset>
                      <bitWidth>2</bitWidth>
                   </field>
                </fields>
@@ -11339,14 +10998,8 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>HTDPGM</name>
-                     <description>High Temperature Detect Error Interrupt Enable Bit</description>
-                     <bitOffset>8</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BORERR</name>
-                     <description>Brown Out Detect Error Interrupt Enable Bit</description>
+                     <name>RSTERR</name>
+                     <description>Reset or Brown Out Detect Error Interrupt Enable Bit</description>
                      <bitOffset>12</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
@@ -11413,14 +11066,8 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>HTDPGM</name>
-                     <description>High Temperature Detect Error Interrupt Enable Bit</description>
-                     <bitOffset>8</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BORERR</name>
-                     <description>Brown Out Detect Error Interrupt Enable Bit</description>
+                     <name>RSTERR</name>
+                     <description>Reset or Brown Out Detect Error Interrupt Enable Bit</description>
                      <bitOffset>12</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
@@ -11487,14 +11134,8 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>HTDPGM</name>
-                     <description>High Temperature Detect Error Flag Bit</description>
-                     <bitOffset>8</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BORERR</name>
-                     <description>Brown Out Detect Error Flag Bit</description>
+                     <name>RSTERR</name>
+                     <description>Reset or Brown Out Detect Error Flag Bit</description>
                      <bitOffset>12</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
@@ -11515,12 +11156,6 @@ limitations under the License.
                      <name>BUSY</name>
                      <description>NVM Busy Status</description>
                      <bitOffset>0</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>HTDRDY</name>
-                     <description>High Temp Detect Ready Status</description>
-                     <bitOffset>8</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
@@ -16534,7 +16169,7 @@ limitations under the License.
          <protection>s</protection>
          <addressBlock>
             <offset>0</offset>
-            <size>0x100</size>
+            <size>0x2C</size>
             <usage>registers</usage>
          </addressBlock>
          <interrupt>
@@ -16801,27 +16436,6 @@ limitations under the License.
                            <value>1</value>
                         </enumeratedValue>
                      </enumeratedValues>
-                  </field>
-               </fields>
-            </register>
-            <register>
-               <name>VERSION</name>
-               <description>Version Register</description>
-               <addressOffset>0xFC</addressOffset>
-               <access>read-only</access>
-               <resetValue>0x00000510</resetValue>
-               <fields>
-                  <field>
-                     <name>VERSION</name>
-                     <description>MCRAMC Version</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>12</bitWidth>
-                  </field>
-                  <field>
-                     <name>MFN</name>
-                     <description>Metal Fix Number</description>
-                     <bitOffset>16</bitOffset>
-                     <bitWidth>3</bitWidth>
                   </field>
                </fields>
             </register>
@@ -17630,18 +17244,6 @@ limitations under the License.
                      </enumeratedValues>
                   </field>
                   <field>
-                     <name>ENSL</name>
-                     <description>Enable Servo Loop</description>
-                     <bitOffset>16</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BOOST</name>
-                     <description>Gain Boost</description>
-                     <bitOffset>17</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
                      <name>CGM</name>
                      <description>Control Gain Mode</description>
                      <bitOffset>18</bitOffset>
@@ -17733,12 +17335,6 @@ limitations under the License.
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
-                  <field>
-                     <name>CTRLX</name>
-                     <description>Extended Control</description>
-                     <bitOffset>24</bitOffset>
-                     <bitWidth>4</bitWidth>
-                  </field>
                </fields>
             </register>
          </registers>
@@ -17751,7 +17347,7 @@ limitations under the License.
          <protection>s</protection>
          <addressBlock>
             <offset>0</offset>
-            <size>0x8C</size>
+            <size>0x7C</size>
             <usage>registers</usage>
          </addressBlock>
          <interrupt>
@@ -17849,12 +17445,6 @@ limitations under the License.
                      <bitOffset>24</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
-                  <field>
-                     <name>PLL0LOCKF</name>
-                     <description>PLL 0 Lock Fall Interrupt Enable</description>
-                     <bitOffset>25</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
                </fields>
             </register>
             <register>
@@ -17921,12 +17511,6 @@ limitations under the License.
                      <name>PLL0LOCKR</name>
                      <description>PLL 0 Lock Rise Interrupt Enable</description>
                      <bitOffset>24</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>PLL0LOCKF</name>
-                     <description>PLL 0 Lock Fall Interrupt Enable</description>
-                     <bitOffset>25</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
@@ -17997,12 +17581,6 @@ limitations under the License.
                      <bitOffset>24</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
-                  <field>
-                     <name>PLL0LOCKF</name>
-                     <description>PLL 0 Lock Fall</description>
-                     <bitOffset>25</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
                </fields>
             </register>
             <register>
@@ -18069,12 +17647,6 @@ limitations under the License.
                      <name>DFLLFAIL</name>
                      <description>DFLL Startup Failure</description>
                      <bitOffset>13</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>PLL0LOCK</name>
-                     <description>PLL 0 Lock</description>
-                     <bitOffset>24</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
@@ -18512,44 +18084,24 @@ limitations under the License.
                      <enumeratedValues>
                         <name>BWSELSelect</name>
                         <enumeratedValue>
-                           <name>BWSEL0</name>
-                           <description>TBD</description>
-                           <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
                            <name>BWSEL1</name>
-                           <description>TBD</description>
+                           <description>Fpfd is greater than or equal to 4MHz and less than 10MHz</description>
                            <value>0x1</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>BWSEL2</name>
-                           <description>TBD</description>
+                           <description>Fpfd is greater than or equal to 10MHz and less than 20MHz</description>
                            <value>0x2</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>BWSEL3</name>
-                           <description>TBD</description>
+                           <description>Fpfd is greater than or equal to 20MHz and less than 30MHz</description>
                            <value>0x3</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>BWSEL4</name>
-                           <description>TBD</description>
+                           <description>Fpfd is greater than or equal to 30MHz and less than 60MHz</description>
                            <value>0x4</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>BWSEL5</name>
-                           <description>TBD</description>
-                           <value>0x5</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>BWSEL6</name>
-                           <description>TBD</description>
-                           <value>0x6</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>BWSEL7</name>
-                           <description>TBD</description>
-                           <value>0x7</value>
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
@@ -18736,144 +18288,6 @@ limitations under the License.
                      <description>FRACDIV1 Synchronization Busy</description>
                      <bitOffset>7</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>
-               </fields>
-            </register>
-            <register>
-               <name>XOSCCAL</name>
-               <description>XOSC Calibration Register</description>
-               <addressOffset>0x80</addressOffset>
-               <fields>
-                  <field>
-                     <name>CAL</name>
-                     <description>XOSC Calibration</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>16</bitWidth>
-                  </field>
-               </fields>
-            </register>
-            <register>
-               <name>XOSCCAL_FUSES_OSC_XTAL_HF_AGC_V2_MODE</name>
-               <description>XOSC Calibration Register</description>
-               <alternateRegister>XOSCCAL</alternateRegister>
-               <addressOffset>0x80</addressOffset>
-               <fields>
-                  <field>
-                     <name>FTRANS</name>
-                     <description>Fine Transconductance programmability for Oscillator</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>2</bitWidth>
-                  </field>
-                  <field>
-                     <name>KICKEREN</name>
-                     <description>Kicker enable</description>
-                     <bitOffset>2</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>ENVAMP</name>
-                     <description>envelope amplitude at osci</description>
-                     <bitOffset>3</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>HYST</name>
-                     <description>loop hysteresis control</description>
-                     <bitOffset>4</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>CMSEL</name>
-                     <description>clock buffer common mode selection</description>
-                     <bitOffset>5</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>FLIPPOL</name>
-                     <description>flip output clock polarity</description>
-                     <bitOffset>6</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>REDGAIN</name>
-                     <description>reduce gain control timer</description>
-                     <bitOffset>8</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>REDOSC</name>
-                     <description>reduce oscillation debug counter</description>
-                     <bitOffset>9</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>SPARES</name>
-                     <description>Spare bits</description>
-                     <bitOffset>10</bitOffset>
-                     <bitWidth>6</bitWidth>
-                  </field>
-               </fields>
-            </register>
-            <register>
-               <name>RC48MCAL0</name>
-               <description>RC48M Calibration 0</description>
-               <addressOffset>0x88</addressOffset>
-               <fields>
-                  <field>
-                     <name>CAL</name>
-                     <description>RC48M Calibration</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>32</bitWidth>
-                  </field>
-               </fields>
-            </register>
-            <register>
-               <name>RC48MCAL0_FUSES_OSC_RC48MHZ_V1_MODE</name>
-               <description>RC48M Calibration 0</description>
-               <alternateRegister>RC48MCAL0</alternateRegister>
-               <addressOffset>0x88</addressOffset>
-               <fields>
-                  <field>
-                     <name>temp_trim_mv</name>
-                     <description>Temp trim value</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>6</bitWidth>
-                  </field>
-                  <field>
-                     <name>proc_trim_mv</name>
-                     <description>Proc trim value</description>
-                     <bitOffset>6</bitOffset>
-                     <bitWidth>8</bitWidth>
-                  </field>
-                  <field>
-                     <name>iosc_boost</name>
-                     <description>IOSC boost</description>
-                     <bitOffset>16</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>out_buf_sel</name>
-                     <description>Output buffer select</description>
-                     <bitOffset>17</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>ldo_vout_boost</name>
-                     <description>LDO VOUT boost</description>
-                     <bitOffset>18</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>cmp_8m_lp</name>
-                     <description>Comparator 8MHz low-power</description>
-                     <bitOffset>19</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>cmp_pwr_ctrl</name>
-                     <description>Comparator power control</description>
-                     <bitOffset>20</bitOffset>
-                     <bitWidth>3</bitWidth>
                   </field>
                </fields>
             </register>
@@ -19603,11 +19017,6 @@ limitations under the License.
                            <name>OFF</name>
                            <description>Event action disabled</description>
                            <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>RETRIGGER</name>
-                           <description>Start, restart or retrigger on event</description>
-                           <value>1</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>COUNT</name>
@@ -20737,73 +20146,73 @@ limitations under the License.
                            <name>PMUXESelect</name>
                            <enumeratedValue>
                               <name>A</name>
-                              <description>Peripheral function A selected</description>
+                              <description>External Interrupts</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>B</name>
-                              <description>Peripheral function B selected</description>
+                              <description>ADC and Analog Comparator</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>C</name>
-                              <description>Peripheral function C selected</description>
+                              <description>SERCOMn (UART, I2C, SPI)</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>D</name>
-                              <description>Peripheral function D selected</description>
+                              <description>SERCOMn Alt (UART, I2C, SPI)</description>
                               <value>0x3</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>E</name>
-                              <description>Peripheral function E selected</description>
+                              <description>External Bus Interface</description>
                               <value>0x4</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>F</name>
-                              <description>Peripheral function F selected</description>
+                              <description>Timer/Counter controller</description>
                               <value>0x5</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>G</name>
-                              <description>Peripheral function G selected</description>
+                              <description>Timer/Counter controller and Positional Decoder Alt</description>
                               <value>0x6</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>H</name>
-                              <description>Peripheral function H selected</description>
+                              <description>SQI/CAN/USB/CM33 Trace</description>
                               <value>0x7</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>I</name>
-                              <description>Peripheral function I selected</description>
+                              <description>SD/MMC Host Controller (Memory Card Interface)</description>
                               <value>0x8</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>J</name>
-                              <description>Peripheral function J selected</description>
+                              <description>SPI_IXS Audio</description>
                               <value>0x9</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>K</name>
-                              <description>Peripheral function K selected</description>
+                              <description>Parallel Capture Controller</description>
                               <value>0xA</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>L</name>
-                              <description>Peripheral function L selected</description>
+                              <description>Ethernet</description>
                               <value>0xB</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>M</name>
-                              <description>Peripheral function M selected</description>
+                              <description>GCLK/CCL/AC Alt</description>
                               <value>0xC</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>P</name>
-                              <description>Peripheral function P selected</description>
-                              <value>0xF</value>
+                              <description>Peripheral Touch Controller and JTAG/SWD Debug Interfaces</description>
+                              <value>0xD</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
@@ -20819,73 +20228,73 @@ limitations under the License.
                            <name>PMUXOSelect</name>
                            <enumeratedValue>
                               <name>A</name>
-                              <description>Peripheral function A selected</description>
+                              <description>External Interrupts</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>B</name>
-                              <description>Peripheral function B selected</description>
+                              <description>ADC and Analog Comparator</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>C</name>
-                              <description>Peripheral function C selected</description>
+                              <description>SERCOMn (UART, I2C, SPI)</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>D</name>
-                              <description>Peripheral function D selected</description>
+                              <description>SERCOMn Alt (UART, I2C, SPI)</description>
                               <value>0x3</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>E</name>
-                              <description>Peripheral function E selected</description>
+                              <description>External Bus Interface</description>
                               <value>0x4</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>F</name>
-                              <description>Peripheral function F selected</description>
+                              <description>Timer/Counter controller</description>
                               <value>0x5</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>G</name>
-                              <description>Peripheral function G selected</description>
+                              <description>Timer/Counter controller and Positional Decoder Alt</description>
                               <value>0x6</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>H</name>
-                              <description>Peripheral function H selected</description>
+                              <description>SQI/CAN/USB/CM33 Trace</description>
                               <value>0x7</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>I</name>
-                              <description>Peripheral function I selected</description>
+                              <description>SD/MMC Host Controller (Memory Card Interface)</description>
                               <value>0x8</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>J</name>
-                              <description>Peripheral function J selected</description>
+                              <description>SPI_IXS Audio</description>
                               <value>0x9</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>K</name>
-                              <description>Peripheral function K selected</description>
+                              <description>Parallel Capture Controller</description>
                               <value>0xA</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>L</name>
-                              <description>Peripheral function L selected</description>
+                              <description>Ethernet</description>
                               <value>0xB</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>M</name>
-                              <description>Peripheral function M selected</description>
+                              <description>GCLK/CCL/AC Alt</description>
                               <value>0xC</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>P</name>
-                              <description>Peripheral function P selected</description>
-                              <value>0xF</value>
+                              <description>Peripheral Touch Controller and JTAG/SWD Debug Interfaces</description>
+                              <value>0xD</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
@@ -21162,21 +20571,9 @@ limitations under the License.
                <access>read-only</access>
                <fields>
                   <field>
-                     <name>VBAT0</name>
-                     <description>VBAT failure in backup mode</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
                      <name>RTC</name>
                      <description>Real Timer Counter Interrupt</description>
                      <bitOffset>1</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BBPS0</name>
-                     <description>Battery Backup Power Switch</description>
-                     <bitOffset>2</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
@@ -25325,7 +24722,7 @@ limitations under the License.
                   </field>
                   <field>
                      <name>PartNo</name>
-                     <description>Part number, 0xD20=Cortex-M23</description>
+                     <description>Part number, 0xD21=Cortex-M33</description>
                      <bitOffset>4</bitOffset>
                      <bitWidth>12</bitWidth>
                   </field>
@@ -27617,7 +27014,7 @@ limitations under the License.
                <size>16</size>
                <fields>
                   <field>
-                     <name>BCNT</name>
+                     <name>BLKCNT</name>
                      <description>Blocks Count for Current Transfer</description>
                      <bitOffset>0</bitOffset>
                      <bitWidth>16</bitWidth>
@@ -27630,7 +27027,7 @@ limitations under the License.
                <addressOffset>0x8</addressOffset>
                <fields>
                   <field>
-                     <name>ARG</name>
+                     <name>ARG1</name>
                      <description>Argument 1</description>
                      <bitOffset>0</bitOffset>
                      <bitWidth>32</bitWidth>
@@ -28002,28 +27399,6 @@ limitations under the License.
                         <enumeratedValue>
                            <name>ACTIVE</name>
                            <description>DAT Line Active</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>RTREQ</name>
-                     <description>Re-Tuning Request</description>
-                     <bitOffset>3</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>RTREQSelect</name>
-                        <enumeratedValue>
-                           <name>OK</name>
-                           <description>Fixed or well-tuned sampling clock</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>REQUIRED</name>
-                           <description>Sampling clock needs re-tuning</description>
                            <value>1</value>
                         </enumeratedValue>
                      </enumeratedValues>
@@ -28459,33 +27834,6 @@ limitations under the License.
                            <name>ON</name>
                            <description>Power on</description>
                            <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>SDBVSEL</name>
-                     <description>SD Bus Voltage Select</description>
-                     <bitOffset>1</bitOffset>
-                     <bitWidth>3</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>SDBVSELSelect</name>
-                        <enumeratedValue>
-                           <name>1V8</name>
-                           <description>1.8V (Typ.)</description>
-                           <value>5</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>3V0</name>
-                           <description>3.0V (Typ.)</description>
-                           <value>6</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>3V3</name>
-                           <description>3.3V (Typ.)</description>
-                           <value>7</value>
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
@@ -31566,141 +30914,6 @@ limitations under the License.
                <size>16</size>
                <fields>
                   <field>
-                     <name>UHSMS</name>
-                     <description>UHS Mode Select</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>3</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>UHSMSSelect</name>
-                        <enumeratedValue>
-                           <name>SDR12</name>
-                           <description>SDR12</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>SDR25</name>
-                           <description>SDR25</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>SDR50</name>
-                           <description>SDR50</description>
-                           <value>2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>SDR104</name>
-                           <description>SDR104</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>DDR50</name>
-                           <description>DDR50</description>
-                           <value>4</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>VS18EN</name>
-                     <description>1.8V Signaling Enable</description>
-                     <bitOffset>3</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>VS18ENSelect</name>
-                        <enumeratedValue>
-                           <name>S33V</name>
-                           <description>3.3V Signaling</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>S18V</name>
-                           <description>1.8V Signaling</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>DRVSEL</name>
-                     <description>Driver Strength Select</description>
-                     <bitOffset>4</bitOffset>
-                     <bitWidth>2</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>DRVSELSelect</name>
-                        <enumeratedValue>
-                           <name>B</name>
-                           <description>Driver Type B is Selected (Default)</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>A</name>
-                           <description>Driver Type A is Selected</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>C</name>
-                           <description>Driver Type C is Selected</description>
-                           <value>2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>D</name>
-                           <description>Driver Type D is Selected</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>EXTUN</name>
-                     <description>Execute Tuning</description>
-                     <bitOffset>6</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>EXTUNSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>Not Tuned or Tuning Completed</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>REQUESTED</name>
-                           <description>Execute Tuning</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>SLCKSEL</name>
-                     <description>Sampling Clock Select</description>
-                     <bitOffset>7</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>SLCKSELSelect</name>
-                        <enumeratedValue>
-                           <name>FIXED</name>
-                           <description>Fixed clock is used to sample data</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>TUNED</name>
-                           <description>Tuned clock is used to sample data</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
                      <name>ASINTEN</name>
                      <description>Asynchronous Interrupt Enable</description>
                      <bitOffset>14</bitOffset>
@@ -31718,150 +30931,6 @@ limitations under the License.
                         <enumeratedValue>
                            <name>ENABLED</name>
                            <description>Enabled</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>PVALEN</name>
-                     <description>Preset Value Enable</description>
-                     <bitOffset>15</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>PVALENSelect</name>
-                        <enumeratedValue>
-                           <name>HOST</name>
-                           <description>SDCLK and Driver Strength are controlled by Host Controller</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>AUTO</name>
-                           <description>Automatic Selection by Preset Value is Enabled</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-               </fields>
-            </register>
-            <register>
-               <name>HC2R_EMMC_MODE</name>
-               <description>Host Control 2</description>
-               <alternateRegister>HC2R</alternateRegister>
-               <addressOffset>0x3E</addressOffset>
-               <size>16</size>
-               <fields>
-                  <field>
-                     <name>HS200EN</name>
-                     <description>HS200 Mode Enable</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>4</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>HS200ENSelect</name>
-                        <enumeratedValue>
-                           <name>SDR12</name>
-                           <description>SDR12</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>SDR25</name>
-                           <description>SDR25</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>SDR50</name>
-                           <description>SDR50</description>
-                           <value>2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>SDR104</name>
-                           <description>SDR104</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>DDR50</name>
-                           <description>DDR50</description>
-                           <value>4</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>DRVSEL</name>
-                     <description>Driver Strength Select</description>
-                     <bitOffset>4</bitOffset>
-                     <bitWidth>2</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>DRVSELSelect</name>
-                        <enumeratedValue>
-                           <name>B</name>
-                           <description>Driver Type B is Selected (Default)</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>A</name>
-                           <description>Driver Type A is Selected</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>C</name>
-                           <description>Driver Type C is Selected</description>
-                           <value>2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>D</name>
-                           <description>Driver Type D is Selected</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>EXTUN</name>
-                     <description>Execute Tuning</description>
-                     <bitOffset>6</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>EXTUNSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>Not Tuned or Tuning Completed</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>REQUESTED</name>
-                           <description>Execute Tuning</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>SLCKSEL</name>
-                     <description>Sampling Clock Select</description>
-                     <bitOffset>7</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>SLCKSELSelect</name>
-                        <enumeratedValue>
-                           <name>FIXED</name>
-                           <description>Fixed clock is used to sample data</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>TUNED</name>
-                           <description>Tuned clock is used to sample data</description>
                            <value>1</value>
                         </enumeratedValue>
                      </enumeratedValues>
@@ -31976,28 +31045,6 @@ limitations under the License.
                            <name>MAXBLKL_2048</name>
                            <description>2048 bytes</description>
                            <value>2</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>ED8SUP</name>
-                     <description>8-bit Support for Embedded Device</description>
-                     <bitOffset>18</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>ED8SUPSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>8-bit Bus Width not Supported</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>YES</name>
-                           <description>8-bit Bus Width Supported</description>
-                           <value>1</value>
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
@@ -32134,50 +31181,6 @@ limitations under the License.
                      </enumeratedValues>
                   </field>
                   <field>
-                     <name>V18VSUP</name>
-                     <description>Voltage Support 1.8V</description>
-                     <bitOffset>26</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>V18VSUPSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>1.8V Not Supported</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>YES</name>
-                           <description>1.8V Supported</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>SB64SUP</name>
-                     <description>64-Bit System Bus Support</description>
-                     <bitOffset>28</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>SB64SUPSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>32-bit Address Descriptors and System Bus</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>YES</name>
-                           <description>64-bit Address Descriptors and System Bus</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
                      <name>ASINTSUP</name>
                      <description>Asynchronous Interrupt Support</description>
                      <bitOffset>29</bitOffset>
@@ -32229,237 +31232,6 @@ limitations under the License.
                <addressOffset>0x44</addressOffset>
                <resetValue>0x00010070</resetValue>
                <fields>
-                  <field>
-                     <name>SDR50SUP</name>
-                     <description>SDR50 Support</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>SDR50SUPSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>SDR50 is Not Supported</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>YES</name>
-                           <description>SDR50 is Supported</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>SDR104SUP</name>
-                     <description>SDR104 Support</description>
-                     <bitOffset>1</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>SDR104SUPSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>SDR104 is Not Supported</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>YES</name>
-                           <description>SDR104 is Supported</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>DDR50SUP</name>
-                     <description>DDR50 Support</description>
-                     <bitOffset>2</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>DDR50SUPSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>DDR50 is Not Supported</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>YES</name>
-                           <description>DDR50 is Supported</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>DRVASUP</name>
-                     <description>Driver Type A Support</description>
-                     <bitOffset>4</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>DRVASUPSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>Driver Type A is Not Supported</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>YES</name>
-                           <description>Driver Type A is Supported</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>DRVCSUP</name>
-                     <description>Driver Type C Support</description>
-                     <bitOffset>5</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>DRVCSUPSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>Driver Type C is Not Supported</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>YES</name>
-                           <description>Driver Type C is Supported</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>DRVDSUP</name>
-                     <description>Driver Type D Support</description>
-                     <bitOffset>6</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>DRVDSUPSelect</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>Driver Type D is Not Supported</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>YES</name>
-                           <description>Driver Type D is Supported</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>TCNTRT</name>
-                     <description>Timer Count for Re-Tuning</description>
-                     <bitOffset>8</bitOffset>
-                     <bitWidth>4</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>TCNTRTSelect</name>
-                        <enumeratedValue>
-                           <name>DISABLED</name>
-                           <description>Re-Tuning Timer disabled</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>1S</name>
-                           <description>1 second</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>2S</name>
-                           <description>2 seconds</description>
-                           <value>2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>4S</name>
-                           <description>4 seconds</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>8S</name>
-                           <description>8 seconds</description>
-                           <value>4</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>16S</name>
-                           <description>16 seconds</description>
-                           <value>5</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>32S</name>
-                           <description>32 seconds</description>
-                           <value>6</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>64S</name>
-                           <description>64 seconds</description>
-                           <value>7</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>128S</name>
-                           <description>128 seconds</description>
-                           <value>8</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>256S</name>
-                           <description>256 seconds</description>
-                           <value>9</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>512S</name>
-                           <description>512 seconds</description>
-                           <value>10</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>1024S</name>
-                           <description>1024 seconds</description>
-                           <value>11</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>OTHER</name>
-                           <description>Get information from other source</description>
-                           <value>15</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>TSDR50</name>
-                     <description>Use Tuning for SDR50</description>
-                     <bitOffset>13</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>TSDR50Select</name>
-                        <enumeratedValue>
-                           <name>NO</name>
-                           <description>SDR50 does not require tuning</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>YES</name>
-                           <description>SDR50 requires tuning</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
                   <field>
                      <name>CLKMULT</name>
                      <description>Clock Multiplier</description>
@@ -32527,38 +31299,6 @@ limitations under the License.
                      </writeConstraint>
                      <enumeratedValues>
                         <name>MAXCUR30VSelect</name>
-                        <enumeratedValue>
-                           <name>OTHER</name>
-                           <description>Get information via another method</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>4MA</name>
-                           <description>4mA</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>8MA</name>
-                           <description>8mA</description>
-                           <value>2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>12MA</name>
-                           <description>12mA</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>MAXCUR18V</name>
-                     <description>Maximum Current for 1.8V</description>
-                     <bitOffset>16</bitOffset>
-                     <bitWidth>8</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>MAXCUR18VSelect</name>
                         <enumeratedValue>
                            <name>OTHER</name>
                            <description>Get information via another method</description>
@@ -33082,38 +31822,6 @@ limitations under the License.
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
-                  <field>
-                     <name>DRVSEL</name>
-                     <description>Driver Strength Select Value for Initialization</description>
-                     <bitOffset>14</bitOffset>
-                     <bitWidth>2</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>DRVSELSelect</name>
-                        <enumeratedValue>
-                           <name>B</name>
-                           <description>Driver Type B is Selected</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>A</name>
-                           <description>Driver Type A is Selected</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>C</name>
-                           <description>Driver Type C is Selected</description>
-                           <value>2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>D</name>
-                           <description>Driver Type D is Selected</description>
-                           <value>3</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
                </fields>
             </register>
             <register>
@@ -33127,7 +31835,7 @@ limitations under the License.
                      <name>INTSSL</name>
                      <description>Interrupt Signal for Each Slot</description>
                      <bitOffset>0</bitOffset>
-                     <bitWidth>1</bitWidth>
+                     <bitWidth>2</bitWidth>
                   </field>
                </fields>
             </register>
@@ -33192,12 +31900,6 @@ limitations under the License.
                      </enumeratedValues>
                   </field>
                   <field>
-                     <name>DDR</name>
-                     <description>e.MMC HSDDR Mode</description>
-                     <bitOffset>3</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
                      <name>OPD</name>
                      <description>e.MMC Open Drain Mode</description>
                      <bitOffset>4</bitOffset>
@@ -33241,47 +31943,6 @@ limitations under the License.
                      <description>e.MMC Abort Boot</description>
                      <bitOffset>1</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>
-               </fields>
-            </register>
-            <register>
-               <name>DEBR</name>
-               <description>Debounce Register</description>
-               <addressOffset>0x207</addressOffset>
-               <size>8</size>
-               <resetValue>0x03</resetValue>
-               <fields>
-                  <field>
-                     <name>CDDVAL</name>
-                     <description>Card Detect Debounce Value</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>2</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>CDDVALSelect</name>
-                        <enumeratedValue>
-                           <name>1CYCLE</name>
-                           <description>1 slow clock cycle</description>
-                           <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>8CYCLES</name>
-                           <description>8 slow clock cycles</description>
-                           <value>0x1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>33CYCLES</name>
-                           <description>33 slow clock cycle</description>
-                           <value>0x2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>328CYCLES</name>
-                           <description>328 slow clock cycle</description>
-                           <value>0x3</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
                   </field>
                </fields>
             </register>
@@ -34070,12 +32731,6 @@ limitations under the License.
                         <name>SYSOP</name>
                         <description>System Operation Synchronization Busy</description>
                         <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>LENGTH</name>
-                        <description>Length Synchronization Busy</description>
-                        <bitOffset>4</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                   </fields>
@@ -38087,8 +36742,8 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>MSSEN</name>
-                     <description>Master/Slave Mode Select Enable bit</description>
+                     <name>CSEN</name>
+                     <description>Host/Client Mode Select Enable bit</description>
                      <bitOffset>6</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
@@ -38841,28 +37496,6 @@ limitations under the License.
                <modifiedWriteValues>oneToSet</modifiedWriteValues>
                <fields>
                   <field>
-                     <name>SWRST</name>
-                     <description>Software Reset</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>SWRSTSelect</name>
-                        <enumeratedValue>
-                           <name>LOW</name>
-                           <description>No reset in progress</description>
-                           <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>HIGH</name>
-                           <description>Reseting the registers and EIP</description>
-                           <value>0x1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
                      <name>RUNSTDBY</name>
                      <description>Run in Standby</description>
                      <bitOffset>6</bitOffset>
@@ -39173,6 +37806,12 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
+                     <name>RESET</name>
+                     <description>Software Reset Select Bit</description>
+                     <bitOffset>16</bitOffset>
+                     <bitWidth>1</bitWidth>
+                  </field>
+                  <field>
                      <name>TXBUFRST</name>
                      <description>Transmit FIFO Reset A reset pulse is generated when writing 1 to this bit. This bit is Auto clear and SPI Controller will clear this bit. Transmit FIFO pointers will get reset by this reset pulse. Note: Transmit FIFO reset can be done only after a transaction is complete on spi bus; however if we want to reset FIFO during transaction, we need to go for soft reset only.Note: For Michigan Ax versions, treat as Reserved, keep 0.</description>
                      <bitOffset>17</bitOffset>
@@ -39255,12 +37894,6 @@ limitations under the License.
                      <name>SCHECK</name>
                      <description>Status Check This bit is mainly used for Programming or Erase operations. 0 - do not check status, 1 - check status. If this bit is set to 1, the hardware will issue the status command automatically after the current operation and wait for busy bit to clear. The hardware will issue the next command only after this Status check phase. Note: For Michigan Ax versions, this bit is Reserved and should be kept 0.</description>
                      <bitOffset>24</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>DEV_SEL_2</name>
-                     <description>SPI Device Select[2]: This field along with SPI DEVICE SELECT [1:0] (bits 21:20) together is used to select a particular SPI device. Bit25 Bit21 Bit20 0 0 0 - SPI Device 0 ,0 0 1 - SPI Device 1 ,0 1 0 - SPI Device 2 ,0 1 1 - SPI Device 3, 1 0 0 - SPI Device 4 ,1 0 1 - SPI Device 5 ,1 1 0 - SPI Device 6 ,1 1 1 - SPI Device 7 Note: For Michigan Ax versions, this bit is Reserved and should be kept 0.</description>
-                     <bitOffset>25</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
@@ -40026,24 +38659,6 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>ULDORDY</name>
-                     <description>User LDO Regulator Ready Interrupt Enable</description>
-                     <bitOffset>2</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>ULDOOVHEAT</name>
-                     <description>User LDO Regulator OverHeat Interrupt Enable</description>
-                     <bitOffset>3</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BORVDDIOB</name>
-                     <description>BORVDDIOB Interrupt Enable</description>
-                     <bitOffset>4</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
                      <name>BORVDDUSB</name>
                      <description>BORVDDUSB Interrupt Enable</description>
                      <bitOffset>5</bitOffset>
@@ -40073,24 +38688,6 @@ limitations under the License.
                      <name>LVDRDY</name>
                      <description>Low Voltage Detector Ready Interrupt Enable</description>
                      <bitOffset>1</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>ULDORDY</name>
-                     <description>User LDO Regulator Ready Interrupt Enable</description>
-                     <bitOffset>2</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>ULDOOVHEAT</name>
-                     <description>User LDO Regulator OverHeat Interrupt Enable</description>
-                     <bitOffset>3</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BORVDDIOB</name>
-                     <description>BORVDDIOB Interrupt Enable</description>
-                     <bitOffset>4</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
@@ -40126,24 +38723,6 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>ULDORDY</name>
-                     <description>User LDO Regulator Ready Interrupt. Set to one if ULDO is ready meaning that output voltage is correct.</description>
-                     <bitOffset>2</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>ULDOOVHEAT</name>
-                     <description>User LDO Regulator OverHeat Interrupt. Is set to one if overheat condition is detected.</description>
-                     <bitOffset>3</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BORVDDIOB</name>
-                     <description>BORVDDIOB Interrupt. Set to one if VDDIOB issue is detected.</description>
-                     <bitOffset>4</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
                      <name>BORVDDUSB</name>
                      <description>BORVDDUSB Interrupt. Set to one if VDDUSB issue is detected.</description>
                      <bitOffset>5</bitOffset>
@@ -40173,24 +38752,6 @@ limitations under the License.
                      <name>LVDRDY</name>
                      <description>Low Voltage Detector Ready Status</description>
                      <bitOffset>1</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>ULDORDY</name>
-                     <description>User LDO regulator Status. It corresponds to vreg_ready_mv signal from ULDO.</description>
-                     <bitOffset>2</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>ULDOOVHEAT</name>
-                     <description>User LDO Regulator OverHeat Status. It corresponds to vreg_overheat_event_mv signal from ULDO.</description>
-                     <bitOffset>3</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>BORVDDIOB</name>
-                     <description>BORVDDIOB Status. One if VDDIOB is OK. It corresponds to bor_vddiob_mv signal of SMOR.</description>
-                     <bitOffset>4</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
@@ -40240,11 +38801,6 @@ limitations under the License.
                            <name>RESET</name>
                            <description>The BOR generates a reset</description>
                            <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>BBKUP</name>
-                           <description>The BOR puts the device in battery backup sleep mode</description>
-                           <value>0x1</value>
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
@@ -40393,33 +38949,6 @@ limitations under the License.
                <addressOffset>0x1C</addressOffset>
                <fields>
                   <field>
-                     <name>VREGOUT</name>
-                     <description>VREG Output Control in RUN mode only. Enable by production fuse by CALSUPC.VREGOUTEN</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>2</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>VREGOUTSelect</name>
-                        <enumeratedValue>
-                           <name>1p2v</name>
-                           <description>In Active mode, VDDCORE_RAM, VDDCORE_BU, VDDCORE_SW and optionnaly VDDCORE_PLL USB are set to 1.2v.</description>
-                           <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>1p0v</name>
-                           <description>In Active mode, VDDCORE_RAM, VDDCORE_BU, VDDCORE_SW and optionnaly VDDCORE_PLL USB are set to 1.0v.</description>
-                           <value>0x1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>0p8v</name>
-                           <description>In Active mode, VDDCORE_RAM, VDDCORE_BU, VDDCORE_SW and optionnaly VDDCORE_PLL USB are set to 0.8v.</description>
-                           <value>0x2</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
                      <name>OFFSTDBY</name>
                      <description>Off in Standby Control for VREGSW[N-1]. Useful for Riverside only.</description>
                      <bitOffset>2</bitOffset>
@@ -40486,76 +39015,10 @@ limitations under the License.
                      </enumeratedValues>
                   </field>
                   <field>
-                     <name>SCAPEN</name>
-                     <description>Super Capacitor Charging Enable</description>
-                     <bitOffset>7</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
                      <name>CPEN</name>
                      <description>Charge Pump Enable and Auto-enable.</description>
                      <bitOffset>8</bitOffset>
                      <bitWidth>2</bitWidth>
-                  </field>
-                  <field>
-                     <name>ULDOEN</name>
-                     <description>User LDO Voltage Regulator Enable</description>
-                     <bitOffset>12</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>ULDOSTDBY</name>
-                     <description>User LDO Voltage Regulator Configuration</description>
-                     <bitOffset>13</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>ULDOSTDBYSelect</name>
-                        <enumeratedValue>
-                           <name>OFFINSTDBY</name>
-                           <description>Regulator is OFF while in sleep mode equal or deeper than standby mode. It is OFF in hibernate and backup mode as well.</description>
-                           <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>ONINSTDBY</name>
-                           <description>Regulator is ON in Standby mode. is OFF from Hibernate mode. It is OFF in backup mode as well.</description>
-                           <value>0x1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>ULDOLEVEL</name>
-                     <description>User LDO Voltage Level Selection</description>
-                     <bitOffset>14</bitOffset>
-                     <bitWidth>2</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>ULDOLEVELSelect</name>
-                        <enumeratedValue>
-                           <name>1p2v</name>
-                           <description>Vout = 1.2v</description>
-                           <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>1p5v</name>
-                           <description>Vout = 1.5v</description>
-                           <value>0x1</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>1p8v</name>
-                           <description>Vout = 1.8v</description>
-                           <value>0x2</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>2p5v</name>
-                           <description>Vout = 2.5v</description>
-                           <value>0x3</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
                   </field>
                   <field>
                      <name>AVREGEN</name>
@@ -40641,75 +39104,6 @@ limitations under the License.
                      <name>TSEN</name>
                      <description>Temperature Sensor Output Enable</description>
                      <bitOffset>4</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-               </fields>
-            </register>
-            <register>
-               <name>BBPS</name>
-               <description>Battery Backup Power Switch. This register is implemented only if SUPC_VBAT_IMPLEMENTED==1</description>
-               <addressOffset>0x24</addressOffset>
-               <fields>
-                  <field>
-                     <name>CONF</name>
-                     <description>Battery Backup Power Switch Configuration</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>CONFSelect</name>
-                        <enumeratedValue>
-                           <name>BOR</name>
-                           <description>The power switch is automatically handled by the BOR</description>
-                           <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>VBAT</name>
-                           <description>In Backup mode, the power-switch is forced to VBAT.</description>
-                           <value>0x1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>WKONVBATEN</name>
-                     <description>Wake on VBAT Enable, from Backup mode</description>
-                     <bitOffset>1</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>WAKEEN</name>
-                     <description>Wake Enable</description>
-                     <bitOffset>2</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>WAKEENSelect</name>
-                        <enumeratedValue>
-                           <name>DIS</name>
-                           <description>When exiting battery backup mode, the device goes to backup mode.</description>
-                           <value>0x0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>EN</name>
-                           <description>When exiting battery backup mode, the device is waken-up.</description>
-                           <value>0x1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>ENVBATMON</name>
-                     <description>Enables battery monitor</description>
-                     <bitOffset>4</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>SELVBATMON</name>
-                     <description>Select VBATMON supply voltage. 0 for VDDA, and 1 for VDDBAT.</description>
-                     <bitOffset>5</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
@@ -40878,8 +39272,8 @@ limitations under the License.
                   <field>
                      <name>RELOAD</name>
                      <description>Counter reload value</description>
-                     <bitOffset>24</bitOffset>
-                     <bitWidth>1</bitWidth>
+                     <bitOffset>0</bitOffset>
+                     <bitWidth>24</bitWidth>
                   </field>
                </fields>
             </register>
@@ -40891,8 +39285,8 @@ limitations under the License.
                   <field>
                      <name>CURRENT</name>
                      <description>Current counter value</description>
-                     <bitOffset>24</bitOffset>
-                     <bitWidth>1</bitWidth>
+                     <bitOffset>0</bitOffset>
+                     <bitWidth>24</bitWidth>
                   </field>
                </fields>
             </register>
@@ -43095,7 +41489,7 @@ limitations under the License.
                      <name>RAMP</name>
                      <description>Ramp Mode</description>
                      <bitOffset>4</bitOffset>
-                     <bitWidth>2</bitWidth>
+                     <bitWidth>3</bitWidth>
                      <writeConstraint>
                         <useEnumeratedValues>true</useEnumeratedValues>
                      </writeConstraint>
@@ -43120,6 +41514,11 @@ limitations under the License.
                            <name>RAMP2C</name>
                            <description>Critical RAMP2 operation</description>
                            <value>3</value>
+                        </enumeratedValue>
+                        <enumeratedValue>
+                           <name>RAMP2CS</name>
+                           <description>Critical Swapped RAMP2 operation</description>
+                           <value>4</value>
                         </enumeratedValue>
                      </enumeratedValues>
                   </field>
@@ -43829,7 +42228,7 @@ limitations under the License.
                <fields>
                   <field>
                      <name>CWIDTH</name>
-                     <description>Current parallel trace port widthi - 1</description>
+                     <description>Current parallel trace port width - 1</description>
                      <bitOffset>0</bitOffset>
                      <bitWidth>32</bitWidth>
                   </field>
@@ -44734,40 +43133,12 @@ limitations under the License.
                               <description>LS : Low Speed</description>
                               <value>0x1</value>
                            </enumeratedValue>
-                           <enumeratedValue>
-                              <name>HS</name>
-                              <description>HS : High Speed capable</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>HSTM</name>
-                              <description>HSTM: High Speed Test Mode (force high-speed mode for test mode)</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
                         </enumeratedValues>
                      </field>
                      <field>
                         <name>NREPLY</name>
                         <description>No Reply</description>
                         <bitOffset>4</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TSTJ</name>
-                        <description>Test mode J</description>
-                        <bitOffset>5</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TSTK</name>
-                        <description>Test mode K</description>
-                        <bitOffset>6</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TSTPCKT</name>
-                        <description>Test packet mode</description>
-                        <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
