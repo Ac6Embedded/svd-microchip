@@ -17,8 +17,8 @@ Copyright (c) 2026 Microchip Technology Inc.
  limitations under the License.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-         schemaVersion="1.3"
-         xs:noNamespaceSchemaLocation="CMSIS-SVD.xsd">
+        schemaVersion="1.3"
+        xs:noNamespaceSchemaLocation="CMSIS-SVD.xsd">
    <vendor>Microchip Technology</vendor>
    <vendorID>MCHP</vendorID>
    <name>SAM9X70</name>
@@ -20716,6 +20716,11 @@ limitations under the License.
             <name>GMAC_MMSL</name>
             <description>Gigabit Ethernet MAC - Mac Merge SubLayer</description>
             <value>66</value>
+         </interrupt>
+         <interrupt>
+            <name>GMAC_TSU</name>
+            <description>Gigabit Ethernet MAC - TSU</description>
+            <value>67</value>
          </interrupt>
          <registers>
             <register>
@@ -90269,28 +90274,6 @@ limitations under the License.
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>CSR_1</name>
-                           <description>At least one chip select rise has been detected since the last read of QSPI_ISR.</description>
-                           <value>1</value>
-                        </enumeratedValue>
-                     </enumeratedValues>
-                  </field>
-                  <field>
-                     <name>CSF</name>
-                     <description>Chip Select Fall (cleared on read)</description>
-                     <bitOffset>9</bitOffset>
-                     <bitWidth>1</bitWidth>
-                     <writeConstraint>
-                        <useEnumeratedValues>true</useEnumeratedValues>
-                     </writeConstraint>
-                     <enumeratedValues>
-                        <name>CSFSelect</name>
-                        <enumeratedValue>
-                           <name>CSF_0</name>
-                           <description>No chip select rise has been detected since the last read of QSPI_ISR.</description>
-                           <value>0</value>
-                        </enumeratedValue>
-                        <enumeratedValue>
-                           <name>CSF_1</name>
                            <description>At least one chip select rise has been detected since the last read of QSPI_ISR.</description>
                            <value>1</value>
                         </enumeratedValue>
