@@ -1,6 +1,6 @@
 {
   "vendor": "Microchip",
-  "generated": "2026-09-14",
+  "generated": "2026-09-21",
   "index": "https://packs.download.microchip.com/index.idx",
   "sources": [
     {
@@ -229,8 +229,8 @@
     },
     {
       "name": "Microchip.SAMA7G5_DFP",
-      "url": "https://packs.download.microchip.com/Microchip.SAMA7G5_DFP.1.15.327.atpack",
-      "version": "1.15.327",
+      "url": "https://packs.download.microchip.com/Microchip.SAMA7G5_DFP.1.16.352.atpack",
+      "version": "1.16.352",
       "license": "Apache-2.0",
       "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
       "files": 8
@@ -2273,56 +2273,56 @@
       "path": "SAMA7G5/SAMA7G54.svd",
       "device": "SAMA7G54",
       "family": "SAMA7G5",
-      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "source": "Microchip.SAMA7G5_DFP.1.16.352",
       "provenance": "pristine"
     },
     {
       "path": "SAMA7G5/SAMA7G54D1G.svd",
       "device": "SAMA7G54D1G",
       "family": "SAMA7G5",
-      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "source": "Microchip.SAMA7G5_DFP.1.16.352",
       "provenance": "pristine"
     },
     {
       "path": "SAMA7G5/SAMA7G54D1GN0.svd",
       "device": "SAMA7G54D1GN0",
       "family": "SAMA7G5",
-      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "source": "Microchip.SAMA7G5_DFP.1.16.352",
       "provenance": "pristine"
     },
     {
       "path": "SAMA7G5/SAMA7G54D1GN2.svd",
       "device": "SAMA7G54D1GN2",
       "family": "SAMA7G5",
-      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "source": "Microchip.SAMA7G5_DFP.1.16.352",
       "provenance": "pristine"
     },
     {
       "path": "SAMA7G5/SAMA7G54D2G.svd",
       "device": "SAMA7G54D2G",
       "family": "SAMA7G5",
-      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "source": "Microchip.SAMA7G5_DFP.1.16.352",
       "provenance": "pristine"
     },
     {
       "path": "SAMA7G5/SAMA7G54D2GN4.svd",
       "device": "SAMA7G54D2GN4",
       "family": "SAMA7G5",
-      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "source": "Microchip.SAMA7G5_DFP.1.16.352",
       "provenance": "pristine"
     },
     {
       "path": "SAMA7G5/SAMA7G54D4G.svd",
       "device": "SAMA7G54D4G",
       "family": "SAMA7G5",
-      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "source": "Microchip.SAMA7G5_DFP.1.16.352",
       "provenance": "pristine"
     },
     {
       "path": "SAMA7G5/SAMA7G54D4GN8.svd",
       "device": "SAMA7G54D4GN8",
       "family": "SAMA7G5",
-      "source": "Microchip.SAMA7G5_DFP.1.15.327",
+      "source": "Microchip.SAMA7G5_DFP.1.16.352",
       "provenance": "pristine"
     },
     {
@@ -4106,7 +4106,7 @@
   ],
   "stats": {
     "total_files": 518,
-    "total_bytes": 1016353002
+    "total_bytes": 1016352986
   },
   "issues": []
 }
