@@ -7046,18 +7046,6 @@ limitations under the License.
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                     <name>DMAC_</name>
-                     <description>DMAC APB Clock Enable</description>
-                     <bitOffset>3</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>MTB_</name>
-                     <description>MTB APB Clock Enable</description>
-                     <bitOffset>4</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
                      <name>HMATRIXHS_</name>
                      <description>HMATRIXHS APB Clock Enable</description>
                      <bitOffset>5</bitOffset>
@@ -8631,147 +8619,147 @@ limitations under the License.
                         <name>PERIDSelect</name>
                         <enumeratedValue>
                            <name>PAC</name>
-                           <description>APBA Peripheral</description>
+                           <description>PAC - APBA Peripheral</description>
                            <value>0x00</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>PM</name>
-                           <description>APBA Peripheral</description>
+                           <description>PM - APBA Peripheral</description>
                            <value>0x01</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>MCLK</name>
-                           <description>APBA Peripheral</description>
+                           <description>MCLK - APBA Peripheral</description>
                            <value>0x02</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>RSTC</name>
-                           <description>APBA Peripheral</description>
+                           <description>RSTC - APBA Peripheral</description>
                            <value>0x03</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>OSCCTRL</name>
-                           <description>APBA Peripheral</description>
+                           <description>OSCCTRL - APBA Peripheral</description>
                            <value>0x04</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>OSC32KCTRL</name>
-                           <description>APBA Peripheral</description>
+                           <description>OSC32KCTRL - APBA Peripheral</description>
                            <value>0x05</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>SUPC</name>
-                           <description>APBA Peripheral</description>
+                           <description>SUPC - APBA Peripheral</description>
                            <value>0x06</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>GCLK</name>
-                           <description>APBA Peripheral</description>
+                           <description>GCLK - APBA Peripheral</description>
                            <value>0x07</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>WDT</name>
-                           <description>APBA Peripheral</description>
+                           <description>WDT - APBA Peripheral</description>
                            <value>0x08</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>RTC</name>
-                           <description>APBA Peripheral</description>
+                           <description>RTC - APBA Peripheral</description>
                            <value>0x09</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>EIC</name>
-                           <description>APBA Peripheral</description>
+                           <description>EIC - APBA Peripheral</description>
                            <value>0x0A</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>PORT</name>
-                           <description>APBB Peripheral</description>
+                           <description>PORT - APBB Peripheral</description>
                            <value>0x20</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>DSU</name>
-                           <description>APBB Peripheral</description>
+                           <description>DSU - APBB Peripheral</description>
                            <value>0x21</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>NVMCTRL</name>
-                           <description>APBB Peripheral</description>
+                           <description>NVMCTRL - APBB Peripheral</description>
                            <value>0x22</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>DMAC</name>
-                           <description>APBB Peripheral</description>
+                           <description>DMAC - APBB Peripheral</description>
                            <value>0x23</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>MTB</name>
-                           <description>APBB Peripheral</description>
+                           <description>MTB - APBB Peripheral</description>
                            <value>0x24</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>HMATRIXHS</name>
-                           <description>APBB Peripheral</description>
+                           <description>HMATRIXHS - APBB Peripheral</description>
                            <value>0x25</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>EVSYS</name>
-                           <description>APBC Peripheral</description>
+                           <description>EVSYS - APBC Peripheral</description>
                            <value>0x40</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>SERCOM0</name>
-                           <description>APBC Peripheral</description>
+                           <description>SERCOM0 - APBC Peripheral</description>
                            <value>0x41</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>SERCOM1</name>
-                           <description>APBC Peripheral</description>
+                           <description>SERCOM1 - APBC Peripheral</description>
                            <value>0x42</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>TC0</name>
-                           <description>APBC Peripheral</description>
+                           <description>TC0 - APBC Peripheral</description>
                            <value>0x43</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>TC1</name>
-                           <description>APBC Peripheral</description>
+                           <description>TC1 - APBC Peripheral</description>
                            <value>0x44</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>TC2</name>
-                           <description>APBC Peripheral</description>
+                           <description>TC2 - APBC Peripheral</description>
                            <value>0x45</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>TCC0</name>
-                           <description>APBC Peripheral</description>
+                           <description>TCC0 - APBC Peripheral</description>
                            <value>0x46</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>ADC0</name>
-                           <description>APBC Peripheral</description>
+                           <description>ADC0 - APBC Peripheral</description>
                            <value>0x47</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>AC</name>
-                           <description>APBC Peripheral</description>
+                           <description>AC - APBC Peripheral</description>
                            <value>0x48</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>CCL</name>
-                           <description>APBC Peripheral</description>
+                           <description>CCL - APBC Peripheral</description>
                            <value>0x49</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>PTC</name>
-                           <description>APBC Peripheral</description>
+                           <description>PTC - APBC Peripheral</description>
                            <value>0x4A</value>
                         </enumeratedValue>
                         <enumeratedValue>
                            <name>SYSCTRL</name>
-                           <description>APBC Peripheral</description>
+                           <description>SYSCTRL - APBC Peripheral</description>
                            <value>0x4B</value>
                         </enumeratedValue>
                      </enumeratedValues>
@@ -17504,7 +17492,7 @@ limitations under the License.
       </peripheral>
       <peripheral>
          <name>SYSCTRL</name>
-         <version>06261v1-rc12</version>
+         <version>06261v1</version>
          <description>System Controller</description>
          <baseAddress>0x42002C00</baseAddress>
          <addressBlock>

@@ -1,6 +1,6 @@
 {
   "vendor": "Microchip",
-  "generated": "2026-09-21",
+  "generated": "2026-11-02",
   "index": "https://packs.download.microchip.com/index.idx",
   "sources": [
     {
@@ -69,8 +69,8 @@
     },
     {
       "name": "Microchip.PIC32CM-PL_DFP",
-      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-PL_DFP.1.5.437.atpack",
-      "version": "1.5.437",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CM-PL_DFP.1.6.499.atpack",
+      "version": "1.6.499",
       "license": "Apache-2.0",
       "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
       "files": 11
@@ -1174,77 +1174,77 @@
       "path": "PIC32CM_PL/PIC32CM1216PL10028.svd",
       "device": "PIC32CM1216PL10028",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_PL/PIC32CM1216PL10032.svd",
       "device": "PIC32CM1216PL10032",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_PL/PIC32CM1216PL10048.svd",
       "device": "PIC32CM1216PL10048",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_PL/PIC32CM1216PL10064.svd",
       "device": "PIC32CM1216PL10064",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_PL/PIC32CM3204PL10020.svd",
       "device": "PIC32CM3204PL10020",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_PL/PIC32CM3204PL10028.svd",
       "device": "PIC32CM3204PL10028",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_PL/PIC32CM3204PL10032.svd",
       "device": "PIC32CM3204PL10032",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_PL/PIC32CM6408PL10028.svd",
       "device": "PIC32CM6408PL10028",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_PL/PIC32CM6408PL10032.svd",
       "device": "PIC32CM6408PL10032",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_PL/PIC32CM6408PL10048.svd",
       "device": "PIC32CM6408PL10048",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CM_PL/PIC32CM6408PL10064.svd",
       "device": "PIC32CM6408PL10064",
       "family": "PIC32CM_PL",
-      "source": "Microchip.PIC32CM-PL_DFP.1.5.437",
+      "source": "Microchip.PIC32CM-PL_DFP.1.6.499",
       "provenance": "pristine"
     },
     {
@@ -4106,7 +4106,7 @@
   ],
   "stats": {
     "total_files": 518,
-    "total_bytes": 1016352986
+    "total_bytes": 1016349752
   },
   "issues": []
 }
