@@ -17,8 +17,8 @@ Copyright (c) 2026 Microchip Technology Inc.
  limitations under the License.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-         schemaVersion="1.3"
-         xs:noNamespaceSchemaLocation="CMSIS-SVD.xsd">
+        schemaVersion="1.3"
+        xs:noNamespaceSchemaLocation="CMSIS-SVD.xsd">
    <vendor>Microchip Technology</vendor>
    <vendorID>MCHP</vendorID>
    <name>PIC32CM5164JH00048</name>
@@ -16533,7 +16533,7 @@ limitations under the License.
       </peripheral>
       <peripheral>
          <name>SERCOM0</name>
-         <version>U22013.1.1</version>
+         <version>U2201v1</version>
          <description>Serial Communication Interface</description>
          <groupName>SERCOM</groupName>
          <prependToName>SERCOM_</prependToName>
@@ -16551,7 +16551,7 @@ limitations under the License.
          <registers>
             <cluster>
                <name>I2CM</name>
-               <description>I2C Master Mode</description>
+               <description>I2C Host Mode</description>
                <headerStructName>SercomI2cm</headerStructName>
                <addressOffset>0x0</addressOffset>
                <register>
@@ -16582,8 +16582,33 @@ limitations under the License.
                         <enumeratedValues>
                            <name>MODESelect</name>
                            <enumeratedValue>
+                              <name>USART_EXT</name>
+                              <description>USART with external clock</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>USART_INT</name>
+                              <description>USART with internal clock</description>
+                              <value>0x1</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>SPI_SLAVE</name>
+                              <description>SPI Client mode</description>
+                              <value>0x2</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>SPI_MASTER</name>
+                              <description>SPI Host mode</description>
+                              <value>0x3</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>I2C_SLAVE</name>
+                              <description>I2C Client mode</description>
+                              <value>0x4</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
                               <name>I2C_MASTER</name>
-                              <description>I2C master operation</description>
+                              <description>I2C Host mode</description>
                               <value>0x5</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -16612,35 +16637,35 @@ limitations under the License.
                            <name>SDAHOLDSelect</name>
                            <enumeratedValue>
                               <name>DIS</name>
-                              <description>Disabled</description>
+                              <description>SDA hold time is disabled</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>75NS</name>
-                              <description>50-100ns hold time</description>
+                              <description>SDA hold time is 50-100 ns</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>450NS</name>
-                              <description>300-600ns hold time</description>
+                              <description>SDA hold time is 300-600 ns</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>600NS</name>
-                              <description>400-800ns hold time</description>
+                              <description>SDA hold time is 400-800 ns</description>
                               <value>0x3</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
                      <field>
                         <name>MEXTTOEN</name>
-                        <description>Master SCL Low Extend Timeout</description>
+                        <description>Host SCL Low Extend Time-Out</description>
                         <bitOffset>22</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>SEXTTOEN</name>
-                        <description>Slave SCL Low Extend Timeout</description>
+                        <description>Client SCL Low Extend Time-Out</description>
                         <bitOffset>23</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -16655,19 +16680,14 @@ limitations under the License.
                         <enumeratedValues>
                            <name>SPEEDSelect</name>
                            <enumeratedValue>
-                              <name>SM</name>
-                              <description>Standard-Mode (SM) and Fast-Mode (FM)</description>
+                              <name>SM_MODE</name>
+                              <description>Standard-mode (Sm) and Fast-mode (Fm)</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>FMP</name>
-                              <description>Fast-Mode Plus (FM+)</description>
+                              <name>FASTPLUS_MODE</name>
+                              <description>Fast-mode Plus (Fm+)</description>
                               <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>HS</name>
-                              <description>High-Speed Mode</description>
-                              <value>0x2</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
@@ -16689,29 +16709,29 @@ limitations under the License.
                            <name>INACTOUTSelect</name>
                            <enumeratedValue>
                               <name>DIS</name>
-                              <description>Disable</description>
+                              <description>Disabled</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>55US</name>
-                              <description>5-6 SCL cycle time-out</description>
+                              <description>5-6 SCL cycle time-out (50-60 us)</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>105US</name>
-                              <description>10-11 SCL cycle time-out</description>
+                              <description>10-11 SCL cycle time-out (100-110 us)</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>205US</name>
-                              <description>20-21 SCL cycle time-out</description>
+                              <description>20-21 SCL cycle time-out (200-210 us)</description>
                               <value>0x3</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
                      <field>
                         <name>LOWTOUTEN</name>
-                        <description>SCL Low Timeout Enable</description>
+                        <description>SCL Low Time-Out</description>
                         <bitOffset>30</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -16755,26 +16775,14 @@ limitations under the License.
                   <fields>
                      <field>
                         <name>BAUD</name>
-                        <description>Baud Rate Value</description>
+                        <description>Host Baud Rate</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>8</bitWidth>
                      </field>
                      <field>
                         <name>BAUDLOW</name>
-                        <description>Baud Rate Value Low</description>
+                        <description>Host Baud Rate Low</description>
                         <bitOffset>8</bitOffset>
-                        <bitWidth>8</bitWidth>
-                     </field>
-                     <field>
-                        <name>HSBAUD</name>
-                        <description>High Speed Baud Rate Value</description>
-                        <bitOffset>16</bitOffset>
-                        <bitWidth>8</bitWidth>
-                     </field>
-                     <field>
-                        <name>HSBAUDLOW</name>
-                        <description>High Speed Baud Rate Value Low</description>
-                        <bitOffset>24</bitOffset>
                         <bitWidth>8</bitWidth>
                      </field>
                   </fields>
@@ -16788,19 +16796,19 @@ limitations under the License.
                   <fields>
                      <field>
                         <name>MB</name>
-                        <description>Master On Bus Interrupt Disable</description>
+                        <description>Host on Bus Interrupt Enable</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>SB</name>
-                        <description>Slave On Bus Interrupt Disable</description>
+                        <description>Client on Bus Interrupt Enable</description>
                         <bitOffset>1</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>ERROR</name>
-                        <description>Combined Error Interrupt Disable</description>
+                        <description>Error Interrupt Enable</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -16815,19 +16823,19 @@ limitations under the License.
                   <fields>
                      <field>
                         <name>MB</name>
-                        <description>Master On Bus Interrupt Enable</description>
+                        <description>Host on Bus Interrupt Enable</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>SB</name>
-                        <description>Slave On Bus Interrupt Enable</description>
+                        <description>Client on Bus Interrupt Enable</description>
                         <bitOffset>1</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>ERROR</name>
-                        <description>Combined Error Interrupt Enable</description>
+                        <description>Error Interrupt Enable</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -16842,19 +16850,19 @@ limitations under the License.
                   <fields>
                      <field>
                         <name>MB</name>
-                        <description>Master On Bus Interrupt</description>
+                        <description>Host on Bus</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>SB</name>
-                        <description>Slave On Bus Interrupt</description>
+                        <description>Client on Bus</description>
                         <bitOffset>1</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>ERROR</name>
-                        <description>Combined Error Interrupt</description>
+                        <description>Error</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -16896,29 +16904,29 @@ limitations under the License.
                            <name>BUSSTATESelect</name>
                            <enumeratedValue>
                               <name>UNKNOWN</name>
-                              <description>Wait for stop or idle</description>
+                              <description>The bus state is unknown to the I2C host, which will wait for a stop condition to be detected or for the bus to be forced into the IDLE state by software</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>IDLE</name>
-                              <description>Wait for transaction initialization</description>
+                              <description>The bus state is waiting for a transaction to be initialized</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>OWNER</name>
-                              <description>I2C master is the current owner of the bus</description>
+                              <description>The I2C host is the current owner of the bus</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>BUSY</name>
-                              <description>Some other I2C master owns the bus</description>
+                              <description>Some other I2C host owns the bus</description>
                               <value>0x3</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
                      <field>
                         <name>LOWTOUT</name>
-                        <description>SCL Low Timeout</description>
+                        <description>SCL Low Time-Out</description>
                         <bitOffset>6</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -16930,19 +16938,19 @@ limitations under the License.
                      </field>
                      <field>
                         <name>MEXTTOUT</name>
-                        <description>Master SCL Low Extend Timeout</description>
+                        <description>Host SCL Low Extend Time-Out</description>
                         <bitOffset>8</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>SEXTTOUT</name>
-                        <description>Slave SCL Low Extend Timeout</description>
+                        <description>Client SCL Low Extend Time-Out</description>
                         <bitOffset>9</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>LENERR</name>
-                        <description>Length Error</description>
+                        <description>Transaction Length Error</description>
                         <bitOffset>10</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -16980,21 +16988,9 @@ limitations under the License.
                   <addressOffset>0x24</addressOffset>
                   <fields>
                      <field>
-                        <name>ADDR</name>
-                        <description>Address Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>11</bitWidth>
-                     </field>
-                     <field>
                         <name>LENEN</name>
-                        <description>Length Enable</description>
+                        <description>Transfer Length Enable</description>
                         <bitOffset>13</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>HS</name>
-                        <description>High Speed Mode</description>
-                        <bitOffset>14</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
@@ -17005,9 +17001,37 @@ limitations under the License.
                      </field>
                      <field>
                         <name>LEN</name>
-                        <description>Length</description>
+                        <description>Transaction Length</description>
                         <bitOffset>16</bitOffset>
                         <bitWidth>8</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>ADDR_SEVENBIT_MODE</name>
+                  <description>I2CM Address</description>
+                  <alternateRegister>ADDR</alternateRegister>
+                  <addressOffset>0x24</addressOffset>
+                  <fields>
+                     <field>
+                        <name>ADDR</name>
+                        <description>Address</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>7</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>ADDR_TENBIT_MODE</name>
+                  <description>I2CM Address</description>
+                  <alternateRegister>ADDR</alternateRegister>
+                  <addressOffset>0x24</addressOffset>
+                  <fields>
+                     <field>
+                        <name>ADDR</name>
+                        <description>Address</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>10</bitWidth>
                      </field>
                   </fields>
                </register>
@@ -17019,7 +17043,7 @@ limitations under the License.
                   <fields>
                      <field>
                         <name>DATA</name>
-                        <description>Data Value</description>
+                        <description>Data</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>8</bitWidth>
                      </field>
@@ -17033,7 +17057,7 @@ limitations under the License.
                   <fields>
                      <field>
                         <name>DBGSTOP</name>
-                        <description>Debug Mode</description>
+                        <description>Debug Stop Mode</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -17042,7 +17066,7 @@ limitations under the License.
             </cluster>
             <cluster>
                <name>I2CS</name>
-               <description>I2C Slave Mode</description>
+               <description>I2C Client Mode</description>
                <alternateCluster>I2CM</alternateCluster>
                <headerStructName>SercomI2cs</headerStructName>
                <addressOffset>0x0</addressOffset>
@@ -17074,15 +17098,40 @@ limitations under the License.
                         <enumeratedValues>
                            <name>MODESelect</name>
                            <enumeratedValue>
+                              <name>USART_EXT</name>
+                              <description>USART with external clock</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>USART_INT</name>
+                              <description>USART with internal clock</description>
+                              <value>0x1</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>SPI_SLAVE</name>
+                              <description>SPI Client mode</description>
+                              <value>0x2</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>SPI_MASTER</name>
+                              <description>SPI Host mode</description>
+                              <value>0x3</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
                               <name>I2C_SLAVE</name>
-                              <description>I2C slave operation</description>
+                              <description>I2C Client mode</description>
                               <value>0x4</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>I2C_MASTER</name>
+                              <description>I2C Host mode</description>
+                              <value>0x5</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
                      <field>
                         <name>RUNSTDBY</name>
-                        <description>Run during Standby</description>
+                        <description>Run in Standby</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -17109,24 +17158,24 @@ limitations under the License.
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>75NS</name>
-                              <description>50-100ns hold time</description>
+                              <description>50-100 ns hold time</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>450NS</name>
-                              <description>300-600ns hold time</description>
+                              <description>300-600 ns hold time</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>600NS</name>
-                              <description>400-800ns hold time</description>
+                              <description>400-800 ns hold time</description>
                               <value>0x3</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
                      <field>
                         <name>SEXTTOEN</name>
-                        <description>Slave SCL Low Extend Timeout</description>
+                        <description>Client SCL Low Extend Time-Out</description>
                         <bitOffset>23</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -17141,19 +17190,14 @@ limitations under the License.
                         <enumeratedValues>
                            <name>SPEEDSelect</name>
                            <enumeratedValue>
-                              <name>SM</name>
-                              <description>Standard-Mode (SM) and Fast-Mode (FM)</description>
+                              <name>SM_MODE</name>
+                              <description>Standard-mode (Sm) and Fast-mode (Fm)</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>FMP</name>
-                              <description>Fast-Mode Plus (FM+)</description>
+                              <name>FASTPLUS_MODE</name>
+                              <description>Fast-mode Plus (Fm+)</description>
                               <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>HS</name>
-                              <description>High-Speed Mode</description>
-                              <value>0x2</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
@@ -17165,7 +17209,7 @@ limitations under the License.
                      </field>
                      <field>
                         <name>LOWTOUTEN</name>
-                        <description>SCL Low Timeout Enable</description>
+                        <description>SCL Low Time-Out</description>
                         <bitOffset>30</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -17190,7 +17234,7 @@ limitations under the License.
                      </field>
                      <field>
                         <name>AACKEN</name>
-                        <description>Automatic Address Acknowledge</description>
+                        <description>Automatic Acknowledge Enable</description>
                         <bitOffset>10</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -17206,17 +17250,17 @@ limitations under the License.
                            <name>AMODESelect</name>
                            <enumeratedValue>
                               <name>MASK</name>
-                              <description>The slave responds to the address written in ADDR.ADDR masked by the value in ADDR.ADDRMASK</description>
+                              <description>The client responds to the address written in ADDR.ADDR masked by the value in ADDR.ADDRMASK. See SERCOM - Serial Communication Interface for additional information.</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>2ADDRS</name>
-                              <description>The slave responds to the two unique addresses in ADDR and ADDRMASK</description>
+                              <description>The client responds to the two unique addresses in ADDR.ADDR and ADDR.ADDRMASK</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>RANGE</name>
-                              <description>The slave responds to the range of addresses between and including ADDR and ADDRMASK. ADDR is the upper limit</description>
+                              <description>The client responds to the range of addresses between and including ADDR.ADDR and ADDR.ADDRMASK. ADDR.ADDR is the upper limit.</description>
                               <value>0x2</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -17244,25 +17288,25 @@ limitations under the License.
                   <fields>
                      <field>
                         <name>PREC</name>
-                        <description>Stop Received Interrupt Disable</description>
+                        <description>Stop Received Interrupt Enable</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>AMATCH</name>
-                        <description>Address Match Interrupt Disable</description>
+                        <description>Address Match Interrupt Enable</description>
                         <bitOffset>1</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>DRDY</name>
-                        <description>Data Interrupt Disable</description>
+                        <description>Data Ready Interrupt Enable</description>
                         <bitOffset>2</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>ERROR</name>
-                        <description>Combined Error Interrupt Disable</description>
+                        <description>Error Interrupt Enable</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -17289,13 +17333,13 @@ limitations under the License.
                      </field>
                      <field>
                         <name>DRDY</name>
-                        <description>Data Interrupt Enable</description>
+                        <description>Data Ready Interrupt Enable</description>
                         <bitOffset>2</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>ERROR</name>
-                        <description>Combined Error Interrupt Enable</description>
+                        <description>Error Interrupt Enable</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -17310,25 +17354,25 @@ limitations under the License.
                   <fields>
                      <field>
                         <name>PREC</name>
-                        <description>Stop Received Interrupt</description>
+                        <description>Stop Received</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>AMATCH</name>
-                        <description>Address Match Interrupt</description>
+                        <description>Address Match</description>
                         <bitOffset>1</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>DRDY</name>
-                        <description>Data Interrupt</description>
+                        <description>Data Ready</description>
                         <bitOffset>2</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>ERROR</name>
-                        <description>Combined Error Interrupt</description>
+                        <description>Error</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -17360,7 +17404,7 @@ limitations under the License.
                      </field>
                      <field>
                         <name>DIR</name>
-                        <description>Read/Write Direction</description>
+                        <description>Read / Write Direction</description>
                         <bitOffset>3</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -17372,7 +17416,7 @@ limitations under the License.
                      </field>
                      <field>
                         <name>LOWTOUT</name>
-                        <description>SCL Low Timeout</description>
+                        <description>SCL Low Time-out</description>
                         <bitOffset>6</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -17384,14 +17428,8 @@ limitations under the License.
                      </field>
                      <field>
                         <name>SEXTTOUT</name>
-                        <description>Slave SCL Low Extend Timeout</description>
+                        <description>Client SCL Low Extend Time-Out</description>
                         <bitOffset>9</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>HS</name>
-                        <description>High Speed</description>
-                        <bitOffset>10</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                   </fields>
@@ -17428,16 +17466,44 @@ limitations under the License.
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
-                        <name>ADDR</name>
-                        <description>Address Value</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>10</bitWidth>
-                     </field>
-                     <field>
                         <name>TENBITEN</name>
                         <description>Ten Bit Addressing Enable</description>
                         <bitOffset>15</bitOffset>
                         <bitWidth>1</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>ADDR_SEVENBIT_MODE</name>
+                  <description>I2CS Address</description>
+                  <alternateRegister>ADDR</alternateRegister>
+                  <addressOffset>0x24</addressOffset>
+                  <fields>
+                     <field>
+                        <name>ADDR</name>
+                        <description>Address</description>
+                        <bitOffset>1</bitOffset>
+                        <bitWidth>7</bitWidth>
+                     </field>
+                     <field>
+                        <name>ADDRMASK</name>
+                        <description>Address Mask</description>
+                        <bitOffset>17</bitOffset>
+                        <bitWidth>7</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>ADDR_TENBIT_MODE</name>
+                  <description>I2CS Address</description>
+                  <alternateRegister>ADDR</alternateRegister>
+                  <addressOffset>0x24</addressOffset>
+                  <fields>
+                     <field>
+                        <name>ADDR</name>
+                        <description>Address</description>
+                        <bitOffset>1</bitOffset>
+                        <bitWidth>10</bitWidth>
                      </field>
                      <field>
                         <name>ADDRMASK</name>
@@ -17455,7 +17521,7 @@ limitations under the License.
                   <fields>
                      <field>
                         <name>DATA</name>
-                        <description>Data Value</description>
+                        <description>Data</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>8</bitWidth>
                      </field>
@@ -17463,14 +17529,14 @@ limitations under the License.
                </register>
             </cluster>
             <cluster>
-               <name>SPIS</name>
-               <description>SPI Slave Mode</description>
+               <name>SPI</name>
+               <description>SPI Mode</description>
                <alternateCluster>I2CM</alternateCluster>
-               <headerStructName>SercomSpis</headerStructName>
+               <headerStructName>SercomSpi</headerStructName>
                <addressOffset>0x0</addressOffset>
                <register>
                   <name>CTRLA</name>
-                  <description>SPIS Control A</description>
+                  <description>SPI Control A</description>
                   <addressOffset>0x0</addressOffset>
                   <fields>
                      <field>
@@ -17496,1118 +17562,570 @@ limitations under the License.
                         <enumeratedValues>
                            <name>MODESelect</name>
                            <enumeratedValue>
-                              <name>SPI_SLAVE</name>
-                              <description>SPI in slave operation</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>SPI_MASTER</name>
-                              <description>SPI in master operation</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>RUNSTDBY</name>
-                        <description>Run during Standby</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>IBON</name>
-                        <description>Immediate Buffer Overflow Notification</description>
-                        <bitOffset>8</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>IBONSelect</name>
-                           <enumeratedValue>
-                              <name>0x0</name>
-                              <description>STATUS.BUFOVF is set when it occurs in the data stream</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x1</name>
-                              <description>STATUS.BUFOVF is set immediately upon buffer overflow</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>DOPO</name>
-                        <description>Data Out Pinout</description>
-                        <bitOffset>16</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>DOPOSelect</name>
-                           <enumeratedValue>
-                              <name>0x0</name>
-                              <description>PAD[0]=DO, PAD[1]=SCK, PAD[2]=SlaveSS</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x1</name>
-                              <description>PAD[2]=DO, PAD[3]=SCK, PAD[1]=SlaveSS</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x2</name>
-                              <description>PAD[3]=DO, PAD[1]=SCK, PAD[2]=SlaveSS</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x3</name>
-                              <description>PAD[0]=DO, PAD[3]=SCK, PAD[1]=SlaveSS</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>DIPO</name>
-                        <description>Data In Pinout</description>
-                        <bitOffset>20</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>DIPOSelect</name>
-                           <enumeratedValue>
-                              <name>0x0</name>
-                              <description>SERCOM PAD[0]</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x1</name>
-                              <description>SERCOM PAD[1]</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x2</name>
-                              <description>SERCOM PAD[2]</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x3</name>
-                              <description>SERCOM PAD[3]</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>FORM</name>
-                        <description>Frame Format</description>
-                        <bitOffset>24</bitOffset>
-                        <bitWidth>4</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>FORMSelect</name>
-                           <enumeratedValue>
-                              <name>SPI_FRAME</name>
-                              <description>SPI Frame</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>SPI_FRAME_WITH_ADDR</name>
-                              <description>SPI Frame with Addr</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>CPHA</name>
-                        <description>Clock Phase</description>
-                        <bitOffset>28</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>CPHASelect</name>
-                           <enumeratedValue>
-                              <name>LEADING_EDGE</name>
-                              <description>The data is sampled on a leading SCK edge and changed on a trailing SCK edge</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>TRAILING_EDGE</name>
-                              <description>The data is sampled on a trailing SCK edge and changed on a leading SCK edge</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>CPOL</name>
-                        <description>Clock Polarity</description>
-                        <bitOffset>29</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>CPOLSelect</name>
-                           <enumeratedValue>
-                              <name>IDLE_LOW</name>
-                              <description>SCK is low when idle</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>IDLE_HIGH</name>
-                              <description>SCK is high when idle</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>DORD</name>
-                        <description>Data Order</description>
-                        <bitOffset>30</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>DORDSelect</name>
-                           <enumeratedValue>
-                              <name>MSB</name>
-                              <description>MSB is transmitted first</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>LSB</name>
-                              <description>LSB is transmitted first</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>CTRLB</name>
-                  <description>SPIS Control B</description>
-                  <addressOffset>0x4</addressOffset>
-                  <fields>
-                     <field>
-                        <name>CHSIZE</name>
-                        <description>Character Size</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>3</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>CHSIZESelect</name>
-                           <enumeratedValue>
-                              <name>8_BIT</name>
-                              <description>8 bits</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>9_BIT</name>
-                              <description>9 bits</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>PLOADEN</name>
-                        <description>Data Preload Enable</description>
-                        <bitOffset>6</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>SSDE</name>
-                        <description>Slave Select Low Detect Enable</description>
-                        <bitOffset>9</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>SSDESelect</name>
-                           <enumeratedValue>
-                              <name>DISABLE</name>
-                              <description>SS low detector is disabled</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>ENABLE</name>
-                              <description>SS low detector is enabled</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>MSSEN</name>
-                        <description>Master Slave Select Enable</description>
-                        <bitOffset>13</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>MSSENSelect</name>
-                           <enumeratedValue>
-                              <name>DISABLE</name>
-                              <description>Hardware SS control is disabled</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>ENABLE</name>
-                              <description>Hardware SS control is enabled</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>AMODE</name>
-                        <description>Address Mode</description>
-                        <bitOffset>14</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>AMODESelect</name>
-                           <enumeratedValue>
-                              <name>MASK</name>
-                              <description>ADDRMASK is used as a mask to the AADR register</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>2ADDRS</name>
-                              <description>The slave responds to the two unique addresses in ADDR and ADDRMASK</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>RANGE</name>
-                              <description>The slave responds to the range of addresses between and including ADDR and ADDRMASK. ADDR is the upper limit</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>RXEN</name>
-                        <description>Receiver Enable</description>
-                        <bitOffset>17</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>BAUD</name>
-                  <description>SPIS Baud Rate</description>
-                  <addressOffset>0xC</addressOffset>
-                  <size>8</size>
-                  <fields>
-                     <field>
-                        <name>BAUD</name>
-                        <description>Baud Rate Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>8</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>INTENCLR</name>
-                  <description>SPIS Interrupt Enable Clear</description>
-                  <addressOffset>0x14</addressOffset>
-                  <size>8</size>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                  <fields>
-                     <field>
-                        <name>DRE</name>
-                        <description>Data Register Empty Interrupt Disable</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TXC</name>
-                        <description>Transmit Complete Interrupt Disable</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXC</name>
-                        <description>Receive Complete Interrupt Disable</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>SSL</name>
-                        <description>Slave Select Low Interrupt Disable</description>
-                        <bitOffset>3</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ERROR</name>
-                        <description>Combined Error Interrupt Disable</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>INTENSET</name>
-                  <description>SPIS Interrupt Enable Set</description>
-                  <addressOffset>0x16</addressOffset>
-                  <size>8</size>
-                  <modifiedWriteValues>oneToSet</modifiedWriteValues>
-                  <fields>
-                     <field>
-                        <name>DRE</name>
-                        <description>Data Register Empty Interrupt Enable</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TXC</name>
-                        <description>Transmit Complete Interrupt Enable</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXC</name>
-                        <description>Receive Complete Interrupt Enable</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>SSL</name>
-                        <description>Slave Select Low Interrupt Enable</description>
-                        <bitOffset>3</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ERROR</name>
-                        <description>Combined Error Interrupt Enable</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>INTFLAG</name>
-                  <description>SPIS Interrupt Flag Status and Clear</description>
-                  <addressOffset>0x18</addressOffset>
-                  <size>8</size>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                  <fields>
-                     <field>
-                        <name>DRE</name>
-                        <description>Data Register Empty Interrupt</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TXC</name>
-                        <description>Transmit Complete Interrupt</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXC</name>
-                        <description>Receive Complete Interrupt</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>SSL</name>
-                        <description>Slave Select Low Interrupt Flag</description>
-                        <bitOffset>3</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ERROR</name>
-                        <description>Combined Error Interrupt</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>STATUS</name>
-                  <description>SPIS Status</description>
-                  <addressOffset>0x1A</addressOffset>
-                  <size>16</size>
-                  <fields>
-                     <field>
-                        <name>BUFOVF</name>
-                        <description>Buffer Overflow</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>SYNCBUSY</name>
-                  <description>SPIS Synchronization Busy</description>
-                  <addressOffset>0x1C</addressOffset>
-                  <access>read-only</access>
-                  <fields>
-                     <field>
-                        <name>SWRST</name>
-                        <description>Software Reset Synchronization Busy</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ENABLE</name>
-                        <description>SERCOM Enable Synchronization Busy</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>CTRLB</name>
-                        <description>CTRLB Synchronization Busy</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>ADDR</name>
-                  <description>SPIS Address</description>
-                  <addressOffset>0x24</addressOffset>
-                  <fields>
-                     <field>
-                        <name>ADDR</name>
-                        <description>Address Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>8</bitWidth>
-                     </field>
-                     <field>
-                        <name>ADDRMASK</name>
-                        <description>Address Mask</description>
-                        <bitOffset>16</bitOffset>
-                        <bitWidth>8</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>DATA</name>
-                  <description>SPIS Data</description>
-                  <addressOffset>0x28</addressOffset>
-                  <fields>
-                     <field>
-                        <name>DATA</name>
-                        <description>Data Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>9</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>DBGCTRL</name>
-                  <description>SPIS Debug Control</description>
-                  <addressOffset>0x30</addressOffset>
-                  <size>8</size>
-                  <fields>
-                     <field>
-                        <name>DBGSTOP</name>
-                        <description>Debug Mode</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-            </cluster>
-            <cluster>
-               <name>SPIM</name>
-               <description>SPI Master Mode</description>
-               <alternateCluster>I2CM</alternateCluster>
-               <headerStructName>SercomSpim</headerStructName>
-               <addressOffset>0x0</addressOffset>
-               <register>
-                  <name>CTRLA</name>
-                  <description>SPIM Control A</description>
-                  <addressOffset>0x0</addressOffset>
-                  <fields>
-                     <field>
-                        <name>SWRST</name>
-                        <description>Software Reset</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ENABLE</name>
-                        <description>Enable</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>MODE</name>
-                        <description>Operating Mode</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>3</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>MODESelect</name>
-                           <enumeratedValue>
-                              <name>SPI_SLAVE</name>
-                              <description>SPI in slave operation</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>SPI_MASTER</name>
-                              <description>SPI in master operation</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>RUNSTDBY</name>
-                        <description>Run during Standby</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>IBON</name>
-                        <description>Immediate Buffer Overflow Notification</description>
-                        <bitOffset>8</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>DOPO</name>
-                        <description>Data Out Pinout</description>
-                        <bitOffset>16</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>DOPOSelect</name>
-                           <enumeratedValue>
-                              <name>0x0</name>
-                              <description>PAD[0]=DO, PAD[1]=SCK, PAD[2]=SlaveSS</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x1</name>
-                              <description>PAD[2]=DO, PAD[3]=SCK, PAD[1]=SlaveSS</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x2</name>
-                              <description>PAD[3]=DO, PAD[1]=SCK, PAD[2]=SlaveSS</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x3</name>
-                              <description>PAD[0]=DO, PAD[3]=SCK, PAD[1]=SlaveSS</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>DIPO</name>
-                        <description>Data In Pinout</description>
-                        <bitOffset>20</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>DIPOSelect</name>
-                           <enumeratedValue>
-                              <name>0x0</name>
-                              <description>SERCOM PAD[0]</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x1</name>
-                              <description>SERCOM PAD[1]</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x2</name>
-                              <description>SERCOM PAD[2]</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>0x3</name>
-                              <description>SERCOM PAD[3]</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>FORM</name>
-                        <description>Frame Format</description>
-                        <bitOffset>24</bitOffset>
-                        <bitWidth>4</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>FORMSelect</name>
-                           <enumeratedValue>
-                              <name>SPI_FRAME</name>
-                              <description>SPI Frame</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>SPI_FRAME_WITH_ADDR</name>
-                              <description>SPI Frame with Addr</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>CPHA</name>
-                        <description>Clock Phase</description>
-                        <bitOffset>28</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>CPHASelect</name>
-                           <enumeratedValue>
-                              <name>LEADING_EDGE</name>
-                              <description>The data is sampled on a leading SCK edge and changed on a trailing SCK edge</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>TRAILING_EDGE</name>
-                              <description>The data is sampled on a trailing SCK edge and changed on a leading SCK edge</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>CPOL</name>
-                        <description>Clock Polarity</description>
-                        <bitOffset>29</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>CPOLSelect</name>
-                           <enumeratedValue>
-                              <name>IDLE_LOW</name>
-                              <description>SCK is low when idle</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>IDLE_HIGH</name>
-                              <description>SCK is high when idle</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>DORD</name>
-                        <description>Data Order</description>
-                        <bitOffset>30</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>DORDSelect</name>
-                           <enumeratedValue>
-                              <name>MSB</name>
-                              <description>MSB is transmitted first</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>LSB</name>
-                              <description>LSB is transmitted first</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>CTRLB</name>
-                  <description>SPIM Control B</description>
-                  <addressOffset>0x4</addressOffset>
-                  <fields>
-                     <field>
-                        <name>CHSIZE</name>
-                        <description>Character Size</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>3</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>CHSIZESelect</name>
-                           <enumeratedValue>
-                              <name>8_BIT</name>
-                              <description>8 bits</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>9_BIT</name>
-                              <description>9 bits</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>PLOADEN</name>
-                        <description>Data Preload Enable</description>
-                        <bitOffset>6</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>SSDE</name>
-                        <description>Slave Select Low Detect Enable</description>
-                        <bitOffset>9</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>SSDESelect</name>
-                           <enumeratedValue>
-                              <name>DISABLE</name>
-                              <description>SS low detector is disabled</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>ENABLE</name>
-                              <description>SS low detector is enabled</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>MSSEN</name>
-                        <description>Master Slave Select Enable</description>
-                        <bitOffset>13</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>MSSENSelect</name>
-                           <enumeratedValue>
-                              <name>DISABLE</name>
-                              <description>Hardware SS control is disabled</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>ENABLE</name>
-                              <description>Hardware SS control is enabled</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>AMODE</name>
-                        <description>Address Mode</description>
-                        <bitOffset>14</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>AMODESelect</name>
-                           <enumeratedValue>
-                              <name>MASK</name>
-                              <description>ADDRMASK is used as a mask to the AADR register</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>2ADDRS</name>
-                              <description>The slave responds to the two unique addresses in ADDR and ADDRMASK</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>RANGE</name>
-                              <description>The slave responds to the range of addresses between and including ADDR and ADDRMASK. ADDR is the upper limit</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>RXEN</name>
-                        <description>Receiver Enable</description>
-                        <bitOffset>17</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>BAUD</name>
-                  <description>SPIM Baud Rate</description>
-                  <addressOffset>0xC</addressOffset>
-                  <size>8</size>
-                  <fields>
-                     <field>
-                        <name>BAUD</name>
-                        <description>Baud Rate Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>8</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>INTENCLR</name>
-                  <description>SPIM Interrupt Enable Clear</description>
-                  <addressOffset>0x14</addressOffset>
-                  <size>8</size>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                  <fields>
-                     <field>
-                        <name>DRE</name>
-                        <description>Data Register Empty Interrupt Disable</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TXC</name>
-                        <description>Transmit Complete Interrupt Disable</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXC</name>
-                        <description>Receive Complete Interrupt Disable</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>SSL</name>
-                        <description>Slave Select Low Interrupt Disable</description>
-                        <bitOffset>3</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ERROR</name>
-                        <description>Combined Error Interrupt Disable</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>INTENSET</name>
-                  <description>SPIM Interrupt Enable Set</description>
-                  <addressOffset>0x16</addressOffset>
-                  <size>8</size>
-                  <modifiedWriteValues>oneToSet</modifiedWriteValues>
-                  <fields>
-                     <field>
-                        <name>DRE</name>
-                        <description>Data Register Empty Interrupt Enable</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TXC</name>
-                        <description>Transmit Complete Interrupt Enable</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXC</name>
-                        <description>Receive Complete Interrupt Enable</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>SSL</name>
-                        <description>Slave Select Low Interrupt Enable</description>
-                        <bitOffset>3</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ERROR</name>
-                        <description>Combined Error Interrupt Enable</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>INTFLAG</name>
-                  <description>SPIM Interrupt Flag Status and Clear</description>
-                  <addressOffset>0x18</addressOffset>
-                  <size>8</size>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                  <fields>
-                     <field>
-                        <name>DRE</name>
-                        <description>Data Register Empty Interrupt</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TXC</name>
-                        <description>Transmit Complete Interrupt</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXC</name>
-                        <description>Receive Complete Interrupt</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>SSL</name>
-                        <description>Slave Select Low Interrupt Flag</description>
-                        <bitOffset>3</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ERROR</name>
-                        <description>Combined Error Interrupt</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>STATUS</name>
-                  <description>SPIM Status</description>
-                  <addressOffset>0x1A</addressOffset>
-                  <size>16</size>
-                  <fields>
-                     <field>
-                        <name>BUFOVF</name>
-                        <description>Buffer Overflow</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>SYNCBUSY</name>
-                  <description>SPIM Synchronization Busy</description>
-                  <addressOffset>0x1C</addressOffset>
-                  <access>read-only</access>
-                  <fields>
-                     <field>
-                        <name>SWRST</name>
-                        <description>Software Reset Synchronization Busy</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ENABLE</name>
-                        <description>SERCOM Enable Synchronization Busy</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>CTRLB</name>
-                        <description>CTRLB Synchronization Busy</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>ADDR</name>
-                  <description>SPIM Address</description>
-                  <addressOffset>0x24</addressOffset>
-                  <fields>
-                     <field>
-                        <name>ADDR</name>
-                        <description>Address Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>8</bitWidth>
-                     </field>
-                     <field>
-                        <name>ADDRMASK</name>
-                        <description>Address Mask</description>
-                        <bitOffset>16</bitOffset>
-                        <bitWidth>8</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>DATA</name>
-                  <description>SPIM Data</description>
-                  <addressOffset>0x28</addressOffset>
-                  <fields>
-                     <field>
-                        <name>DATA</name>
-                        <description>Data Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>9</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>DBGCTRL</name>
-                  <description>SPIM Debug Control</description>
-                  <addressOffset>0x30</addressOffset>
-                  <size>8</size>
-                  <fields>
-                     <field>
-                        <name>DBGSTOP</name>
-                        <description>Debug Mode</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-            </cluster>
-            <cluster>
-               <name>USART_EXT</name>
-               <description>USART EXTERNAL CLOCK Mode</description>
-               <alternateCluster>I2CM</alternateCluster>
-               <headerStructName>SercomUsart_ext</headerStructName>
-               <addressOffset>0x0</addressOffset>
-               <register>
-                  <name>CTRLA</name>
-                  <description>USART_EXT Control A</description>
-                  <addressOffset>0x0</addressOffset>
-                  <fields>
-                     <field>
-                        <name>SWRST</name>
-                        <description>Software Reset</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ENABLE</name>
-                        <description>Enable</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>MODE</name>
-                        <description>Operating Mode</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>3</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>MODESelect</name>
-                           <enumeratedValue>
-                              <name>USART_EXT_CLK</name>
+                              <name>USART_EXT</name>
                               <description>USART with external clock</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>USART_INT_CLK</name>
+                              <name>USART_INT</name>
                               <description>USART with internal clock</description>
                               <value>0x1</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>SPI_SLAVE</name>
+                              <description>SPI Client mode</description>
+                              <value>0x2</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>SPI_MASTER</name>
+                              <description>SPI Host mode</description>
+                              <value>0x3</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>I2C_SLAVE</name>
+                              <description>I2C Client mode</description>
+                              <value>0x4</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>I2C_MASTER</name>
+                              <description>I2C Host mode</description>
+                              <value>0x5</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
                      <field>
                         <name>RUNSTDBY</name>
-                        <description>Run during Standby</description>
+                        <description>Run In Standby</description>
+                        <bitOffset>7</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>IBON</name>
+                        <description>Immediate Buffer Overflow Notification</description>
+                        <bitOffset>8</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>DOPO</name>
+                        <description>Data Out Pinout</description>
+                        <bitOffset>16</bitOffset>
+                        <bitWidth>2</bitWidth>
+                        <writeConstraint>
+                           <useEnumeratedValues>true</useEnumeratedValues>
+                        </writeConstraint>
+                        <enumeratedValues>
+                           <name>DOPOSelect</name>
+                           <enumeratedValue>
+                              <name>MUX0</name>
+                              <description>PAD[0]=DO, PAD[1]=SCK, PAD[2]=SS</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>MUX1</name>
+                              <description>PAD[2]=DO, PAD[3]=SCK, PAD[1]=SS</description>
+                              <value>0x1</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>MUX2</name>
+                              <description>PAD[3]=DO, PAD[1]=SCK, PAD[2]=SS</description>
+                              <value>0x2</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>MUX3</name>
+                              <description>PAD[0]=DO, PAD[3]=SCK, PAD[1]=SS</description>
+                              <value>0x3</value>
+                           </enumeratedValue>
+                        </enumeratedValues>
+                     </field>
+                     <field>
+                        <name>DIPO</name>
+                        <description>Data In Pinout</description>
+                        <bitOffset>20</bitOffset>
+                        <bitWidth>2</bitWidth>
+                        <writeConstraint>
+                           <useEnumeratedValues>true</useEnumeratedValues>
+                        </writeConstraint>
+                        <enumeratedValues>
+                           <name>DIPOSelect</name>
+                           <enumeratedValue>
+                              <name>MUX0</name>
+                              <description>SERCOM PAD[0] is used as data input</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>MUX1</name>
+                              <description>SERCOM PAD[1] is used as data input</description>
+                              <value>0x1</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>MUX2</name>
+                              <description>SERCOM PAD[2] is used as data input</description>
+                              <value>0x2</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>MUX3</name>
+                              <description>SERCOM PAD[3] is used as data input</description>
+                              <value>0x3</value>
+                           </enumeratedValue>
+                        </enumeratedValues>
+                     </field>
+                     <field>
+                        <name>FORM</name>
+                        <description>Frame Format</description>
+                        <bitOffset>24</bitOffset>
+                        <bitWidth>4</bitWidth>
+                        <writeConstraint>
+                           <useEnumeratedValues>true</useEnumeratedValues>
+                        </writeConstraint>
+                        <enumeratedValues>
+                           <name>FORMSelect</name>
+                           <enumeratedValue>
+                              <name>SPI_FRAME</name>
+                              <description>SPI Frame</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>SPI_FRAME_WITH_ADDR</name>
+                              <description>SPI Frame with Address</description>
+                              <value>0x2</value>
+                           </enumeratedValue>
+                        </enumeratedValues>
+                     </field>
+                     <field>
+                        <name>CPHA</name>
+                        <description>Clock Phase</description>
+                        <bitOffset>28</bitOffset>
+                        <bitWidth>1</bitWidth>
+                        <writeConstraint>
+                           <useEnumeratedValues>true</useEnumeratedValues>
+                        </writeConstraint>
+                        <enumeratedValues>
+                           <name>CPHASelect</name>
+                           <enumeratedValue>
+                              <name>LEADING_EDGE</name>
+                              <description>The data is sampled on a leading SCK edge and changed on a trailing SCK edge</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>TRAILING_EDGE</name>
+                              <description>The data is sampled on a trailing SCK edge and changed on a leading SCK edge</description>
+                              <value>0x1</value>
+                           </enumeratedValue>
+                        </enumeratedValues>
+                     </field>
+                     <field>
+                        <name>CPOL</name>
+                        <description>Clock Polarity</description>
+                        <bitOffset>29</bitOffset>
+                        <bitWidth>1</bitWidth>
+                        <writeConstraint>
+                           <useEnumeratedValues>true</useEnumeratedValues>
+                        </writeConstraint>
+                        <enumeratedValues>
+                           <name>CPOLSelect</name>
+                           <enumeratedValue>
+                              <name>IDLE_LOW</name>
+                              <description>SCK is low when IDLE. The leading edge of a clock cycle is a rising edge, while the trailing edge is a falling edge.</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>IDLE_HIGH</name>
+                              <description>SCK is high when IDLE. The leading edge of a clock cycle is a falling edge, while the trailing edge is a rising edge.</description>
+                              <value>0x1</value>
+                           </enumeratedValue>
+                        </enumeratedValues>
+                     </field>
+                     <field>
+                        <name>DORD</name>
+                        <description>Data Order</description>
+                        <bitOffset>30</bitOffset>
+                        <bitWidth>1</bitWidth>
+                        <writeConstraint>
+                           <useEnumeratedValues>true</useEnumeratedValues>
+                        </writeConstraint>
+                        <enumeratedValues>
+                           <name>DORDSelect</name>
+                           <enumeratedValue>
+                              <name>MSB</name>
+                              <description>MSb is transferred first</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>LSB</name>
+                              <description>LSb is transferred first</description>
+                              <value>0x1</value>
+                           </enumeratedValue>
+                        </enumeratedValues>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>CTRLB</name>
+                  <description>SPI Control B</description>
+                  <addressOffset>0x4</addressOffset>
+                  <fields>
+                     <field>
+                        <name>CHSIZE</name>
+                        <description>Character Size</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>3</bitWidth>
+                        <writeConstraint>
+                           <useEnumeratedValues>true</useEnumeratedValues>
+                        </writeConstraint>
+                        <enumeratedValues>
+                           <name>CHSIZESelect</name>
+                           <enumeratedValue>
+                              <name>8_BIT</name>
+                              <description>Eight bits</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>9_BIT</name>
+                              <description>Nine bits</description>
+                              <value>0x1</value>
+                           </enumeratedValue>
+                        </enumeratedValues>
+                     </field>
+                     <field>
+                        <name>PLOADEN</name>
+                        <description>Client Data Preload Enable</description>
+                        <bitOffset>6</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>SSDE</name>
+                        <description>SPI Select Low Detect Enable</description>
+                        <bitOffset>9</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>MSSEN</name>
+                        <description>Host SPI Select Enable</description>
+                        <bitOffset>13</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>AMODE</name>
+                        <description>Address Mode</description>
+                        <bitOffset>14</bitOffset>
+                        <bitWidth>2</bitWidth>
+                        <writeConstraint>
+                           <useEnumeratedValues>true</useEnumeratedValues>
+                        </writeConstraint>
+                        <enumeratedValues>
+                           <name>AMODESelect</name>
+                           <enumeratedValue>
+                              <name>MASK</name>
+                              <description>ADDRMASK is used as a mask to the ADDR register</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>2ADDRS</name>
+                              <description>The client responds to the two unique addresses in ADDR and ADDRMASK</description>
+                              <value>0x1</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>RANGE</name>
+                              <description>The client responds to the range of addresses between and including ADDR and ADDRMASK with ADDR as the upper limit</description>
+                              <value>0x2</value>
+                           </enumeratedValue>
+                        </enumeratedValues>
+                     </field>
+                     <field>
+                        <name>RXEN</name>
+                        <description>Receiver Enable</description>
+                        <bitOffset>17</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>BAUD</name>
+                  <description>SPI Baud Rate</description>
+                  <addressOffset>0xC</addressOffset>
+                  <size>8</size>
+                  <fields>
+                     <field>
+                        <name>BAUD</name>
+                        <description>Baud Register</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>8</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>INTENCLR</name>
+                  <description>SPI Interrupt Enable Clear</description>
+                  <addressOffset>0x14</addressOffset>
+                  <size>8</size>
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
+                  <fields>
+                     <field>
+                        <name>DRE</name>
+                        <description>Data Register Empty Interrupt Enable</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>TXC</name>
+                        <description>Transmit Complete Interrupt Enable</description>
+                        <bitOffset>1</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>RXC</name>
+                        <description>Receive Complete Interrupt Enable</description>
+                        <bitOffset>2</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>SSL</name>
+                        <description>SPI Select Low Interrupt Enable</description>
+                        <bitOffset>3</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>ERROR</name>
+                        <description>Error Interrupt Enable</description>
+                        <bitOffset>7</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>INTENSET</name>
+                  <description>SPI Interrupt Enable Set</description>
+                  <addressOffset>0x16</addressOffset>
+                  <size>8</size>
+                  <modifiedWriteValues>oneToSet</modifiedWriteValues>
+                  <fields>
+                     <field>
+                        <name>DRE</name>
+                        <description>Data Register Empty Interrupt Enable</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>TXC</name>
+                        <description>Transmit Complete Interrupt Enable</description>
+                        <bitOffset>1</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>RXC</name>
+                        <description>Receive Complete Interrupt Enable</description>
+                        <bitOffset>2</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>SSL</name>
+                        <description>SPI Select Low Interrupt Enable</description>
+                        <bitOffset>3</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>ERROR</name>
+                        <description>Error Interrupt Enable</description>
+                        <bitOffset>7</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>INTFLAG</name>
+                  <description>SPI Interrupt Flag Status and Clear</description>
+                  <addressOffset>0x18</addressOffset>
+                  <size>8</size>
+                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
+                  <fields>
+                     <field>
+                        <name>DRE</name>
+                        <description>Data Register Empty</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>TXC</name>
+                        <description>Transmit Complete</description>
+                        <bitOffset>1</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>RXC</name>
+                        <description>Receive Complete</description>
+                        <bitOffset>2</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>SSL</name>
+                        <description>SPI Select Low</description>
+                        <bitOffset>3</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>ERROR</name>
+                        <description>Error</description>
+                        <bitOffset>7</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>STATUS</name>
+                  <description>SPI Status</description>
+                  <addressOffset>0x1A</addressOffset>
+                  <size>16</size>
+                  <fields>
+                     <field>
+                        <name>BUFOVF</name>
+                        <description>Buffer Overflow</description>
+                        <bitOffset>2</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>SYNCBUSY</name>
+                  <description>SPI Synchronization Busy</description>
+                  <addressOffset>0x1C</addressOffset>
+                  <access>read-only</access>
+                  <fields>
+                     <field>
+                        <name>SWRST</name>
+                        <description>Software Reset Synchronization Busy</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>ENABLE</name>
+                        <description>SERCOM Enable Synchronization Busy</description>
+                        <bitOffset>1</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>CTRLB</name>
+                        <description>CTRLB Synchronization Busy</description>
+                        <bitOffset>2</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>ADDR</name>
+                  <description>SPI Address</description>
+                  <addressOffset>0x24</addressOffset>
+                  <fields>
+                     <field>
+                        <name>ADDR</name>
+                        <description>Address</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>8</bitWidth>
+                     </field>
+                     <field>
+                        <name>ADDRMASK</name>
+                        <description>Address Mask</description>
+                        <bitOffset>16</bitOffset>
+                        <bitWidth>8</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>DATA</name>
+                  <description>SPI Data</description>
+                  <addressOffset>0x28</addressOffset>
+                  <size>16</size>
+                  <fields>
+                     <field>
+                        <name>DATA</name>
+                        <description>Data</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>9</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+               <register>
+                  <name>DBGCTRL</name>
+                  <description>SPI Debug Control</description>
+                  <addressOffset>0x30</addressOffset>
+                  <size>8</size>
+                  <fields>
+                     <field>
+                        <name>DBGSTOP</name>
+                        <description>Debug Stop Mode</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                  </fields>
+               </register>
+            </cluster>
+            <cluster>
+               <name>USART</name>
+               <description>USART Mode</description>
+               <alternateCluster>I2CM</alternateCluster>
+               <headerStructName>SercomUsart</headerStructName>
+               <addressOffset>0x0</addressOffset>
+               <register>
+                  <name>CTRLA</name>
+                  <description>USART Control A</description>
+                  <addressOffset>0x0</addressOffset>
+                  <fields>
+                     <field>
+                        <name>SWRST</name>
+                        <description>Software Reset</description>
+                        <bitOffset>0</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>ENABLE</name>
+                        <description>Enable</description>
+                        <bitOffset>1</bitOffset>
+                        <bitWidth>1</bitWidth>
+                     </field>
+                     <field>
+                        <name>MODE</name>
+                        <description>Operating Mode</description>
+                        <bitOffset>2</bitOffset>
+                        <bitWidth>3</bitWidth>
+                        <writeConstraint>
+                           <useEnumeratedValues>true</useEnumeratedValues>
+                        </writeConstraint>
+                        <enumeratedValues>
+                           <name>MODESelect</name>
+                           <enumeratedValue>
+                              <name>USART_EXT</name>
+                              <description>USART with external clock</description>
+                              <value>0x0</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>USART_INT</name>
+                              <description>USART with internal clock</description>
+                              <value>0x1</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>SPI_SLAVE</name>
+                              <description>SPI Client mode</description>
+                              <value>0x2</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>SPI_MASTER</name>
+                              <description>SPI Host mode</description>
+                              <value>0x3</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>I2C_SLAVE</name>
+                              <description>I2C Client mode</description>
+                              <value>0x4</value>
+                           </enumeratedValue>
+                           <enumeratedValue>
+                              <name>I2C_MASTER</name>
+                              <description>I2C Host mode</description>
+                              <value>0x5</value>
+                           </enumeratedValue>
+                        </enumeratedValues>
+                     </field>
+                     <field>
+                        <name>RUNSTDBY</name>
+                        <description>Run In Standby</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -18619,7 +18137,7 @@ limitations under the License.
                      </field>
                      <field>
                         <name>SAMPR</name>
-                        <description>Sample</description>
+                        <description>Sample Rate</description>
                         <bitOffset>13</bitOffset>
                         <bitWidth>3</bitWidth>
                         <writeConstraint>
@@ -18629,27 +18147,27 @@ limitations under the License.
                            <name>SAMPRSelect</name>
                            <enumeratedValue>
                               <name>16X_ARITHMETIC</name>
-                              <description>16x over-sampling using arithmetic baudrate generation</description>
+                              <description>16x over-sampling using arithmetic baud rate generation</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>16X_FRACTIONAL</name>
-                              <description>16x over-sampling using fractional baudrate generation</description>
+                              <description>16x over-sampling using fractional baud rate generation</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>8X_ARITHMETIC</name>
-                              <description>8x over-sampling using arithmetic baudrate generation</description>
+                              <description>8x over-sampling using arithmetic baud rate generation</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>8X_FRACTIONAL</name>
-                              <description>8x over-sampling using fractional baudrate generation</description>
+                              <description>8x over-sampling using fractional baud rate generation</description>
                               <value>0x3</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>3X_ARITHMETIC</name>
-                              <description>3x over-sampling using arithmetic baudrate generation</description>
+                              <description>3x over-sampling using arithmetic baud rate generation</description>
                               <value>0x4</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -18665,22 +18183,22 @@ limitations under the License.
                         <enumeratedValues>
                            <name>TXPOSelect</name>
                            <enumeratedValue>
-                              <name>PAD0</name>
+                              <name>MUX0</name>
                               <description>PAD[0]=TxD, PAD[1]=XCK</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>PAD1</name>
+                              <name>MUX1</name>
                               <description>PAD[2]=TxD, PAD[3]=XCK</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>PAD2</name>
+                              <name>MUX2</name>
                               <description>PAD[0]=TxD, PAD[2]=RTS/TE, PAD[3]=CTS</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>PAD3</name>
+                              <name>MUX3</name>
                               <description>PAD[0]=TxD, PAD[1]=XCK, PAD[2]=RTS/TE</description>
                               <value>0x3</value>
                            </enumeratedValue>
@@ -18697,22 +18215,22 @@ limitations under the License.
                         <enumeratedValues>
                            <name>RXPOSelect</name>
                            <enumeratedValue>
-                              <name>PAD0</name>
+                              <name>MUX0</name>
                               <description>SERCOM PAD[0] is used for data reception</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>PAD1</name>
+                              <name>MUX1</name>
                               <description>SERCOM PAD[1] is used for data reception</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>PAD2</name>
+                              <name>MUX2</name>
                               <description>SERCOM PAD[2] is used for data reception</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>PAD3</name>
+                              <name>MUX3</name>
                               <description>SERCOM PAD[3] is used for data reception</description>
                               <value>0x3</value>
                            </enumeratedValue>
@@ -18772,12 +18290,12 @@ limitations under the License.
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>USART_FRAME_LINBRKGEN</name>
-                              <description>LIN Master Break and Sync generation</description>
+                              <description>LIN Host - Break and sync generation. See LIN Command (CTRLB.LINCMD).</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>USART_FRAME_AUTO_BAUD_NO_PARITY</name>
-                              <description>Auto-baud (LIN Slave) - break detection and auto-baud</description>
+                              <description>Auto-baud (LIN Client) - break detection and auto-baud</description>
                               <value>0x4</value>
                            </enumeratedValue>
                            <enumeratedValue>
@@ -18799,12 +18317,12 @@ limitations under the License.
                            <name>CMODESelect</name>
                            <enumeratedValue>
                               <name>ASYNC</name>
-                              <description>Asynchronous communication.</description>
+                              <description>Asynchronous communication</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>SYNC</name>
-                              <description>Synchronous communication.</description>
+                              <description>Synchronous communication</description>
                               <value>0x1</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -18821,12 +18339,12 @@ limitations under the License.
                            <name>CPOLSelect</name>
                            <enumeratedValue>
                               <name>IDLE_LOW</name>
-                              <description>TxD Change:- Rising XCK edge, RxD Sample:- Falling XCK edge</description>
+                              <description>TxD Change: Rising XCK edge, RxD Sample: Falling XCK edge</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>IDLE_HIGH</name>
-                              <description>TxD Change:- Falling XCK edge, RxD Sample:- Rising XCK edge</description>
+                              <description>TxD Change: Falling XCK edge, RxD Sample: Rising XCK edge</description>
                               <value>0x1</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -18843,12 +18361,12 @@ limitations under the License.
                            <name>DORDSelect</name>
                            <enumeratedValue>
                               <name>MSB</name>
-                              <description>MSB is transmitted first.</description>
+                              <description>MSb is transferred first</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>LSB</name>
-                              <description>LSB is transmitted first.</description>
+                              <description>LSb is transferred first</description>
                               <value>0x1</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -18857,7 +18375,7 @@ limitations under the License.
                </register>
                <register>
                   <name>CTRLB</name>
-                  <description>USART_EXT Control B</description>
+                  <description>USART Control B</description>
                   <addressOffset>0x4</addressOffset>
                   <fields>
                      <field>
@@ -18872,27 +18390,27 @@ limitations under the License.
                            <name>CHSIZESelect</name>
                            <enumeratedValue>
                               <name>8_BIT</name>
-                              <description>8 Bits</description>
+                              <description>8-bits character</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>9_BIT</name>
-                              <description>9 Bits</description>
+                              <description>9-bits character</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>5_BIT</name>
-                              <description>5 Bits</description>
+                              <description>5-bits character</description>
                               <value>0x5</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>6_BIT</name>
-                              <description>6 Bits</description>
+                              <description>6-bits character</description>
                               <value>0x6</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>7_BIT</name>
-                              <description>7 Bits</description>
+                              <description>7-bits character</description>
                               <value>0x7</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -18909,12 +18427,12 @@ limitations under the License.
                            <name>SBMODESelect</name>
                            <enumeratedValue>
                               <name>1_BIT</name>
-                              <description>One Stop Bit</description>
+                              <description>One stop bit</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>2_BIT</name>
-                              <description>Two Stop Bits</description>
+                              <description>Two stop bits</description>
                               <value>0x1</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -18942,11 +18460,6 @@ limitations under the License.
                         <enumeratedValues>
                            <name>ENCSelect</name>
                            <enumeratedValue>
-                              <name>DISABLE</name>
-                              <description>Data is not encoded</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
                               <name>IRDA</name>
                               <description>Data is IrDA encoded</description>
                               <value>0x1</value>
@@ -18965,12 +18478,12 @@ limitations under the License.
                            <name>PMODESelect</name>
                            <enumeratedValue>
                               <name>EVEN</name>
-                              <description>Even Parity</description>
+                              <description>Even parity</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>ODD</name>
-                              <description>Odd Parity</description>
+                              <description>Odd parity</description>
                               <value>0x1</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -19004,12 +18517,12 @@ limitations under the License.
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>SOFTWARE_CONTROL_TRANSMIT_CMD</name>
-                              <description>Break field is transmitted when DATA is written</description>
+                              <description>A break field is transmitted when DATA is written</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
                               <name>AUTO_TRANSMIT_CMD</name>
-                              <description>Break, sync and identifier are automatically transmitted when DATA is written with the identifier</description>
+                              <description>The break, sync, and identifier fields are automatically transmitted when the DATA is written with the identifier</description>
                               <value>0x2</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -19018,7 +18531,7 @@ limitations under the License.
                </register>
                <register>
                   <name>CTRLC</name>
-                  <description>USART_EXT Control C</description>
+                  <description>USART Control C</description>
                   <addressOffset>0x8</addressOffset>
                   <fields>
                      <field>
@@ -19029,7 +18542,7 @@ limitations under the License.
                      </field>
                      <field>
                         <name>BRKLEN</name>
-                        <description>LIN Master Break Length</description>
+                        <description>LIN Host Break Length</description>
                         <bitOffset>8</bitOffset>
                         <bitWidth>2</bitWidth>
                         <writeConstraint>
@@ -19038,30 +18551,30 @@ limitations under the License.
                         <enumeratedValues>
                            <name>BRKLENSelect</name>
                            <enumeratedValue>
-                              <name>13_BIT</name>
-                              <description>Break field transmission is 13 bit times</description>
+                              <name>13_BIT_TIME</name>
+                              <description>The break field transmission is 13 bit times</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>17_BIT</name>
-                              <description>Break field transmission is 17 bit times</description>
+                              <name>17_BIT_TIME</name>
+                              <description>The break field transmission is 17 bit times</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>21_BIT</name>
-                              <description>Break field transmission is 21 bit times</description>
+                              <name>21_BIT_TIME</name>
+                              <description>The break field transmission is 21 bit times</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>26_BIT</name>
-                              <description>Break field transmission is 26 bit times</description>
+                              <name>26_BIT_TIME</name>
+                              <description>The break field transmission is 26 bit times</description>
                               <value>0x3</value>
                            </enumeratedValue>
                         </enumeratedValues>
                      </field>
                      <field>
                         <name>HDRDLY</name>
-                        <description>LIN Master Header Delay</description>
+                        <description>LIN Host Header Delay</description>
                         <bitOffset>10</bitOffset>
                         <bitWidth>2</bitWidth>
                         <writeConstraint>
@@ -19070,23 +18583,23 @@ limitations under the License.
                         <enumeratedValues>
                            <name>HDRDLYSelect</name>
                            <enumeratedValue>
-                              <name>DELAY0</name>
-                              <description>Delay between break and sync transmission is 1 bit time; Delay between sync and ID transmission is 1 bit time</description>
+                              <name>1_BIT_TIME</name>
+                              <description>Delay between break and sync transmission is one bit time. Delay between sync and ID transmission is one bit time.</description>
                               <value>0x0</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>DELAY1</name>
-                              <description>Delay between break and sync transmission is 4 bit time; Delay between sync and ID transmission is 4 bit time</description>
+                              <name>4_BIT_TIME</name>
+                              <description>Delay between break and sync transmission is four bit times. Delay between sync and ID transmission is four bit times.</description>
                               <value>0x1</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>DELAY2</name>
-                              <description>Delay between break and sync transmission is 8 bit time; Delay between sync and ID transmission is 4 bit time</description>
+                              <name>8_BIT_TIME</name>
+                              <description>Delay between break and sync transmission is eight bit times. Delay between sync and ID transmission is four bit times.</description>
                               <value>0x2</value>
                            </enumeratedValue>
                            <enumeratedValue>
-                              <name>DELAY3</name>
-                              <description>Delay between break and sync transmission is 14 bit time; Delay between sync and ID transmission is 4 bit time</description>
+                              <name>14_BIT_TIME</name>
+                              <description>Delay between break and sync transmission is 14 bit times. Delay between sync and ID transmission is four bit times.</description>
                               <value>0x3</value>
                            </enumeratedValue>
                         </enumeratedValues>
@@ -19094,14 +18607,14 @@ limitations under the License.
                   </fields>
                </register>
                <register>
-                  <name>BAUD</name>
-                  <description>USART_EXT Baud Rate</description>
+                  <name>BAUD_ARITH_MODE</name>
+                  <description>USART Baud</description>
                   <addressOffset>0xC</addressOffset>
                   <size>16</size>
                   <fields>
                      <field>
                         <name>BAUD</name>
-                        <description>Baud Rate Value</description>
+                        <description>Baud Value</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>16</bitWidth>
                      </field>
@@ -19109,14 +18622,14 @@ limitations under the License.
                </register>
                <register>
                   <name>BAUD_FRAC_MODE</name>
-                  <description>USART_EXT Baud Rate</description>
-                  <alternateRegister>BAUD</alternateRegister>
+                  <description>USART Baud</description>
+                  <alternateRegister>BAUD_ARITH_MODE</alternateRegister>
                   <addressOffset>0xC</addressOffset>
                   <size>16</size>
                   <fields>
                      <field>
                         <name>BAUD</name>
-                        <description>Baud Rate Value</description>
+                        <description>Baud Value</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>13</bitWidth>
                      </field>
@@ -19125,48 +18638,12 @@ limitations under the License.
                         <description>Fractional Part</description>
                         <bitOffset>13</bitOffset>
                         <bitWidth>3</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>BAUD_FRACFP_MODE</name>
-                  <description>USART_EXT Baud Rate</description>
-                  <alternateRegister>BAUD</alternateRegister>
-                  <addressOffset>0xC</addressOffset>
-                  <size>16</size>
-                  <fields>
-                     <field>
-                        <name>BAUD</name>
-                        <description>Baud Rate Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>13</bitWidth>
-                     </field>
-                     <field>
-                        <name>FP</name>
-                        <description>Fractional Part</description>
-                        <bitOffset>13</bitOffset>
-                        <bitWidth>3</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>BAUD_USARTFP_MODE</name>
-                  <description>USART_EXT Baud Rate</description>
-                  <alternateRegister>BAUD</alternateRegister>
-                  <addressOffset>0xC</addressOffset>
-                  <size>16</size>
-                  <fields>
-                     <field>
-                        <name>BAUD</name>
-                        <description>Baud Rate Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>16</bitWidth>
                      </field>
                   </fields>
                </register>
                <register>
                   <name>RXPL</name>
-                  <description>USART_EXT Receive Pulse Length</description>
+                  <description>USART Receive Pulse Length</description>
                   <addressOffset>0xE</addressOffset>
                   <size>8</size>
                   <fields>
@@ -19180,50 +18657,50 @@ limitations under the License.
                </register>
                <register>
                   <name>INTENCLR</name>
-                  <description>USART_EXT Interrupt Enable Clear</description>
+                  <description>USART Interrupt Enable Clear</description>
                   <addressOffset>0x14</addressOffset>
                   <size>8</size>
                   <modifiedWriteValues>oneToClear</modifiedWriteValues>
                   <fields>
                      <field>
                         <name>DRE</name>
-                        <description>Data Register Empty Interrupt Disable</description>
+                        <description>Data Register Empty Interrupt Enable</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>TXC</name>
-                        <description>Transmit Complete Interrupt Disable</description>
+                        <description>Transmit Complete Interrupt Enable</description>
                         <bitOffset>1</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>RXC</name>
-                        <description>Receive Complete Interrupt Disable</description>
+                        <description>Receive Complete Interrupt Enable</description>
                         <bitOffset>2</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>RXS</name>
-                        <description>Receive Start Interrupt Disable</description>
+                        <description>Receive Start Interrupt Enable</description>
                         <bitOffset>3</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>CTSIC</name>
-                        <description>Clear To Send Input Change Interrupt Disable</description>
+                        <description>Clear to Send Input Change Interrupt Enable</description>
                         <bitOffset>4</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>RXBRK</name>
-                        <description>Break Received Interrupt Disable</description>
+                        <description>Receive Break Interrupt Enable</description>
                         <bitOffset>5</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>ERROR</name>
-                        <description>Combined Error Interrupt Disable</description>
+                        <description>Error Interrupt Enable</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -19231,7 +18708,7 @@ limitations under the License.
                </register>
                <register>
                   <name>INTENSET</name>
-                  <description>USART_EXT Interrupt Enable Set</description>
+                  <description>USART Interrupt Enable Set</description>
                   <addressOffset>0x16</addressOffset>
                   <size>8</size>
                   <modifiedWriteValues>oneToSet</modifiedWriteValues>
@@ -19262,19 +18739,19 @@ limitations under the License.
                      </field>
                      <field>
                         <name>CTSIC</name>
-                        <description>Clear To Send Input Change Interrupt Enable</description>
+                        <description>Clear to Send Input Change Interrupt Enable</description>
                         <bitOffset>4</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>RXBRK</name>
-                        <description>Break Received Interrupt Enable</description>
+                        <description>Receive Break Interrupt Enable</description>
                         <bitOffset>5</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>ERROR</name>
-                        <description>Combined Error Interrupt Enable</description>
+                        <description>Error Interrupt Enable</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -19282,50 +18759,50 @@ limitations under the License.
                </register>
                <register>
                   <name>INTFLAG</name>
-                  <description>USART_EXT Interrupt Flag Status and Clear</description>
+                  <description>USART Interrupt Flag Status and Clear</description>
                   <addressOffset>0x18</addressOffset>
                   <size>8</size>
                   <modifiedWriteValues>oneToClear</modifiedWriteValues>
                   <fields>
                      <field>
                         <name>DRE</name>
-                        <description>Data Register Empty Interrupt</description>
+                        <description>Data Register Empty</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>TXC</name>
-                        <description>Transmit Complete Interrupt</description>
+                        <description>Transmit Complete</description>
                         <bitOffset>1</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>RXC</name>
-                        <description>Receive Complete Interrupt</description>
+                        <description>Receive Complete</description>
                         <bitOffset>2</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>RXS</name>
-                        <description>Receive Start Interrupt</description>
+                        <description>Receive Start</description>
                         <bitOffset>3</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>CTSIC</name>
-                        <description>Clear To Send Input Change Interrupt</description>
+                        <description>Clear to Send Input Change</description>
                         <bitOffset>4</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>RXBRK</name>
-                        <description>Break Received Interrupt</description>
+                        <description>Receive Break</description>
                         <bitOffset>5</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
                      <field>
                         <name>ERROR</name>
-                        <description>Combined Error Interrupt</description>
+                        <description>Error</description>
                         <bitOffset>7</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -19333,7 +18810,7 @@ limitations under the License.
                </register>
                <register>
                   <name>STATUS</name>
-                  <description>USART_EXT Status</description>
+                  <description>USART Status</description>
                   <addressOffset>0x1A</addressOffset>
                   <size>16</size>
                   <fields>
@@ -19357,7 +18834,7 @@ limitations under the License.
                      </field>
                      <field>
                         <name>CTS</name>
-                        <description>Clear To Send</description>
+                        <description>Clear to Send</description>
                         <bitOffset>3</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>
@@ -19383,7 +18860,7 @@ limitations under the License.
                </register>
                <register>
                   <name>SYNCBUSY</name>
-                  <description>USART_EXT Synchronization Busy</description>
+                  <description>USART Synchronization Busy</description>
                   <addressOffset>0x1C</addressOffset>
                   <access>read-only</access>
                   <fields>
@@ -19409,13 +18886,13 @@ limitations under the License.
                </register>
                <register>
                   <name>DATA</name>
-                  <description>USART_EXT Data</description>
+                  <description>USART Data</description>
                   <addressOffset>0x28</addressOffset>
                   <size>16</size>
                   <fields>
                      <field>
                         <name>DATA</name>
-                        <description>Data Value</description>
+                        <description>Data</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>9</bitWidth>
                      </field>
@@ -19423,889 +18900,13 @@ limitations under the License.
                </register>
                <register>
                   <name>DBGCTRL</name>
-                  <description>USART_EXT Debug Control</description>
+                  <description>USART Debug Control</description>
                   <addressOffset>0x30</addressOffset>
                   <size>8</size>
                   <fields>
                      <field>
                         <name>DBGSTOP</name>
-                        <description>Debug Mode</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-            </cluster>
-            <cluster>
-               <name>USART_INT</name>
-               <description>USART INTERNAL CLOCK Mode</description>
-               <alternateCluster>I2CM</alternateCluster>
-               <headerStructName>SercomUsart_int</headerStructName>
-               <addressOffset>0x0</addressOffset>
-               <register>
-                  <name>CTRLA</name>
-                  <description>USART_INT Control A</description>
-                  <addressOffset>0x0</addressOffset>
-                  <fields>
-                     <field>
-                        <name>SWRST</name>
-                        <description>Software Reset</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ENABLE</name>
-                        <description>Enable</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>MODE</name>
-                        <description>Operating Mode</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>3</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>MODESelect</name>
-                           <enumeratedValue>
-                              <name>USART_EXT_CLK</name>
-                              <description>USART with external clock</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>USART_INT_CLK</name>
-                              <description>USART with internal clock</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>RUNSTDBY</name>
-                        <description>Run during Standby</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>IBON</name>
-                        <description>Immediate Buffer Overflow Notification</description>
-                        <bitOffset>8</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>SAMPR</name>
-                        <description>Sample</description>
-                        <bitOffset>13</bitOffset>
-                        <bitWidth>3</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>SAMPRSelect</name>
-                           <enumeratedValue>
-                              <name>16X_ARITHMETIC</name>
-                              <description>16x over-sampling using arithmetic baudrate generation</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>16X_FRACTIONAL</name>
-                              <description>16x over-sampling using fractional baudrate generation</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>8X_ARITHMETIC</name>
-                              <description>8x over-sampling using arithmetic baudrate generation</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>8X_FRACTIONAL</name>
-                              <description>8x over-sampling using fractional baudrate generation</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>3X_ARITHMETIC</name>
-                              <description>3x over-sampling using arithmetic baudrate generation</description>
-                              <value>0x4</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>TXPO</name>
-                        <description>Transmit Data Pinout</description>
-                        <bitOffset>16</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>TXPOSelect</name>
-                           <enumeratedValue>
-                              <name>PAD0</name>
-                              <description>PAD[0]=TxD, PAD[1]=XCK</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>PAD1</name>
-                              <description>PAD[2]=TxD, PAD[3]=XCK</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>PAD2</name>
-                              <description>PAD[0]=TxD, PAD[2]=RTS/TE, PAD[3]=CTS</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>PAD3</name>
-                              <description>PAD[0]=TxD, PAD[1]=XCK, PAD[2]=RTS/TE</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>RXPO</name>
-                        <description>Receive Data Pinout</description>
-                        <bitOffset>20</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>RXPOSelect</name>
-                           <enumeratedValue>
-                              <name>PAD0</name>
-                              <description>SERCOM PAD[0] is used for data reception</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>PAD1</name>
-                              <description>SERCOM PAD[1] is used for data reception</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>PAD2</name>
-                              <description>SERCOM PAD[2] is used for data reception</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>PAD3</name>
-                              <description>SERCOM PAD[3] is used for data reception</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>SAMPA</name>
-                        <description>Sample Adjustment</description>
-                        <bitOffset>22</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>SAMPASelect</name>
-                           <enumeratedValue>
-                              <name>ADJ0</name>
-                              <description>16x Over-sampling = 7-8-9; 8x Over-sampling = 3-4-5</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>ADJ1</name>
-                              <description>16x Over-sampling = 9-10-11; 8x Over-sampling = 4-5-6</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>ADJ2</name>
-                              <description>16x Over-sampling = 11-12-13; 8x Over-sampling = 5-6-7</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>ADJ3</name>
-                              <description>16x Over-sampling = 13-14-15; 8x Over-sampling = 6-7-8</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>FORM</name>
-                        <description>Frame Format</description>
-                        <bitOffset>24</bitOffset>
-                        <bitWidth>4</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>FORMSelect</name>
-                           <enumeratedValue>
-                              <name>USART_FRAME_NO_PARITY</name>
-                              <description>USART frame</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>USART_FRAME_WITH_PARITY</name>
-                              <description>USART frame with parity</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>USART_FRAME_LINBRKGEN</name>
-                              <description>LIN Master Break and Sync generation</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>USART_FRAME_AUTO_BAUD_NO_PARITY</name>
-                              <description>Auto-baud (LIN Slave) - break detection and auto-baud</description>
-                              <value>0x4</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>USART_FRAME_AUTO_BAUD_WITH_PARITY</name>
-                              <description>Auto-baud - break detection and auto-baud with parity</description>
-                              <value>0x5</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>CMODE</name>
-                        <description>Communication Mode</description>
-                        <bitOffset>28</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>CMODESelect</name>
-                           <enumeratedValue>
-                              <name>ASYNC</name>
-                              <description>Asynchronous communication.</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>SYNC</name>
-                              <description>Synchronous communication.</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>CPOL</name>
-                        <description>Clock Polarity</description>
-                        <bitOffset>29</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>CPOLSelect</name>
-                           <enumeratedValue>
-                              <name>IDLE_LOW</name>
-                              <description>TxD Change:- Rising XCK edge, RxD Sample:- Falling XCK edge</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>IDLE_HIGH</name>
-                              <description>TxD Change:- Falling XCK edge, RxD Sample:- Rising XCK edge</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>DORD</name>
-                        <description>Data Order</description>
-                        <bitOffset>30</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>DORDSelect</name>
-                           <enumeratedValue>
-                              <name>MSB</name>
-                              <description>MSB is transmitted first.</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>LSB</name>
-                              <description>LSB is transmitted first.</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>CTRLB</name>
-                  <description>USART_INT Control B</description>
-                  <addressOffset>0x4</addressOffset>
-                  <fields>
-                     <field>
-                        <name>CHSIZE</name>
-                        <description>Character Size</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>3</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>CHSIZESelect</name>
-                           <enumeratedValue>
-                              <name>8_BIT</name>
-                              <description>8 Bits</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>9_BIT</name>
-                              <description>9 Bits</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>5_BIT</name>
-                              <description>5 Bits</description>
-                              <value>0x5</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>6_BIT</name>
-                              <description>6 Bits</description>
-                              <value>0x6</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>7_BIT</name>
-                              <description>7 Bits</description>
-                              <value>0x7</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>SBMODE</name>
-                        <description>Stop Bit Mode</description>
-                        <bitOffset>6</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>SBMODESelect</name>
-                           <enumeratedValue>
-                              <name>1_BIT</name>
-                              <description>One Stop Bit</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>2_BIT</name>
-                              <description>Two Stop Bits</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>COLDEN</name>
-                        <description>Collision Detection Enable</description>
-                        <bitOffset>8</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>SFDE</name>
-                        <description>Start of Frame Detection Enable</description>
-                        <bitOffset>9</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ENC</name>
-                        <description>Encoding Format</description>
-                        <bitOffset>10</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>ENCSelect</name>
-                           <enumeratedValue>
-                              <name>DISABLE</name>
-                              <description>Data is not encoded</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>IRDA</name>
-                              <description>Data is IrDA encoded</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>PMODE</name>
-                        <description>Parity Mode</description>
-                        <bitOffset>13</bitOffset>
-                        <bitWidth>1</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>PMODESelect</name>
-                           <enumeratedValue>
-                              <name>EVEN</name>
-                              <description>Even Parity</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>ODD</name>
-                              <description>Odd Parity</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>TXEN</name>
-                        <description>Transmitter Enable</description>
-                        <bitOffset>16</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXEN</name>
-                        <description>Receiver Enable</description>
-                        <bitOffset>17</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>LINCMD</name>
-                        <description>LIN Command</description>
-                        <bitOffset>24</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>LINCMDSelect</name>
-                           <enumeratedValue>
-                              <name>NONE</name>
-                              <description>Normal USART transmission</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>SOFTWARE_CONTROL_TRANSMIT_CMD</name>
-                              <description>Break field is transmitted when DATA is written</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>AUTO_TRANSMIT_CMD</name>
-                              <description>Break, sync and identifier are automatically transmitted when DATA is written with the identifier</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>CTRLC</name>
-                  <description>USART_INT Control C</description>
-                  <addressOffset>0x8</addressOffset>
-                  <fields>
-                     <field>
-                        <name>GTIME</name>
-                        <description>Guard Time</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>3</bitWidth>
-                     </field>
-                     <field>
-                        <name>BRKLEN</name>
-                        <description>LIN Master Break Length</description>
-                        <bitOffset>8</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>BRKLENSelect</name>
-                           <enumeratedValue>
-                              <name>13_BIT</name>
-                              <description>Break field transmission is 13 bit times</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>17_BIT</name>
-                              <description>Break field transmission is 17 bit times</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>21_BIT</name>
-                              <description>Break field transmission is 21 bit times</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>26_BIT</name>
-                              <description>Break field transmission is 26 bit times</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                     <field>
-                        <name>HDRDLY</name>
-                        <description>LIN Master Header Delay</description>
-                        <bitOffset>10</bitOffset>
-                        <bitWidth>2</bitWidth>
-                        <writeConstraint>
-                           <useEnumeratedValues>true</useEnumeratedValues>
-                        </writeConstraint>
-                        <enumeratedValues>
-                           <name>HDRDLYSelect</name>
-                           <enumeratedValue>
-                              <name>DELAY0</name>
-                              <description>Delay between break and sync transmission is 1 bit time; Delay between sync and ID transmission is 1 bit time</description>
-                              <value>0x0</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>DELAY1</name>
-                              <description>Delay between break and sync transmission is 4 bit time; Delay between sync and ID transmission is 4 bit time</description>
-                              <value>0x1</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>DELAY2</name>
-                              <description>Delay between break and sync transmission is 8 bit time; Delay between sync and ID transmission is 4 bit time</description>
-                              <value>0x2</value>
-                           </enumeratedValue>
-                           <enumeratedValue>
-                              <name>DELAY3</name>
-                              <description>Delay between break and sync transmission is 14 bit time; Delay between sync and ID transmission is 4 bit time</description>
-                              <value>0x3</value>
-                           </enumeratedValue>
-                        </enumeratedValues>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>BAUD</name>
-                  <description>USART_INT Baud Rate</description>
-                  <addressOffset>0xC</addressOffset>
-                  <size>16</size>
-                  <fields>
-                     <field>
-                        <name>BAUD</name>
-                        <description>Baud Rate Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>16</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>BAUD_FRAC_MODE</name>
-                  <description>USART_INT Baud Rate</description>
-                  <alternateRegister>BAUD</alternateRegister>
-                  <addressOffset>0xC</addressOffset>
-                  <size>16</size>
-                  <fields>
-                     <field>
-                        <name>BAUD</name>
-                        <description>Baud Rate Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>13</bitWidth>
-                     </field>
-                     <field>
-                        <name>FP</name>
-                        <description>Fractional Part</description>
-                        <bitOffset>13</bitOffset>
-                        <bitWidth>3</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>BAUD_FRACFP_MODE</name>
-                  <description>USART_INT Baud Rate</description>
-                  <alternateRegister>BAUD</alternateRegister>
-                  <addressOffset>0xC</addressOffset>
-                  <size>16</size>
-                  <fields>
-                     <field>
-                        <name>BAUD</name>
-                        <description>Baud Rate Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>13</bitWidth>
-                     </field>
-                     <field>
-                        <name>FP</name>
-                        <description>Fractional Part</description>
-                        <bitOffset>13</bitOffset>
-                        <bitWidth>3</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>BAUD_USARTFP_MODE</name>
-                  <description>USART_INT Baud Rate</description>
-                  <alternateRegister>BAUD</alternateRegister>
-                  <addressOffset>0xC</addressOffset>
-                  <size>16</size>
-                  <fields>
-                     <field>
-                        <name>BAUD</name>
-                        <description>Baud Rate Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>16</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>RXPL</name>
-                  <description>USART_INT Receive Pulse Length</description>
-                  <addressOffset>0xE</addressOffset>
-                  <size>8</size>
-                  <fields>
-                     <field>
-                        <name>RXPL</name>
-                        <description>Receive Pulse Length</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>8</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>INTENCLR</name>
-                  <description>USART_INT Interrupt Enable Clear</description>
-                  <addressOffset>0x14</addressOffset>
-                  <size>8</size>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                  <fields>
-                     <field>
-                        <name>DRE</name>
-                        <description>Data Register Empty Interrupt Disable</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TXC</name>
-                        <description>Transmit Complete Interrupt Disable</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXC</name>
-                        <description>Receive Complete Interrupt Disable</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXS</name>
-                        <description>Receive Start Interrupt Disable</description>
-                        <bitOffset>3</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>CTSIC</name>
-                        <description>Clear To Send Input Change Interrupt Disable</description>
-                        <bitOffset>4</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXBRK</name>
-                        <description>Break Received Interrupt Disable</description>
-                        <bitOffset>5</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ERROR</name>
-                        <description>Combined Error Interrupt Disable</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>INTENSET</name>
-                  <description>USART_INT Interrupt Enable Set</description>
-                  <addressOffset>0x16</addressOffset>
-                  <size>8</size>
-                  <modifiedWriteValues>oneToSet</modifiedWriteValues>
-                  <fields>
-                     <field>
-                        <name>DRE</name>
-                        <description>Data Register Empty Interrupt Enable</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TXC</name>
-                        <description>Transmit Complete Interrupt Enable</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXC</name>
-                        <description>Receive Complete Interrupt Enable</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXS</name>
-                        <description>Receive Start Interrupt Enable</description>
-                        <bitOffset>3</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>CTSIC</name>
-                        <description>Clear To Send Input Change Interrupt Enable</description>
-                        <bitOffset>4</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXBRK</name>
-                        <description>Break Received Interrupt Enable</description>
-                        <bitOffset>5</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ERROR</name>
-                        <description>Combined Error Interrupt Enable</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>INTFLAG</name>
-                  <description>USART_INT Interrupt Flag Status and Clear</description>
-                  <addressOffset>0x18</addressOffset>
-                  <size>8</size>
-                  <modifiedWriteValues>oneToClear</modifiedWriteValues>
-                  <fields>
-                     <field>
-                        <name>DRE</name>
-                        <description>Data Register Empty Interrupt</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TXC</name>
-                        <description>Transmit Complete Interrupt</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXC</name>
-                        <description>Receive Complete Interrupt</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXS</name>
-                        <description>Receive Start Interrupt</description>
-                        <bitOffset>3</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>CTSIC</name>
-                        <description>Clear To Send Input Change Interrupt</description>
-                        <bitOffset>4</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>RXBRK</name>
-                        <description>Break Received Interrupt</description>
-                        <bitOffset>5</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ERROR</name>
-                        <description>Combined Error Interrupt</description>
-                        <bitOffset>7</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>STATUS</name>
-                  <description>USART_INT Status</description>
-                  <addressOffset>0x1A</addressOffset>
-                  <size>16</size>
-                  <fields>
-                     <field>
-                        <name>PERR</name>
-                        <description>Parity Error</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>FERR</name>
-                        <description>Frame Error</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>BUFOVF</name>
-                        <description>Buffer Overflow</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>CTS</name>
-                        <description>Clear To Send</description>
-                        <bitOffset>3</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ISF</name>
-                        <description>Inconsistent Sync Field</description>
-                        <bitOffset>4</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>COLL</name>
-                        <description>Collision Detected</description>
-                        <bitOffset>5</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>TXE</name>
-                        <description>Transmitter Empty</description>
-                        <bitOffset>6</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>SYNCBUSY</name>
-                  <description>USART_INT Synchronization Busy</description>
-                  <addressOffset>0x1C</addressOffset>
-                  <access>read-only</access>
-                  <fields>
-                     <field>
-                        <name>SWRST</name>
-                        <description>Software Reset Synchronization Busy</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>ENABLE</name>
-                        <description>SERCOM Enable Synchronization Busy</description>
-                        <bitOffset>1</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                     <field>
-                        <name>CTRLB</name>
-                        <description>CTRLB Synchronization Busy</description>
-                        <bitOffset>2</bitOffset>
-                        <bitWidth>1</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>DATA</name>
-                  <description>USART_INT Data</description>
-                  <addressOffset>0x28</addressOffset>
-                  <size>16</size>
-                  <fields>
-                     <field>
-                        <name>DATA</name>
-                        <description>Data Value</description>
-                        <bitOffset>0</bitOffset>
-                        <bitWidth>9</bitWidth>
-                     </field>
-                  </fields>
-               </register>
-               <register>
-                  <name>DBGCTRL</name>
-                  <description>USART_INT Debug Control</description>
-                  <addressOffset>0x30</addressOffset>
-                  <size>8</size>
-                  <fields>
-                     <field>
-                        <name>DBGSTOP</name>
-                        <description>Debug Mode</description>
+                        <description>Debug Stop Mode</description>
                         <bitOffset>0</bitOffset>
                         <bitWidth>1</bitWidth>
                      </field>

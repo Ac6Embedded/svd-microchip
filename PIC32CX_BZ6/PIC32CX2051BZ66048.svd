@@ -23547,7 +23547,7 @@ limitations under the License.
          <baseAddress>0x0</baseAddress>
          <addressBlock>
             <offset>0</offset>
-            <size>0x1E8</size>
+            <size>0x180</size>
             <usage>registers</usage>
          </addressBlock>
          <registers>
@@ -23762,7 +23762,7 @@ limitations under the License.
                <dimIncrement>1</dimIncrement>
                <name>UUID[%s]</name>
                <description>Unique ID</description>
-               <addressOffset>0x1D8</addressOffset>
+               <addressOffset>0x170</addressOffset>
                <size>8</size>
                <fields>
                   <field>
