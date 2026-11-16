@@ -1,6 +1,6 @@
 {
   "vendor": "Microchip",
-  "generated": "2026-11-09",
+  "generated": "2026-11-16",
   "index": "https://packs.download.microchip.com/index.idx",
   "sources": [
     {
@@ -157,8 +157,8 @@
     },
     {
       "name": "Microchip.PIC32CZ-CA80_DFP",
-      "url": "https://packs.download.microchip.com/Microchip.PIC32CZ-CA80_DFP.1.7.219.atpack",
-      "version": "1.7.219",
+      "url": "https://packs.download.microchip.com/Microchip.PIC32CZ-CA80_DFP.1.8.233.atpack",
+      "version": "1.8.233",
       "license": "Apache-2.0",
       "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
       "files": 12
@@ -437,8 +437,8 @@
     },
     {
       "name": "Microchip.SAMRH71_DFP",
-      "url": "https://packs.download.microchip.com/Microchip.SAMRH71_DFP.2.8.290.atpack",
-      "version": "2.8.290",
+      "url": "https://packs.download.microchip.com/Microchip.SAMRH71_DFP.2.9.301.atpack",
+      "version": "2.9.301",
       "license": "Apache-2.0",
       "license_file": "PIC32CK-SG_DFP-LICENSE.txt",
       "files": 1
@@ -1699,84 +1699,84 @@
       "path": "PIC32CZ_CA80/PIC32CZ2051CA80100.svd",
       "device": "PIC32CZ2051CA80100",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ2051CA80144.svd",
       "device": "PIC32CZ2051CA80144",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ2051CA80176.svd",
       "device": "PIC32CZ2051CA80176",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ2051CA80208.svd",
       "device": "PIC32CZ2051CA80208",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ4010CA80100.svd",
       "device": "PIC32CZ4010CA80100",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ4010CA80144.svd",
       "device": "PIC32CZ4010CA80144",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ4010CA80176.svd",
       "device": "PIC32CZ4010CA80176",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ4010CA80208.svd",
       "device": "PIC32CZ4010CA80208",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ8110CA80100.svd",
       "device": "PIC32CZ8110CA80100",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ8110CA80144.svd",
       "device": "PIC32CZ8110CA80144",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ8110CA80176.svd",
       "device": "PIC32CZ8110CA80176",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
       "path": "PIC32CZ_CA80/PIC32CZ8110CA80208.svd",
       "device": "PIC32CZ8110CA80208",
       "family": "PIC32CZ_CA80",
-      "source": "Microchip.PIC32CZ-CA80_DFP.1.7.219",
+      "source": "Microchip.PIC32CZ-CA80_DFP.1.8.233",
       "provenance": "pristine"
     },
     {
@@ -3925,7 +3925,7 @@
       "path": "SAMRH71/ATSAMRH71F20C.svd",
       "device": "ATSAMRH71F20C",
       "family": "SAMRH71",
-      "source": "Microchip.SAMRH71_DFP.2.8.290",
+      "source": "Microchip.SAMRH71_DFP.2.9.301",
       "provenance": "pristine"
     },
     {
@@ -4106,7 +4106,7 @@
   ],
   "stats": {
     "total_files": 518,
-    "total_bytes": 1015557423
+    "total_bytes": 1015579852
   },
   "issues": []
 }
